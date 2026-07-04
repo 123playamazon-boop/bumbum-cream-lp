@@ -408,6 +408,61 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .drname small{display:block;font-weight:600;color:var(--muted);font-style:normal}
   .drbadge{display:inline-block;margin-top:12px;background:#e9f7ef;color:var(--green);font-weight:800;font-size:12px;padding:6px 12px;border-radius:20px}
   @media(min-width:640px){.drblock{grid-template-columns:300px 1fr;align-items:stretch}.drphoto{height:100%;aspect-ratio:auto}}
+/* ============ MOBILE OPTIMIZATION (primary traffic) ============ */
+  html{-webkit-text-size-adjust:100%}
+  body{overflow-wrap:break-word}
+  img,video{max-width:100%;height:auto}
+  a,button,summary,.cta,.pack,.gthumbs .t{ -webkit-tap-highlight-color:rgba(234,8,137,.18) }
+  @media(max-width:520px){
+    .wrap{padding:0 15px}
+    .heroinner{padding:0 15px;gap:22px}
+    section{padding:26px 0}
+    h1.hero{font-size:25px}
+    .vsltitle{font-size:20px}
+    h2.sec{font-size:22px}
+    h2.sm{font-size:16px}
+    .lead{font-size:15px}
+    .subt{font-size:14px}
+    .offerbar{font-size:12px;padding:8px 8px;letter-spacing:0}
+    .pressbar{font-size:11px;padding:9px 8px;line-height:1.9}
+    .pressbar span{margin:0 6px}
+    .cta{padding:16px 14px;font-size:16px}
+    .ctablk{padding:20px 0}
+    /* comparison table fits small screens */
+    .ctable{font-size:12.5px}
+    .ctable th,.ctable td{padding:9px 6px}
+    .ctable thead th{font-size:11px}
+    .ctable td.y,.ctable td.n{width:40px}
+    /* offer / packs */
+    .offerbox{padding:20px 14px}
+    .pack{padding:16px}
+    .packimg{max-height:210px}
+    /* social proof blocks */
+    .stat .n{font-size:30px}
+    .badge{font-size:10px;padding:12px 5px}
+    .bigtl .num{min-width:62px;font-size:13px;padding:7px 7px}
+    .bigtl .step{padding:14px;gap:10px}
+    .bigtl h3{font-size:14px}
+    /* VSL uses full width, capped height */
+    .vslbox{width:94vw;max-height:72vh}
+    /* exit popup comfy */
+    .exitbox{padding:22px 16px}
+    .exithead{font-size:19px}
+    /* doctor photo not too tall */
+    .drphoto{aspect-ratio:1/1}
+    /* sticky cta */
+    .sticky{padding:8px 12px}
+    .sticky .cta{font-size:15px;padding:13px}
+  }
+  @media(max-width:360px){
+    h1.hero{font-size:23px}
+    .vsltitle{font-size:18px}
+    h2.sec{font-size:20px}
+    .badges{grid-template-columns:repeat(2,1fr)}
+    .asseen-logos{gap:8px 14px}
+    .asseen-logos .mag{font-size:15px}
+    .pay span{font-size:9px;padding:3px 5px}
+  }
 </style>
 </head>
 <body>
