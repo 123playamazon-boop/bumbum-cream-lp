@@ -322,7 +322,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .pz{background:var(--soft);border-radius:14px;padding:18px;margin:16px 0;border-left:4px solid var(--gold)}
   .pz p{margin:0 0 10px;font-size:15px}
   .pz p:last-child{margin:0}
-  .packimg{width:100%;max-height:142px;object-fit:contain;display:block;margin:0 auto 10px}
+  .packimg{width:100%;max-height:232px;object-fit:contain;display:block;margin:0 auto 8px}
   .socialpk{text-align:center;font-size:13px;color:var(--muted);margin:12px 0 2px;line-height:1.6}
   .socialpk .s{color:#f5a623;letter-spacing:1px}
   .socialpk b{color:var(--wine)}
@@ -400,6 +400,14 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .exitimg{width:120px;margin:0 auto 8px;display:block}
   .exitsmall{font-size:12px;color:var(--muted);margin:12px 0 0}
   @media(min-width:600px){.mtestims{grid-template-columns:repeat(3,1fr)}}
+  .drblock{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr}
+  .drphoto{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;display:block}
+  .drbody{padding:20px}
+  .drbody p{font-style:italic;color:#3a3f49;font-size:15px;margin:8px 0 12px}
+  .drname{font-family:"Libre Franklin";font-weight:800;color:var(--wine)}
+  .drname small{display:block;font-weight:600;color:var(--muted);font-style:normal}
+  .drbadge{display:inline-block;margin-top:12px;background:#e9f7ef;color:var(--green);font-weight:800;font-size:12px;padding:6px 12px;border-radius:20px}
+  @media(min-width:640px){.drblock{grid-template-columns:300px 1fr;align-items:stretch}.drphoto{height:100%;aspect-ratio:auto}}
 </style>
 </head>
 <body>
@@ -958,11 +966,16 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 <!-- ===== [20] DOCTOR REVIEWED ===== -->
 <section>
   <div class="wrap">
-    <h2 class="sm">Dermatologist Reviewed</h2>
-    <div class="doc">
-      <div class="stars">★★★★★</div>
-      <p>"American women have been sold 'firming lotions' for years — a genuinely weaker class of product. The Brazilian modelador tradition combines a real active like guaraná caffeine with a specific mechanical massage, and the texture and firmness results speak for themselves. What I like most is that it's a 60-second daily habit patients actually stick with — and consistency is everything with skin."</p>
-      <div class="dn">Dr. Larissa Andrade, MD<small>Board-Certified Dermatologist · Cosmetic Formulation Consultant</small></div>
+    <h2 class="sm">Dermatologist &amp; Aesthetician Recommended</h2>
+    <h2 class="sec" style="margin-bottom:14px">"I Recommend It to My Own Patients."</h2>
+    <div class="drblock">
+      <img class="drphoto" src="img/dr-beatriz.webp" alt="Dr. Beatriz Silva, board-certified dermatologist and aesthetician" loading="lazy">
+      <div class="drbody">
+        <div class="stars">★★★★★</div>
+        <p>"In 20 years as a dermatologist and aesthetician I've tested hundreds of firming creams — most are just moisturizer with a pretty label. The Brazilian <em>modelador</em> class is genuinely different: guaraná-derived caffeine plus the specific upward massage really do support the look of firmer, smoother, lifted skin. It's one of the very few I actually recommend to my own patients who want visible results without needles or surgery."</p>
+        <div class="drname">Dr. Beatriz Silva, MD<small>Board-Certified Dermatologist &amp; Aesthetician · 20+ years in practice</small></div>
+        <div class="drbadge">✔ Dermatologist Recommended</div>
+      </div>
     </div>
     <p class="secure">🔒 All transactions are secure and encrypted · <em>Not available on Amazon or eBay</em></p>
   </div>
