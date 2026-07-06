@@ -464,6 +464,26 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
     .pay span{font-size:9px;padding:3px 5px}
   }
   #offer{scroll-margin-top:48px}
+
+  /* ===== MOBILE HERO REORDER — hook + product + price + CTA on the first screen ===== */
+  @media(max-width:899px){
+    .heroinner{display:flex;flex-direction:column;gap:14px}
+    .hero-left,.hero-right{display:contents}
+    .hero-right .eyebrow{order:1}
+    .hero-right h1.hero{order:2}
+    .hero-left .gal{order:3;margin-top:2px}
+    .hero-right .lead{order:4}
+    .hero-right .priceanchor{order:5}
+    .hero-right .cta{order:6;margin-top:2px}
+    .hero-right .checks{order:7}
+    .hero-right .ship{order:8}
+    .hero-right .truststrip{order:9}
+    .hero-right .metarow{order:10}
+    .hero-right .pay{order:11}
+    .hero-right .guar{order:12}
+    .hero-left .toptesti{order:13;margin-top:6px}
+    .gthumbs{display:none}
+  }
 </style>
 </head>
 <body>
@@ -652,18 +672,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 </section>
 
-<!-- ===== model & real-women testimonials ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">Loved by Real Women — From 25 to 68</h2>
-    <p class="subt">Models, moms and grandmothers — the 60-second ritual works at every age.</p>
-    <div class="mtestims">
-      <figure class="mt"><img src="img/mtestim-3.webp" alt="Model with Bumbum cream" loading="lazy"><figcaption><div class="stars">★★★★★</div><p class="q">"I model part-time and my skin is my paycheck. This is the only body cream in my kit now — it firmed my thighs for a swimwear shoot in 5 weeks. Nothing else came close."</p><div class="nm">Valentina, 27<small>✔ Verified Buyer · Miami, FL</small></div></figcaption></figure>
-      <figure class="mt"><img src="img/mtestim-2.webp" alt="Customer with Bumbum cream" loading="lazy"><figcaption><div class="stars">★★★★★</div><p class="q">"Two kids and I'd given up on my body. Six weeks of the ritual and my husband asked if I'd been to a clinic. The lift is real — I'll never be without it."</p><div class="nm">Renata, 41<small>✔ Verified Buyer · Austin, TX</small></div></figcaption></figure>
-      <figure class="mt"><img src="img/mtestim-old.webp" alt="Older customer with Bumbum cream" loading="lazy"><figcaption><div class="stars">★★★★★</div><p class="q">"I'm 68 and thought firmer skin was behind me. My daughter gave me a jar as a joke. Three months later the crepey texture on the back of my legs is genuinely smoother. I reorder it myself now."</p><div class="nm">Barbara, 68<small>✔ Verified Buyer · Naples, FL</small></div></figcaption></figure>
-    </div>
-  </div>
-</section>
 
 <!-- ===== social proof / press bar ===== -->
 <div class="pressbar">
@@ -724,59 +732,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 </section>
 
-<!-- ===== [5] WHAT CAN IT HELP WITH (8 cards) ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">What Can The Bumbum Method Help With?</h2>
-    <div class="helpgrid">
-      <div class="hcard"><div class="em">🍑</div><h3>Loss of Lift &amp; "Fallen" Shape</h3><p>Guaraná caffeine plus the Brazilian Lift massage support the look of a firmer, higher, more sculpted bottom — the #1 reason women reorder.</p></div>
-      <div class="hcard"><div class="em">🌊</div><h3>Cellulite &amp; Dimpling</h3><p>Targets the orange-peel texture on the bottom and back of thighs that squats and lotions leave completely untouched.</p></div>
-      <div class="hcard"><div class="em">⚡</div><h3>Stretch Marks</h3><p>Cacay oil (naturally rich in vitamin A) and deep hydration soften the look of old and new stretch marks over time.</p></div>
-      <div class="hcard"><div class="em">🎈</div><h3>Loose Skin After Kids</h3><p>For the "deflated," crepey texture left behind after pregnancy or weight loss — the exact complaint most creams ignore.</p></div>
-      <div class="hcard"><div class="em">💧</div><h3>Dry, Crepey Texture</h3><p>Açaí and Brazilian botanicals flood the skin with antioxidants and moisture for a smoother, plumper surface.</p></div>
-      <div class="hcard"><div class="em">🪷</div><h3>Firmness &amp; Tone</h3><p>Supports the skin's structural bounce so it looks and feels tighter and more toned, not soft and slack.</p></div>
-      <div class="hcard"><div class="em">☀️</div><h3>Post-Vacation Glow</h3><p>Skin looks tighter and more confident — the "just got back from Rio" look, without the plane ticket.</p></div>
-      <div class="hcard"><div class="em">✨</div><h3>Everyday Confidence</h3><p>Jeans that fit right. Swimsuits that stop being a source of dread. A reflection you actually smile at.</p></div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== [6] WHEN WILL I SEE RESULTS (3 blocks) ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">When Will I See Results?</h2>
-    <div class="rblock"><h3>📅 In the First Few Days</h3><p>From the very first application, skin feels firmer, hydrated and taut. The 60-second ritual becomes the part of your day you look forward to. This is the stage where women message us "okay, this already feels different."</p></div>
-    <div class="rblock"><h3>📆 After 2–3 Weeks of Daily Use</h3><p>With consistent use, the dimpled, orange-peel look begins to soften and skin looks more even and toned. Many women say this is when they first notice their jeans "sitting" differently.</p></div>
-    <div class="rblock"><h3>📈 With Ongoing Use</h3><p>The real transformation happens with consistency. By around 6 weeks the look of lift and firmness is visible in the mirror — this is the reorder moment, when partners notice and old photos suddenly look "before."</p></div>
-  </div>
-</section>
 
-<!-- ===== [7] HOW LONG UNTIL I GET IT ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">How Long Until I Get It?</h2>
-    <p class="subt">Bumbum is formulated with Brazilian actives and manufactured in an FDA-registered U.S. facility, batch-tested for purity.</p>
-    <p class="center">Orders are processed and shipped from our Orlando, FL fulfillment center within 1–2 business days. Most customers receive their package within 3–5 business days, depending on location. You'll receive a tracking number as soon as your order ships.</p>
-  </div>
-</section>
 
-<!-- ===== [8] WHO IS IT FOR ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Who Is It For?</h2>
-    <p class="center">Bumbum is made for any woman who wants a firmer, lifted, smoother-looking bottom — without needles, without surgery, and without wasting another $60 on a lotion that just moisturizes.</p>
-    <p class="center" style="margin-top:14px"><strong>It's especially powerful for:</strong></p>
-    <ul class="checks">
-      <li>Moms whose body "changed" after kids and never bounced back on top</li>
-      <li>Women 35+ noticing loss of lift, firmness and that "fallen" shape</li>
-      <li>Anyone with cellulite or dimpling the gym never fixed</li>
-      <li>Women who considered a BBL but are terrified of the cost and recovery</li>
-      <li>Anyone who's tried 2, 3, 4 firming creams and got nothing to show for it</li>
-      <li>Anyone on Mounjaro, Ozempic or Zepbound watching their skin deflate as the weight drops</li>
-    </ul>
-    <p class="center"><strong>It's safe for daily use and gentle on your skin.</strong> If you're tired of choosing between "does nothing" and "$12,000 and a month of recovery," this was made for you.</p>
-  </div>
-</section>
 
 <!-- ===== [8b] GLP-1 / OZEMPIC SECTION ===== -->
 <section id="glp1">
@@ -817,117 +775,11 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 </section>
 
-<!-- ===== [9] RESULTS OR FULL REFUND GUARANTEE ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">Results or Full Refund Guarantee</h2>
-    <p class="center">If you don't see your bottom looking visibly firmer and lifted, or simply don't love it, within 60 days — we'll refund you in full. No hassle. No questions asked.</p>
-    <!-- repeat testimonial -->
-    <div class="toptesti" style="margin-top:18px">
-      <div class="stars">★★★★★</div>
-      <p>"I've tried everything to firm up back there — squats, three different creams, even priced out a BBL. Nothing moved the needle. Bumbum is the first thing that actually showed up in the mirror. It's been 3 months and the lift is real — my husband noticed before I even told him. This is the one that finally worked."</p>
-      <div class="who">
-        <div class="av">DM</div>
-        <div><strong>— Danielle M., United States</strong><br><span class="verif">Verified Customer</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== [10] BIG EMOTIONAL ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Your Body After Kids Isn't a Life Sentence. (You Just Haven't Found the Right Category Yet.)</h2>
-    <video class="rvid" src="img/intro.mp4" autoplay muted loop playsinline preload="metadata"></video>
-    <p>You're not imagining it. The way your bottom "fell" and flattened after kids. The dimpling that squats never touched. The jeans that used to fit right and now just hang. The quiet sigh every time you catch your reflection sideways after a shower.</p>
-    <p>These aren't just "part of getting older." They're signs your skin lost structural support — and the usual solutions come with their own problems. Surgery means anesthesia, scars, and weeks of recovery. $60 creams just moisturize. "Love your body" is easier said than done when you don't recognize it.</p>
-    <p>You've tried the gym and watched the texture stay exactly the same. You've dreaded the swimsuit aisle. What you need is something that actually works AND doesn't come with a list of downsides — something you'll actually do every single day.</p>
-  </div>
-</section>
-
-<!-- ===== [11] BACKED BY 30 YEARS ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">The Brazilian Ritual Backed by 30 Years of Daily Use — and a Category American Brands Skipped</h2>
-    <img class="rimg" src="img/ingredients.webp" alt="Brazilian active ingredients — Brazil nut, shea butter, vitamin E" loading="lazy">
-    <p>The modelador is one of the most trusted body-care traditions in Brazil. For three decades, women in São Paulo and Rio have used it daily to keep the skin on their bottom and thighs firm, smooth and lifted-looking. This isn't a trendy supplement that appeared last year — it's time-tested.</p>
-    <p><strong>Just 60 seconds a day helps to:</strong></p>
-    <ul class="greenlist">
-      <li>Support the look of firmer, lifted, more sculpted skin on the bottom &amp; thighs</li>
-      <li>Soften the appearance of cellulite, dimpling and crepey texture</li>
-      <li>Fade the look of old and new stretch marks with deep hydration</li>
-      <li>Drive Brazilian actives into the deeper layer with the Lift massage technique</li>
-      <li>Deliver antioxidant support from guaraná, açaí and cacay oil</li>
-      <li>Keep skin looking tight and toned — not soft and slack</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== [12] SURVEY STATS ===== -->
-<section class="wine-bg">
-  <div class="wrap">
-    <h2 class="sec">Real Feedback from Bumbum Customers</h2>
-    <p class="subt" style="color:#fff2df">In a recent customer survey, users reported:</p>
-    <div class="stats">
-      <div class="stat"><div class="n">92%</div><p>said skin looked and felt firmer within the first month*</p></div>
-      <div class="stat"><div class="n">87%</div><p>noticed softer, smoother texture where they had dimpling*</p></div>
-      <div class="stat"><div class="n">4 in 5</div><p>said a partner, friend or family member noticed*</p></div>
-      <div class="stat"><div class="n">94%</div><p>said they'd never go back to a regular "firming lotion"*</p></div>
-    </div>
-    <p class="disc" style="color:#ffe6c2">*Based on a voluntary, self-reported customer survey conducted by Bumbum in 2025. This is a cosmetic product. Individual results vary.</p>
-  </div>
-</section>
-
-<!-- ===== [13] ONE JAR — INSTEAD OF ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">One Jar. The Whole Brazilian Ritual.</h2>
-    <p class="subt">Here's how the modelador compares to everything else you've tried:</p>
-    <div class="cmp"><b>Instead of a $12,000 BBL:</b> Surgery means anesthesia, weeks of not sitting normally, visible scars and a regret rate all over Reddit. Bumbum gives you the look of lift and firmness for the price of dinner — with zero downtime. (Always consult your doctor before any procedure.)</div>
-    <div class="cmp"><b>Instead of $120 Designer "Firming" Creams:</b> Turn the jar over and read it — water, glycerin, fragrance, and a $110 markup for the famous name on the front. You're paying for the logo, not the lift. Bumbum puts every single dollar into guaraná-charged modelador actives, not a department-store marketing budget or a pretty glass jar.</div>
-    <div class="cmp"><b>Instead of $60 department-store "firming creams":</b> Those are firming <em>lotions</em> — a weaker class with a fraction of the actives. Bumbum is the modelador category Brazilian women actually use. Same shelf, completely different results.</div>
-    <div class="cmp"><b>Instead of Endless Squats &amp; the Gym:</b> Exercise builds muscle <em>under</em> the skin — it does nothing for the dimpled, loose texture <em>on top</em>. Bumbum targets exactly what the gym can't reach.</div>
-    <div class="cmp"><b>Instead of Spa Body-Contouring:</b> $200+ per session, booked weeks out, results that fade. Bumbum is the same idea as a daily 60-second home ritual, for a tiny fraction of the price.</div>
-    <div class="cmp"><b>Instead of Just "Accepting It":</b> "It's just getting older" is what the brands want you to believe so you keep buying lotion. Bumbum gives you something to actually <em>do</em> about it every morning.</div>
-    <div class="cmp"><b>Instead of Hoping It Goes Away:</b> Skin firmness doesn't fix itself. Ignoring it doesn't make it better. Bumbum gives your skin the daily support it needs — taking action feels better than the sigh in the mirror.</div>
-  </div>
-</section>
-
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 53% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
 
 
 
-<!-- ===== [15] PROMISE BADGES ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">The Bumbum Promise</h2>
-    <div class="badges">
-      <div class="badge"><span class="ic">🇧🇷</span>Brazilian Actives</div>
-      <div class="badge"><span class="ic">🐰</span>Cruelty-Free</div>
-      <div class="badge"><span class="ic">🌿</span>Paraben-Free</div>
-      <div class="badge"><span class="ic">🧪</span>Dermatologist-Tested</div>
-      <div class="badge"><span class="ic">🚫</span>No Sulfates or Dyes</div>
-      <div class="badge"><span class="ic">🏭</span>FDA-Registered Facility</div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== [16] WHAT TO EXPECT — BIG TIMELINE ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">What Should I Expect From Consistent Use of the Bumbum Method?</h2>
-    <div class="bigtl">
-      <div class="step"><div class="num">1 Week</div><div><h3>Hydrated, Taut &amp; Smoother to the Touch</h3><p>Immediate softening and a tighter surface feel. The 60-second ritual is locked into your routine.</p></div></div>
-      <div class="step"><div class="num">1 Month</div><div><h3>Texture Begins to Even Out</h3><p>Dimpling looks softer, skin looks more toned. The first "is it just me, or…?" glances in the mirror.</p></div></div>
-      <div class="step"><div class="num">2 Months</div><div><h3>Visible Lift &amp; Firmness</h3><p>The look you came for. This is peak reorder season — and when partners tend to notice.</p></div></div>
-      <div class="step"><div class="num">3 Months</div><div><h3>The Full Brazilian-Lift Look</h3><p>Firmer, smoother, higher-looking. Old photos officially become "before" photos.</p></div></div>
-      <div class="step"><div class="num">6 Months</div><div><h3>Confidence on Autopilot</h3><p>Consistent, maintained results. Beach trips and swimsuits stop being a source of dread.</p></div></div>
-      <div class="step"><div class="num">12 Months</div><div><h3>A Habit You'll Never Drop</h3><p>60 seconds a day, permanently. No surgery to maintain, no prescriptions, no going backward.</p></div></div>
-    </div>
-  </div>
-</section>
+
 
 <!-- CTA repeat -->
 <div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 53% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
@@ -968,16 +820,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 </section>
 
-<!-- ===== secondary objections (Amanda) ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">"Okay… But Will It Work For <em>Me</em>?"</h2>
-    <p class="subt">Let's kill the three doubts still in the back of your mind.</p>
-    <div class="cmp"><b>"It's just another miracle cream."</b> If it were, you'd feel nothing. The guaraná gives a real warm tingle from the first application — that's the active working, not marketing. And you're covered by the 60-day firmer-or-it's-free challenge, so the risk sits 100% with us, not you.</div>
-    <div class="cmp"><b>"If it really worked, my dermatologist would've told me."</b> Dermatologists recommend what they can prescribe and patent. Nobody patents a Brazilian flower or a massage technique — so it never came up in the appointment. That's the whole reason it stayed a São Paulo secret for 30 years while you were sold $120 lotion.</div>
-    <div class="cmp"><b>"Even if it works, it'll wear off."</b> It's not a procedure that fades — it's a 60-second daily ritual. Keep the ritual, keep the look. No touch-ups, no needles, no maintenance surgery, nothing to "wear off."</div>
-  </div>
-</section>
 
 <!-- ===== [19] SPECIAL OFFER + PACKS ===== -->
 <section id="offer-full" class="soft-bg">
@@ -1080,19 +922,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 </section>
 
-<!-- ===== real women UGC strip ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Loved by Women Everywhere</h2>
-    <p class="subt">15,870+ women have made the 60-second Brazilian ritual part of their day.</p>
-    <div class="ugc">
-      <figure><img src="img/ugc-1.webp" alt="Real customer with Bumbum cream" loading="lazy"><figcaption><span class="vr">✔</span> Jessica, 34</figcaption></figure>
-      <figure><img src="img/ugc-2.webp" alt="Real customer with Bumbum cream" loading="lazy"><figcaption><span class="vr">✔</span> Mei, 29</figcaption></figure>
-      <figure><img src="img/ugc-3.webp" alt="Real customer with Bumbum cream" loading="lazy"><figcaption><span class="vr">✔</span> Karen, 41</figcaption></figure>
-      <figure><img src="img/ugc-4.webp" alt="Real customer with Bumbum cream" loading="lazy"><figcaption><span class="vr">✔</span> Sofia, 37</figcaption></figure>
-    </div>
-  </div>
-</section>
 
 <!-- ===== [21] CUSTOMER REVIEWS ===== -->
 <section class="soft-bg">
@@ -1109,15 +938,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 
     <div class="tcards" style="margin-top:22px">
       <div class="tcard"><img class="revimg" src="img/rev-1.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I've been 'accepting' my post-baby body for 6 years. Bought this on a whim. Six weeks later my sister asked if I'd had 'work done.' That's the whole review. Ordering the 6-pack."</p><div class="nm">Carol J. — Austin, TX</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-2.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"The guaraná gives it this slight warm tingle so you KNOW it's doing something — unlike the lotions I wasted money on that just sat there. Texture on my thighs is smoother than it's been in a decade."</p><div class="nm">Norma K.</div><span class="verif">Verified Buyer</span></div></div>
       <div class="tcard"><img class="revimg" src="img/rev-3.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I genuinely almost booked a BBL. My Brazilian hairdresser talked me out of it and told me about modelador creams. This is the one she uses. I cannot believe the difference — and I still have all my money."</p><div class="nm">Deborah F.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-4.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I was really trying to avoid surgery. My sister told me about this and I figured I had nothing to lose. Three months later the lift is real and the dimpling is fading. I didn't have to go down the surgery road. Yet, at least."</p><div class="nm">Eugene W.</div><span class="verif">Verified Buyer</span></div></div>
       <div class="tcard"><img class="revimg" src="img/rev-5.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"51 years old. Thought that ship had sailed. The lift is real and the stretch marks from my kids are noticeably lighter. My husband is now the one reminding ME to use it. Wild."</p><div class="nm">Gloria M. — Portland, OR</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-6.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"My husband was the skeptic. 'It's just cream,' he said. Well, 'just cream' brought back a shape I hadn't seen since before kids. He's not skeptical anymore — he's the one reminding me to reorder."</p><div class="nm">Marlene C. — Denver, CO</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-7.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I track everything and I'm a skeptic by nature. Took weekly photos. By week 6 there was a clear, visible difference in firmness and dimpling. Not placebo — the photos don't lie."</p><div class="nm">Raymond T. (for my wife)</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-8.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"The stress of hating my reflection was its own thing. Now I feel like I'm actually doing something about it every day. My body changed, yes — but the confidence might be the biggest benefit."</p><div class="nm">Beverly N.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-9.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I bought one jar to 'test' it and immediately regretted not getting three. By week 5 my leggings fit different and my mom — who never compliments anything — asked if I'd been doing squats. Bought the 6-pack that same night."</p><div class="nm">Priya S.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-10.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"45, two kids, zero time for the gym. This is the only thing I've stuck with because it's literally 60 seconds after my shower. The dimpling on the back of my thighs is fading — and my husband pointed it out before I did."</p><div class="nm">Tanya R.</div><span class="verif">Verified Buyer</span></div></div>
       <div class="tcard"><img class="revimg" src="img/rev-11.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I'm on Mounjaro and terrified of the loose-skin thing everyone warns about. Started this the same week as my first shot. Down 22 lbs and my skin actually looks like it's keeping up. Wish more people talked about doing both together."</p><div class="nm">Danielle W.</div><span class="verif">Verified Buyer</span></div></div>
       <div class="tcard"><img class="revimg" src="img/rev-12.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"Skeptical Amazon-review reader here. The guaraná tingle is real, the smell is amazing, and after 6 weeks the mirror doesn't lie. I cancelled the $180 'designer' cream I was about to reorder on autopilot."</p><div class="nm">Monica L.</div><span class="verif">Verified Buyer</span></div></div>
     </div>
