@@ -22,8 +22,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 </script>
 <style>
   :root{
-    --ink:#1b1b1b;--muted:#5f5f5f;--green:#a80664;--green-link:#c40a6f;--green-pill:#8a054f;
-    --gold:#f4b400;--line:#e7e7e7;--card:#ffffff;--chip:#eef3ee;--red:#d93a3a;--olive:#4b6b52;--maxw:1180px;
+    --ink:#1b1b1b;--muted:#5f5f5f;--green:#ea0889;--green-link:#c40a6f;--green-pill:#a80664;
+    --gold:#ffc343;--line:#e7e7e7;--card:#ffffff;--chip:#eef3ee;--red:#d93a3a;--olive:#a80664;--maxw:1180px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -43,7 +43,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 
   .eyebrow{font-size:24px;color:var(--muted);font-weight:400;margin:0 0 6px;}
   h1.headline{font-size:52px;line-height:1.05;font-weight:800;margin:0 0 20px;letter-spacing:-1px;}
-  h1.headline .hl{color:var(--green);}
+  h1.headline .hl{background:linear-gradient(transparent 52%, #ffd85a 52%);color:inherit;padding:0 2px;border-radius:2px;}
   .subhead{font-size:21px;color:#333;margin:0 0 18px;}
   .byline{font-size:15px;color:var(--muted);margin-bottom:26px;}
   .byline b{color:#333;}
@@ -79,7 +79,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .catlabel .dot{width:16px;height:16px;border-radius:4px;background:var(--green);display:inline-block;}
   .checkrow{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 10px;cursor:pointer;transition:.15s;user-select:none;}
   .checkrow:hover{border-color:#bcd2c1;background:#fafcfa;}
-  .checkrow.on{border-color:var(--green);background:#f1f7f2;}
+  .checkrow.on{border-color:var(--green);background:#fff2f8;}
   .checkrow .box{flex:0 0 22px;width:22px;height:22px;border:2px solid #c3c3c3;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:800;}
   .checkrow.on .box{background:var(--green);border-color:var(--green);}
   .checkrow .lbl{font-size:17px;}
@@ -92,7 +92,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .qfoot{text-align:center;color:var(--muted);font-size:15px;margin-top:16px;}
 
   .ing{display:flex;gap:18px;border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 14px;align-items:flex-start;}
-  .ing.hero{border-color:var(--green);background:#f6faf6;}
+  .ing.hero{border-color:var(--green);background:#fff2f8;}
   .ing .ic{flex:0 0 84px;width:84px;height:84px;border-radius:12px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:42px;line-height:1;}
   .ing h4{margin:0 0 6px;font-size:20px;font-weight:800;}
   .ing h4 .star{display:inline-block;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:middle;text-transform:uppercase;}
@@ -129,7 +129,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .pricing{margin:14px 0 10px;}
   .price{position:relative;display:flex;align-items:center;gap:20px;border:2px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 14px;cursor:pointer;transition:.15s;}
   .price:hover{border-color:#bcd2c1;}
-  .price.best{border-color:var(--green);background:#f6faf6;}
+  .price.best{border-color:var(--green);background:#fff2f8;}
   .price .qty{flex:1;}
   .price .qty .q{font-size:22px;font-weight:800;}
   .price .qty .sub{font-size:14px;color:var(--muted);}
@@ -139,9 +139,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   .price .money .was{font-size:14px;color:#a0a0a0;text-decoration:line-through;}
   .price .money .per{font-size:13px;color:var(--muted);}
   .price .badge{position:absolute;top:-11px;right:16px;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;border-radius:20px;padding:4px 12px;text-transform:uppercase;}
-  .price .off{display:inline-block;background:#eaf3ec;color:var(--green);font-weight:800;font-size:12px;border-radius:6px;padding:2px 8px;margin-top:6px;}
+  .price .off{display:inline-block;background:#ffe1a1;color:#8a5a00;font-weight:800;font-size:12px;border-radius:6px;padding:2px 8px;margin-top:6px;}
   .deliver{text-align:center;color:var(--muted);font-size:15px;margin:6px 0 14px;}
-  .cta{display:block;width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:20px;font-size:20px;font-weight:800;letter-spacing:1px;text-align:center;cursor:pointer;text-transform:uppercase;box-shadow:0 4px 14px rgba(53,98,63,.28);}
+  .cta{display:block;width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:20px;font-size:20px;font-weight:800;letter-spacing:1px;text-align:center;cursor:pointer;text-transform:uppercase;box-shadow:0 6px 18px rgba(234,8,137,.34);}
   .cta:hover{background:#2c5334;}
   .subcta{text-align:center;color:var(--muted);font-size:14px;margin:12px 0 0;}
 
@@ -288,10 +288,10 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
       <main class="main">
 
         <!-- HERO -->
-        <p class="eyebrow">Before you book a BBL or buy another $120 "firming" cream &mdash;</p>
-        <h1 class="headline" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">If Your Bottom Looks Flatter, Softer And More Dimpled Every Year, It's Not Just Age &mdash; It's The <span class="hl">Modelador Gap</span></h1>
-        <p class="subhead">Everyone's buying $120 designer "firming" creams. But flip one over &mdash; it's mostly water, glycerin and fragrance, and it does nothing for the deep layer where firmness is actually lost. One Brazilian ritual women have used for 30 years targets that layer at the source. No needle, no surgery, no $12,000 BBL.</p>
-        <p class="subhead" style="font-weight:600;border-left:4px solid var(--green);padding-left:16px;">See visibly firmer, more lifted skin in about 6 weeks &mdash; <b>even if</b> nothing has worked before, <b>even if</b> squats did nothing, <b>even if</b> the sagging already started.</p>
+        <p class="eyebrow">A Beverly Hills dermatologist's warning for every woman over 35 &mdash;</p>
+        <h1 class="headline" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">Brazilian Women In Their 40s Have <span class="hl">Firmer, Rounder Bottoms Than 25-Year-Olds</span> &mdash; And It's Not Surgery, Not Genetics, Not Squats</h1>
+        <p class="subhead">American moms keep buying $120 "firming" creams that do <b>nothing</b> &mdash; while Brazilian women rub in a $1-a-day ritual their grandmothers have used for 30 years. The difference isn't willpower or good genes. It's an entire product category American brands skipped <b>on purpose</b>: the <em>modelador</em>. Flip your $120 jar over &mdash; water, glycerin, fragrance, and a $110 markup for the logo on the front.</p>
+        <p class="subhead" style="font-weight:600;border-left:4px solid var(--green);padding-left:16px;">Visibly firmer, lifted skin on your bottom in <b>6 weeks</b> &mdash; <b>even if</b> you're past 40, <b>even if</b> you've had two kids, <b>even if</b> every cream, squat and lotion has failed you so far.</p>
         <p class="byline">By <b>Dr. Beatriz Moreira, M.D.</b> &middot; Board-Certified Dermatologist &middot; June 30, 2026 &middot; 7 min read</p>
 
         <figure class="herofig" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})"><img src="img/aspirational-trio.webp" alt="Verified reader before and after"></figure>
@@ -299,7 +299,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 
         <!-- TRUST + PRESS -->
         <style>
-          .trustbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;justify-content:center;text-align:center;background:#f6faf6;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:14px 0 12px;}
+          .trustbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;justify-content:center;text-align:center;background:#fffbe8;border:1px solid #ffe1a1;border-radius:12px;padding:12px 16px;margin:14px 0 12px;}
           .trustbar .tb-stars{color:var(--gold);font-size:20px;letter-spacing:2px;}
           .trustbar .tb-txt{font-size:14px;color:#3a3a3a;}
           .pressbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;justify-content:center;text-align:center;margin:0 0 24px;padding:10px 0 14px;border-bottom:1px solid var(--line);}
@@ -414,7 +414,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
         <h2>The Brazilian ritual that firms the skin naturally</h2>
         <p>Deep in Brazil, women have used one thing for a firmer, lifted bottom for over 30 years &mdash; the <span class="em">modelador</span> ritual, powered by <span class="em">guaran&aacute;</span>.</p>
         <p>Dermatologists asking why Brazilian women keep firm, lifted skin &mdash; no surgery, no needles &mdash; kept landing on the same thing. Guaran&aacute; carries roughly <span class="underline">twice the caffeine of a coffee bean</span> &mdash; and topical caffeine is one of the only cosmetic actives actually studied for the appearance of <span class="underline">cellulite and skin firmness</span>. That's the engine of the modelador.</p>
-        <p>In plain English: the ritual does topically what a $12,000 BBL tries to fake surgically &mdash; it supports the look of firm, lifted skin in the layer where it's actually lost. We call it closing the <span class="em">Modelador Gap</span>.</p>
+        <p>In plain English: it does topically what a $12,000 BBL tries to fake surgically &mdash; it supports the look of firm, lifted skin in the exact layer where it's lost. We call it <span class="em">The 60-Second Brazilian Lift</span> &mdash; the guaran&aacute;-charged ritual that finally closes the Modelador Gap.</p>
         <p>And unlike a lotion that just sits on the surface, the 60-second upward massage drives the guaran&aacute;-charged actives into the deeper layer &mdash; so they actually reach where firmness is lost instead of evaporating off the top.</p>
         <figure><img class="roundimg" src="img/ingredients.webp" alt="Wild Amazonian guaraná harvest"></figure>
         <p class="imgcap">Guaran&aacute; &amp; Brazilian actives &mdash; the modelador class the drugstore lotion left out.</p>
@@ -564,7 +564,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
             <div class="mc-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8 &middot; 13,428 reviews</span></div>
             <div class="mc-deal"><b>6 jars</b> &middot; <span class="mc-old">$239.94</span> <span class="mc-now">$99.90</span> <span class="mc-per">&middot; $16.65/jar &middot; most popular</span></div>
           </div>
-          <a class="cta mc-btn" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">Get my Bumbum &rarr;</a>
+          <a class="cta mc-btn" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">YES &mdash; FIRM MY BOTTOM &rarr;</a>
         </div>
 
         <!-- WHERE TO GET IT -->
@@ -621,7 +621,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
           </a>
         </div>
         <p class="deliver">Ships from the U.S. within 24&ndash;48 hours</p>
-        <a class="cta" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">Get my Bumbum &rarr;</a>
+        <a class="cta" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">YES &mdash; FIRM MY BOTTOM &rarr;</a>
         <p class="subcta">One payment &middot; no subscription &middot; 60-day money-back guarantee</p>
 
         <!-- GUARANTEE -->
@@ -642,7 +642,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
         <p>That's it. No gym. No surgery. No needle. No giving up your evening.</p>
         <p>And it keeps working: the more consistently you do the ritual, the firmer the skin looks. Most women find 60&ndash;90 days is the full transformation window &mdash; which is why the 3- and 6-jar plans are the ones women stick with.</p>
         <p><span class="underline">60 seconds a day. The same lift a BBL fakes &mdash; from a Brazilian ritual.</span></p>
-        <a class="cta" href="#offer" style="margin-top:8px;">See your options &rarr;</a>
+        <a class="cta" href="#offer" style="margin-top:8px;">SHOW ME THE PACKS &rarr;</a>
 
         <!-- MORE PROOF -->
         <h2>More reader submissions</h2>
@@ -701,13 +701,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
         <div class="sticky">
           <div class="sidecard">
             <div class="prodwrap"><img src="img/00-product.webp" alt="Bumbum jar"><div class="disc"><span>Save</span><span>$288</span></div></div>
-            <a class="avail" href="#offer">Check availability &rsaquo;</a>
+            <a class="avail" href="#offer">See today's price &rsaquo;</a>
           </div>
           <div class="sidecard rec">
             <div class="rt">Recommended</div>
             <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <div class="rev">4.8 | 13,428 reviews</div>
-            <div class="recname">Bumbum</div>
+            <div class="recname">The 60-Second Brazilian Lift</div>
             <div class="recben"><span class="ck">&check;</span><span>Targets the deep layer a BBL fakes</span></div>
             <div class="recben"><span class="ck">&check;</span><span>Real guaran&aacute;-charged Brazilian modelador</span></div>
             <div class="recben"><span class="ck">&check;</span><span>No needles, no $12k BBL, no downtime</span></div>
@@ -719,7 +719,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   </div>
 
   <a class="stickybar" href="#offer">
-    <div class="inner"><div class="btn">Get up to $288 off &raquo;</div></div>
+    <div class="inner"><div class="btn">FIRM MY BUTT &mdash; UP TO 60% OFF &raquo;</div></div>
   </a>
 
 <script>
