@@ -321,9 +321,48 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
           <span class="tb-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           <span class="tb-txt"><b>4.8/5</b> &middot; <b>13,428</b> verified reviews &middot; <b>41,000+</b> women assessed &middot; <b>194</b> orders in the last 24h</span>
         </div>
-        <div class="pressbar">
-          <span class="pb-label">As reported in</span>
-          <span class="pb-outlets">Allure &middot; Byrdie &middot; Cosmopolitan &middot; Women's Health &middot; PopSugar</span>
+        <style>
+          .asseen-ad{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:0 0 10px;}
+          .asseen-ad .lbl{text-align:center;font-weight:800;font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:10px;}
+          .asseen-ad .logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 22px;filter:grayscale(1);opacity:.72;}
+          .asseen-ad .mag{font-size:19px;color:#2a2530;line-height:1;white-space:nowrap;}
+          .asseen-ad .vogue{font-family:"Times New Roman",Georgia,serif;font-weight:700;letter-spacing:.2em;}
+          .asseen-ad .allure{font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:21px;}
+          .asseen-ad .cosmo{font-family:Georgia,serif;font-weight:700;font-size:14px;}
+          .asseen-ad .elle{font-family:"Times New Roman",serif;font-weight:800;letter-spacing:.24em;}
+          .asseen-ad .bazaar{font-family:Georgia,serif;font-weight:700;font-size:14px;}
+          .asseen-ad .marie{font-family:Georgia,serif;font-weight:600;font-size:16px;}
+          @media(max-width:560px){.asseen-ad .logos{gap:8px 14px;} .asseen-ad .mag{font-size:14px;}}
+        </style>
+        <div class="asseen-ad">
+          <div class="lbl">As Seen In</div>
+          <div class="logos">
+            <span class="mag vogue">VOGUE</span>
+            <span class="mag allure">Allure</span>
+            <span class="mag cosmo">COSMOPOLITAN</span>
+            <span class="mag elle">ELLE</span>
+            <span class="mag bazaar">Harper's BAZAAR</span>
+            <span class="mag marie">marie claire</span>
+          </div>
+        </div>
+
+        <!-- ===== CELEBRITY SECRET (status proof) ===== -->
+        <style>
+          .celeb{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;align-items:center;border:1px solid #ffe1a1;background:linear-gradient(180deg,#fffdf5,#fff7fb);border-radius:18px;padding:22px;margin:10px 0 24px;}
+          .celeb-img{margin:0;} .celeb-img img{width:100%;border-radius:14px;border:1px solid var(--line);display:block;}
+          .celeb-badge{display:inline-block;background:var(--gold);color:#5a3d00;font-weight:800;font-size:12px;letter-spacing:.05em;padding:6px 13px;border-radius:20px;text-transform:uppercase;}
+          .celeb-txt h2{margin:10px 0 8px;}
+          .celeb-txt p{color:#3a463d;margin:0;font-size:17px;}
+          @media(max-width:760px){.celeb{grid-template-columns:1fr;gap:14px;padding:16px;}}
+        </style>
+        <div class="celeb">
+          <figure class="celeb-img"><img src="img/aspirational-trio.webp" alt="Brazilian women with firm, lifted skin" loading="lazy"></figure>
+          <div class="celeb-txt">
+            <span class="celeb-badge">&#11088; The Brazilian Celebrity Secret</span>
+            <h2>The Firming Ritual Brazilian Models &amp; Celebrities Have Guarded For 30 Years</h2>
+            <p>Ever wonder why Brazilian women &mdash; the ones on every &ldquo;best beach body&rdquo; list, firm and lifted well past 40 &mdash; never seem to sag? It was never surgery. Never genetics. It&rsquo;s the <b>modelador</b>: a 60-second daily ritual passed down in S&atilde;o Paulo and Rio for three decades. American brands skipped the whole category &mdash; Brazilian celebrities never did. Now it&rsquo;s yours for less than <b>$1 a day</b>.</p>
+            <a class="cta" style="max-width:360px;margin-top:14px;" href="#offer">UNLOCK THE BRAZILIAN SECRET &rarr;</a>
+          </div>
         </div>
 
         <!-- MISTAKES -->
