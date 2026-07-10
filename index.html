@@ -2,12 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>Bumbum Brazilian Lift &amp; Firm Cream</title>
-
-<!-- ==========================================================
-     TRACKING — troque os IDs placeholder antes de subir ao ar
-     ========================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty &amp; Wellness Daily | Bumbum | Why Your Firming Cream Never Worked</title>
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,1067 +20,767 @@ fbq('track','PageView');
 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xhdeu5qf2q");
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --wine:#ea0889;          /* Sol de Janeiro hot pink (primary) */
-    --wine-dark:#a80664;
-    --gold:#ffc343;          /* Sol de Janeiro sun yellow */
-    --sun:#ffb600;
-    --ink:#252a32;
-    --muted:#636a7b;
-    --green:#1f9d57;
-    --line:#ececec;
-    --soft:#fbf8ed;
-    --shadow:0 6px 22px rgba(0,0,0,.07);
+    --ink:#1b1b1b;--muted:#5f5f5f;--green:#ea0889;--green-link:#c40a6f;--green-pill:#a80664;
+    --gold:#ffc343;--line:#e7e7e7;--card:#ffffff;--chip:#eef3ee;--red:#d93a3a;--olive:#a80664;--maxw:1180px;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Inter",Arial,sans-serif;color:var(--muted);background:#fff;
-    line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;}
+  a{color:var(--green-link);text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+
+  .masthead{text-align:center;padding:26px 20px 18px;border-bottom:1px solid var(--line);}
+  .masthead .brand{font-family:Georgia,"Times New Roman",serif;font-size:32px;font-weight:700;color:var(--green);letter-spacing:.5px;}
+  .masthead .tagline{font-size:12px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:4px;}
+
+  .layout{display:flex;gap:44px;padding:38px 0 60px;}
+  .main{flex:1;min-width:0;}
+  .aside{width:330px;flex:0 0 330px;}
+  .aside .sticky{position:sticky;top:20px;}
+
+  .eyebrow{font-size:24px;color:var(--muted);font-weight:400;margin:0 0 6px;}
+  h1.headline{font-size:52px;line-height:1.05;font-weight:800;margin:0 0 20px;letter-spacing:-1px;}
+  h1.headline .hl{color:#ea0889;}
+  .subhead{font-size:21px;color:#333;margin:0 0 18px;}
+  .byline{font-size:15px;color:var(--muted);margin-bottom:26px;}
+  .byline b{color:#333;}
+
+  h2{font-size:30px;font-weight:800;line-height:1.15;margin:44px 0 18px;letter-spacing:-.5px;}
+  .main p{margin:0 0 18px;}
+  .lead-list{list-style:none;padding:0;margin:0 0 18px;}
+  .lead-list li{margin:0 0 6px;}
+  .underline{border-bottom:2px solid var(--ink);font-weight:600;}
+  .em{font-weight:700;}
+
+  .villain{border-left:4px solid var(--red);background:#fcf3f2;border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0;font-size:18px;}
+  .villain b{color:#a6231f;}
+
+  .herofig{margin:6px 0 8px;border-radius:14px;overflow:hidden;border:1px solid var(--line);}
+  .figcap{font-size:13px;color:var(--muted);font-style:italic;text-align:center;margin:0 0 24px;}
+  .imgcap{font-size:14px;color:var(--muted);font-style:italic;text-align:center;margin:6px 0 22px;}
+  .roundimg{border-radius:14px;border:1px solid var(--line);margin:10px 0 4px;}
+
+  .proofstrip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:12px 0 6px;}
+  .proofstrip figure{margin:0;}
+  .proofstrip img{border-radius:10px;border:1px solid var(--line);}
+  .proofstrip figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:6px;}
+
+  .xlist{list-style:none;padding:0;margin:0 0 20px;}
+  .xlist li{display:flex;align-items:center;gap:12px;font-size:19px;margin:0 0 12px;}
+  .xlist .xi{flex:0 0 24px;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;}
+
+  .quizcard{border:1px solid var(--line);border-radius:16px;padding:30px;margin:26px 0 30px;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.03);}
+  .quizcard h3{font-size:26px;font-weight:800;margin:0 0 8px;}
+  .quizcard .qsub{color:var(--muted);margin:0 0 20px;font-size:17px;}
+  .catlabel{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;letter-spacing:1px;color:var(--green);text-transform:uppercase;margin:22px 0 12px;}
+  .catlabel .dot{width:16px;height:16px;border-radius:4px;background:var(--green);display:inline-block;}
+  .checkrow{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 10px;cursor:pointer;transition:.15s;user-select:none;}
+  .checkrow:hover{border-color:#bcd2c1;background:#fafcfa;}
+  .checkrow.on{border-color:var(--green);background:#fff2f8;}
+  .checkrow .box{flex:0 0 22px;width:22px;height:22px;border:2px solid #c3c3c3;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:800;}
+  .checkrow.on .box{background:var(--green);border-color:var(--green);}
+  .checkrow .lbl{font-size:17px;}
+  .gauge{margin-top:26px;}
+  .gauge .gtitle{font-size:13px;font-weight:800;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;text-align:center;margin-bottom:4px;}
+  .gauge .gstate{text-align:center;font-size:22px;font-weight:800;margin-bottom:14px;color:var(--ink);}
+  .gbar{position:relative;height:16px;border-radius:10px;background:linear-gradient(90deg,#3fa15b 0%,#eac33e 50%,#d93a3a 100%);}
+  .gneedle{position:absolute;top:-7px;width:4px;height:30px;background:#1b1b1b;border-radius:2px;left:0%;transition:left .35s ease;box-shadow:0 0 0 2px #fff;}
+  .gends{display:flex;justify-content:space-between;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--muted);margin-top:8px;text-transform:uppercase;}
+  .qfoot{text-align:center;color:var(--muted);font-size:15px;margin-top:16px;}
+
+  .ing{display:flex;gap:18px;border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 14px;align-items:flex-start;}
+  .ing.hero{border-color:var(--green);background:#fff2f8;}
+  .ing .ic{flex:0 0 84px;width:84px;height:84px;border-radius:12px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:42px;line-height:1;}
+  .ing h4{margin:0 0 6px;font-size:20px;font-weight:800;}
+  .ing h4 .star{display:inline-block;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:middle;text-transform:uppercase;}
+  .ing p{margin:0;color:#3a3a3a;font-size:16px;}
+
+  .cmp{width:100%;border-collapse:collapse;margin:12px 0 8px;font-size:15px;}
+  .cmp th,.cmp td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-align:top;}
+  .cmp thead th{background:#f3f6f3;font-size:13px;text-transform:uppercase;letter-spacing:.5px;}
+  .cmp tbody th{font-weight:700;color:var(--muted);font-size:14px;}
+  .cmp .col-best{background:#f1f7f2;}
+  .cmp .col-best.head{color:var(--green);}
+
+  .timeline{border-left:2px solid #cfe0d3;margin:14px 0 20px;padding-left:26px;}
+  .tl{position:relative;margin:0 0 30px;}
+  .tl .pill{display:inline-block;background:var(--green-pill);color:#fff;font-size:12px;font-weight:800;letter-spacing:.5px;border-radius:20px;padding:5px 14px;position:absolute;left:-97px;top:2px;white-space:nowrap;}
+  .tl h4{margin:0 0 6px;font-size:21px;font-weight:800;}
+  .tl p{margin:0;color:#3a3a3a;font-size:16px;}
+
+  .benefit{margin:0 0 18px;}
+  .benefit b{display:block;font-size:19px;}
+  .benefit span{color:#3a3a3a;}
+
+  .prodcard{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:14px 0 24px;box-shadow:0 1px 6px rgba(0,0,0,.03);}
+  .prodcard .pname{padding:20px 24px 4px;}
+  .prodcard .pname .t{font-size:24px;font-weight:800;}
+  .prodcard .pname .s{color:var(--muted);font-size:16px;}
+  .spec{display:flex;padding:16px 24px;border-top:1px solid var(--line);}
+  .spec .k{flex:0 0 140px;font-size:13px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:700;padding-top:2px;}
+  .spec .v{font-size:17px;}
+
+  .refnote{background:#f3f6f3;border-radius:12px;padding:16px 20px;font-size:16px;color:#3a3a3a;margin:20px 0 6px;text-align:center;}
+  .refnote b{color:var(--ink);}
+
+  .pricing{margin:14px 0 10px;}
+  .price{position:relative;display:flex;align-items:center;gap:20px;border:2px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 14px;cursor:pointer;transition:.15s;}
+  .price:hover{border-color:#bcd2c1;}
+  .price.best{border-color:var(--green);background:#fff2f8;}
+  .price .qty{flex:1;}
+  .price .qty .q{font-size:22px;font-weight:800;}
+  .price .qty .sub{font-size:14px;color:var(--muted);}
+  .price .money{text-align:right;white-space:nowrap;}
+  .price .money .big{font-size:34px;font-weight:800;line-height:1;}
+  .price .money .big small{font-size:16px;font-weight:700;}
+  .price .money .was{font-size:14px;color:#a0a0a0;text-decoration:line-through;}
+  .price .money .per{font-size:13px;color:var(--muted);}
+  .price .badge{position:absolute;top:-11px;right:16px;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;border-radius:20px;padding:4px 12px;text-transform:uppercase;}
+  .price .off{display:inline-block;background:#ffe1a1;color:#8a5a00;font-weight:800;font-size:12px;border-radius:6px;padding:2px 8px;margin-top:6px;}
+  .deliver{text-align:center;color:var(--muted);font-size:15px;margin:6px 0 14px;}
+  .cta{display:block;width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:20px;font-size:20px;font-weight:800;letter-spacing:1px;text-align:center;cursor:pointer;text-transform:uppercase;box-shadow:0 6px 18px rgba(234,8,137,.34);}
+  .cta:hover{background:#2c5334;}
+  .subcta{text-align:center;color:var(--muted);font-size:14px;margin:12px 0 0;}
+
+  .sidecard{border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:22px;box-shadow:0 1px 6px rgba(0,0,0,.03);text-align:center;}
+  .sidecard .prodwrap{position:relative;border-radius:12px;overflow:hidden;}
+  .sidecard .prodwrap .disc{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;font-size:12px;font-weight:800;border-radius:50%;width:52px;height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;}
+  .sidecard .avail{display:inline-block;margin-top:14px;color:var(--green-link);font-weight:700;}
+  .rec .rt{font-size:22px;font-weight:800;margin-bottom:6px;}
+  .stars{color:var(--gold);font-size:22px;letter-spacing:2px;}
+  .rev{font-size:14px;color:var(--muted);margin:4px 0 10px;}
+  .recname{color:var(--green);font-size:22px;font-weight:800;margin-bottom:14px;}
+  .recben{display:flex;gap:10px;text-align:left;font-size:15px;color:#333;margin:0 0 12px;align-items:flex-start;}
+  .recben .ck{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;}
+
+  .guarantee{border:1px solid var(--line);border-radius:16px;background:#f8faf8;padding:26px 28px;margin:20px 0;}
+  .sealrow{display:flex;gap:20px;align-items:center;}
+  .sealrow img{flex:0 0 110px;width:110px;border-radius:10px;}
+
+  .comments{margin-top:40px;}
+  .comment{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--line);}
+  .comment .av{flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:#dfe6e0;color:#5b6b5e;display:flex;align-items:center;justify-content:center;font-weight:800;}
+  .comment .cname{font-weight:800;font-size:16px;}
+  .comment .ctext{font-size:16px;margin:2px 0 6px;color:#222;}
+  .comment .cmeta{font-size:13px;color:var(--muted);}
+  .comment.reply{margin-left:52px;}
+
+  .stickybar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px;background:transparent;}
+  .stickybar .inner{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px;background:var(--olive);border-radius:14px;padding:10px 16px;box-shadow:0 6px 24px rgba(0,0,0,.25);}
+  .stickybar .btn{flex:1;text-align:center;color:#fff;font-weight:800;font-size:20px;letter-spacing:1px;text-transform:uppercase;}
+
+  .disc-note{font-size:12px;color:#9a9a9a;text-align:center;margin:34px 0 90px;line-height:1.5;}
+
+  @media(max-width:900px){
+    body{font-size:17px;}
+    .wrap{padding:0 16px;}
+    .layout{flex-direction:column;gap:0;padding:20px 0 44px;}
+    .aside{display:none;}
+    .eyebrow{font-size:18px;}
+    h1.headline{font-size:32px;letter-spacing:-.5px;}
+    .subhead{font-size:18px;}
+    h2{font-size:23px;margin:34px 0 14px;}
+    .tl .pill{position:static;display:inline-block;margin-bottom:8px;}
+    .timeline{padding-left:16px;}
+    .spec{flex-direction:column;gap:2px;}
+    .spec .k{flex:none;}
+    .price .money .big{font-size:28px;}
+    .cmp{font-size:13px;}
+    .cmp th,.cmp td{padding:8px;}
   }
-  img{max-width:100%;display:block}
-  h1,h2,h3,h4{font-family:"Libre Franklin",Arial,sans-serif;color:#111;line-height:1.22;letter-spacing:-.01em}
-  strong,b{color:#222}
-  .wrap{max-width:600px;margin:0 auto;padding:0 18px}
-  .center{text-align:center}
-  .red{color:var(--wine)}
-
-  /* section titles — reference uses centered Libre Franklin */
-  h2.sec{font-size:28px;font-weight:800;text-align:center;margin-bottom:6px}
-  h2.sm{font-size:19px;font-weight:800;text-align:center;color:var(--wine);margin-bottom:6px}
-  .subt{text-align:center;color:var(--muted);max-width:520px;margin:0 auto 18px}
-  p{margin-bottom:14px}
-  section{padding:34px 0}
-  .soft-bg{background:var(--soft)}
-  .wine-bg{background:linear-gradient(150deg,#ff5cb0,#ea0889);color:#fff}
-  .wine-bg h2,.wine-bg h3{color:#fff}
-
-  /* offer bar */
-  .offerbar{background:var(--gold);color:#2a2530;text-align:center;padding:9px 12px;font-size:13px;
-    font-weight:700;letter-spacing:.03em;position:sticky;top:0;z-index:60}
-  .offerbar b{color:#ea0889}
-
-  /* header + gallery */
-  header{padding:16px 0 4px;text-align:center}
-  .logo{font-family:"Libre Franklin";font-weight:800;font-size:23px;color:var(--wine);letter-spacing:.02em}
-  .logo small{display:block;font-size:9px;font-weight:600;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-top:1px}
-  .imgph{background:repeating-linear-gradient(45deg,#f4ecec,#f4ecec 12px,#efe4e4 12px,#efe4e4 24px);
-    border:1px dashed #d8bcc2;border-radius:12px;display:flex;flex-direction:column;align-items:center;
-    justify-content:center;color:#a06a76;text-align:center;font-size:11px;font-weight:600;min-height:130px;padding:16px;gap:5px}
-  .imgph .ic{font-size:24px;opacity:.6}
-  .maingal{min-height:300px;border-radius:16px}
-  .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:8px}
-  .thumbs .imgph{min-height:56px;font-size:9px;border-radius:9px}
-
-  /* stars + testimonial */
-  .stars{color:#f5a623;letter-spacing:2px;font-size:17px}
-  .toptesti{margin:16px 0}
-  .toptesti p{font-style:italic;color:#3a3f49;font-size:15px}
-  .who{display:flex;align-items:center;gap:10px;margin-top:10px}
-  .who .av{width:42px;height:42px;border-radius:50%;background:var(--wine);color:#fff;display:flex;
-    align-items:center;justify-content:center;font-weight:700;flex-shrink:0;font-size:14px}
-  .verif{color:var(--green);font-weight:700;font-size:12px}
-  .verif::before{content:"✔ "}
-
-  /* hero headline block */
-  .eyebrow{color:var(--wine);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:11px;margin-bottom:10px;text-align:center}
-  h1.hero{font-size:27px;font-weight:800;text-align:center;margin-bottom:14px}
-  .lead{font-size:16px;color:#3a3f49;text-align:center;margin-bottom:4px}
-
-  ul.checks{list-style:none;margin:20px 0}
-  ul.checks li{position:relative;padding:9px 0 9px 32px;border-bottom:1px solid var(--line);font-size:15px}
-  ul.checks li:last-child{border-bottom:none}
-  ul.checks li::before{content:"✔";position:absolute;left:0;top:9px;color:#fff;background:var(--green);
-    width:20px;height:20px;border-radius:50%;font-size:11px;display:flex;align-items:center;justify-content:center}
-
-  .ship{text-align:center;color:var(--muted);font-size:13px;margin:8px 0}
-  .ship b{color:#222}
-
-  /* CTA */
-  .cta{display:block;width:100%;max-width:520px;margin:0 auto;background:var(--wine);color:#fff;text-align:center;
-    font-family:"Libre Franklin";font-weight:800;font-size:18px;letter-spacing:.02em;padding:16px 18px;border:none;
-    border-radius:30px;text-decoration:none;box-shadow:0 6px 16px rgba(234,8,137,.32);cursor:pointer}
-  .cta{background:linear-gradient(180deg,#f5209a,#e2067f)}
-  .cta:active{transform:scale(.99)}
-  .cta.pulse{animation:pulse 2s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(234,8,137,.4)}70%{box-shadow:0 0 0 14px rgba(234,8,137,0)}100%{box-shadow:0 0 0 0 rgba(234,8,137,0)}}
-
-  /* repeated CTA block */
-  .ctablk{padding:26px 0;text-align:center}
-  .ctablk .guarline{margin-top:10px;font-size:13px;color:var(--muted)}
-  .ctablk .guarline::before{content:"🛡️ ";}
-
-  .metarow{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--muted)}
-  .metarow .g{color:var(--green);font-weight:800}
-  .pay{display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap}
-  .pay span{background:#fff;border:1px solid var(--line);border-radius:5px;padding:3px 7px;font-size:10px;font-weight:700;color:#666}
-
-  /* guarantee badge */
-  .guar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;margin-top:20px;box-shadow:var(--shadow)}
-  .seal{width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#f6dd9a,#c9962f);
-    color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px;
-    font-weight:800;font-size:11px;line-height:1.05;border:3px solid #fff;box-shadow:0 3px 10px rgba(201,150,47,.4)}
-  .seal b{font-size:26px}
-  .guar h3{color:var(--wine);font-size:19px;margin-bottom:8px}
-
-  /* green check list block */
-  ul.greenlist{list-style:none;margin:16px 0}
-  ul.greenlist li{position:relative;padding:8px 0 8px 30px;font-size:15px}
-  ul.greenlist li::before{content:"✅";position:absolute;left:0;top:7px;font-size:14px}
-
-  /* help grid (8 cards) */
-  .helpgrid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
-  .hcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
-  .hcard h3{font-size:16px;margin-bottom:6px}
-  .hcard .em{font-size:22px;margin-bottom:6px}
-  .hcard p{font-size:14px;color:var(--muted);margin:0}
-
-  /* when results (3 blocks) */
-  .rblock{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:12px;box-shadow:var(--shadow)}
-  .rblock h3{font-size:16px;margin-bottom:6px}
-  .rblock p{margin:0;font-size:15px}
-
-  /* instead-of comparison blocks */
-  .cmp{background:#fff;border:1px solid var(--line);border-left:4px solid var(--wine);border-radius:0 12px 12px 0;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow);font-size:15px}
-  .cmp b{color:var(--wine)}
-
-  /* testimonial cards */
-  .tcards{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
-  .tcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-  .tcard .b{padding:16px}
-  .tcard p{font-style:italic;color:#3a3f49;margin:9px 0;font-size:14px}
-  .tcard .nm{font-weight:700;color:#222;font-size:14px}
-
-  /* survey stats */
-  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
-  .stat{text-align:center;padding:14px 8px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-  .stat .n{font-family:"Libre Franklin";font-size:34px;font-weight:800;color:#ffe27a;line-height:1}
-  .stat p{font-size:12px;color:#fff2df;margin:8px 0 0}
-
-  /* promise badges */
-  .badges{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
-  .badge{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 8px;text-align:center;font-size:11px;font-weight:700;color:#555}
-  .badge .ic{font-size:22px;display:block;margin-bottom:6px}
-
-  /* big timeline (6 steps) */
-  .bigtl .step{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
-  .bigtl .num{font-family:"Libre Franklin";font-weight:800;color:var(--wine);font-size:16px;white-space:nowrap;
-    background:var(--soft);border-radius:10px;padding:8px 12px;min-width:78px;text-align:center;flex-shrink:0}
-  .bigtl h3{font-size:15px;margin-bottom:4px}
-  .bigtl p{margin:0;font-size:14px}
-
-  /* comparison table */
-  .ctable{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:14px}
-  .ctable th,.ctable td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
-  .ctable thead th{background:var(--wine);color:#fff;text-align:center;font-family:"Libre Franklin";font-size:13px}
-  .ctable thead th:first-child{text-align:left}
-  .ctable td.f{width:auto;color:#333}
-  .ctable td.y{color:var(--green);font-weight:800;text-align:center;width:64px}
-  .ctable td.n{color:#c94b4b;font-weight:800;text-align:center;width:64px}
-
-  /* how to apply (3 steps) */
-  .prep{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
-  .pstep{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative;box-shadow:var(--shadow)}
-  .pstep::before{counter-increment:p;content:counter(p);position:absolute;left:16px;top:16px;width:30px;height:30px;
-    background:var(--wine);color:#fff;border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center}
-  .prep{counter-reset:p}
-  .pstep h3{font-size:15px;margin-bottom:4px}
-  .pstep p{margin:0;font-size:14px}
-
-  /* offer + packs */
-  .offerbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 18px;box-shadow:var(--shadow);margin-top:16px}
-  .bonus{list-style:none;margin:14px 0}
-  .bonus li{position:relative;padding:8px 0 8px 30px;border-bottom:1px dashed var(--line);font-size:14px}
-  .bonus li:last-child{border-bottom:none}
-  .bonus li::before{content:"🎁";position:absolute;left:0;top:8px}
-  .totval{text-align:center;font-weight:700;color:#222;margin-top:8px}
-  .totval s{color:#b0a0a4;font-weight:500}
-  .packs{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
-  .pack{border:2px solid var(--line);border-radius:16px;padding:18px;position:relative;background:#fff}
-  .pack .tier{font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-family:"Libre Franklin"}
-  .pack .jars{font-family:"Libre Franklin";font-size:21px;font-weight:800;color:#111;margin:2px 0}
-  .pack .per{font-size:12px;color:var(--muted)}
-  .pack .price{font-family:"Libre Franklin";font-size:28px;font-weight:800;color:var(--wine);margin:8px 0}
-  .pack .price s{font-size:15px;color:#b0a0a4;font-weight:500;margin-right:6px}
-  .pack .save{display:inline-block;background:#e9f7ef;color:var(--green);font-weight:800;font-size:11px;padding:3px 10px;border-radius:20px;margin-bottom:6px}
-  .pack.td{border-style:dashed}
-  .pack.rec{border-color:var(--wine);box-shadow:0 10px 24px rgba(234,8,137,.16)}
-  .pack.best{border-color:var(--green)}
-  .pack .ribbon{position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:"Libre Franklin";
-    font-weight:800;font-size:10px;letter-spacing:.05em;padding:5px 14px;border-radius:20px;text-transform:uppercase}
-  .pack.rec .ribbon{background:var(--wine);color:#fff}
-  .pack.best .ribbon{background:var(--green);color:#fff}
-  .pack .cta{margin-top:14px;font-size:15px;padding:13px}
-  .todayonly{text-align:center;margin-top:6px}
-  .todayonly .to{font-family:"Libre Franklin";font-weight:800;color:#111;font-size:15px;letter-spacing:.05em}
-
-  /* doctor */
-  .doc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
-  .doc p{font-style:italic;color:#3a3f49}
-  .doc .dn{font-weight:800;color:var(--wine);font-family:"Libre Franklin"}
-  .doc .dn small{display:block;font-weight:500;color:var(--muted)}
-  .secure{text-align:center;font-size:12px;color:var(--muted);margin-top:14px}
-
-  /* reviews */
-  .rate{text-align:center;margin:8px 0 14px}
-  .rate .big{font-family:"Libre Franklin";font-size:52px;font-weight:800;color:var(--wine);line-height:1}
-  .rbar{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);max-width:320px;margin:4px auto}
-  .rbar .tr{flex:1;height:7px;background:#eee;border-radius:6px;overflow:hidden}
-  .rbar .fl{height:100%;background:#f5a623}
-
-  /* FAQ */
-  details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
-  summary{padding:15px 42px 15px 16px;font-family:"Libre Franklin";font-weight:700;color:#111;cursor:pointer;list-style:none;position:relative;font-size:15px}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";position:absolute;right:16px;top:12px;font-size:22px;color:var(--wine);font-weight:700}
-  details[open] summary::after{content:"–"}
-  details .a{padding:0 16px 16px;font-size:14px;color:var(--muted)}
-
-  /* footer */
-  footer{background:var(--wine-dark);color:#ffd9ec;text-align:center;padding:28px 18px;font-size:12px}
-  footer .logo{color:#fff;margin-bottom:10px}
-  footer a{color:#ffc7e4;text-decoration:none;margin:0 5px}
-  .disc{font-size:11px;color:#e39ac0;max-width:560px;margin:14px auto 0;line-height:1.5}
-  .note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
-
-  /* sticky mobile cta */
-  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);padding:9px 14px;box-shadow:0 -5px 16px rgba(0,0,0,.08);display:none}
-  .sticky .cta{font-size:16px;padding:13px}
-
-  @media(min-width:600px){
-    .helpgrid{grid-template-columns:1fr 1fr}
-    .tcards{grid-template-columns:1fr 1fr}
-    .ugc{grid-template-columns:repeat(4,1fr)}
-    .bagrid{grid-template-columns:repeat(3,1fr)}
-    h1.hero{font-size:32px}
-    h2.sec{font-size:31px}
-  }
-  @media(max-width:520px){.sticky{display:block}body{padding-bottom:74px}}
-
-  /* ==== CRO ADD-ONS (não muda a estrutura) ==== */
-  .truststrip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 14px;margin:14px auto 0;max-width:520px;font-size:12px;font-weight:700;color:#4a4148}
-  .truststrip span{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
-  .truststrip .s{color:#f5a623}
-  .truststrip .g{color:var(--green)}
-  .priceanchor{text-align:center;font-size:14px;color:var(--muted);margin:2px 0 4px}
-  .priceanchor b{color:var(--wine);font-family:"Libre Franklin";font-weight:800;font-size:16px}
-  .habox{margin:22px 0 4px}
-  .habox .cap{text-align:center;font-family:"Libre Franklin";font-weight:800;color:#111;font-size:16px;margin-bottom:8px}
-  .habox .cap small{display:block;font-family:"Inter";font-weight:700;color:var(--wine);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
-  .baph{min-height:210px}
-  .scarcity{background:#fff;border:1px solid #f2d9df;border-radius:14px;padding:15px;margin-bottom:14px;box-shadow:var(--shadow);text-align:center}
-  .timer{font-family:"Libre Franklin";font-weight:800;color:#111;font-size:14px}
-  .timer .clock{background:var(--wine);color:#fff;border-radius:8px;padding:3px 9px;display:inline-block;min-width:82px;letter-spacing:.05em}
-  .stockbar{margin-top:10px;font-size:12px;color:var(--muted)}
-  .stockbar .track{height:8px;background:#eee;border-radius:6px;overflow:hidden;margin-top:6px}
-  .stockbar .fill{height:100%;width:23%;background:linear-gradient(90deg,#ffc343,#ea0889)}
-  .expresspay{text-align:center;margin-top:14px;font-size:12px;color:var(--muted)}
-  .expresspay .pill{display:inline-flex;gap:6px;align-items:center;background:#111;color:#fff;font-weight:700;border-radius:8px;padding:6px 12px;margin:6px 4px 0;font-size:13px}
-  .expresspay .pill.g{background:#fff;color:#3c4043;border:1px solid #dadce0}
-  .pack .choice{display:inline-block;background:var(--wine);color:#fff;font-weight:800;font-size:10px;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:6px}
-  .pack .perday{font-size:13px;color:var(--green);font-weight:800;margin-top:-4px;margin-bottom:2px}
-  .toast{position:fixed;left:14px;bottom:84px;z-index:65;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.16);padding:10px 14px 10px 12px;max-width:280px;display:flex;gap:10px;align-items:center;opacity:0;transform:translateY(10px);transition:.4s;pointer-events:none}
-  .toast.show{opacity:1;transform:translateY(0)}
-  .toast .tav{width:34px;height:34px;border-radius:50%;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
-  .toast .tx{font-size:12px;color:#333;line-height:1.3}
-  .toast .tx b{color:#111}
-  .toast .tx small{color:var(--green);font-weight:700}
-  [data-scroll]{cursor:pointer}
-  .villain{background:#fff6d6;border:2px solid var(--wine);border-radius:16px;padding:20px;margin:18px 0;box-shadow:var(--shadow)}
-  .villain .label{display:inline-block;background:var(--wine);color:#fff;font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:8px}
-  .villain h3{color:var(--wine);font-size:19px;margin-bottom:8px;font-family:"Libre Franklin"}
-  .villain p{margin:0;color:#3a2f22;font-size:15px}
-  .villain p+p{margin-top:10px}
-  /* ==== real product gallery ==== */
-  .gal{margin-top:2px}
-  .gmain{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--soft);min-height:280px;display:flex;align-items:center;justify-content:center}
-  .gmain img{width:100%;height:auto;display:block;position:relative;z-index:2}
-  .gmain img[data-broken]{display:none}
-  .gmain .lbl{position:absolute;z-index:1;color:#b98a6a;font-size:12px;font-weight:600;text-align:center;padding:0 26px;line-height:1.6}
-  .gthumbs{display:grid;grid-auto-flow:column;grid-auto-columns:64px;gap:8px;overflow-x:auto;margin-top:8px;padding-bottom:2px;-webkit-overflow-scrolling:touch}
-  .gthumbs .t{position:relative;border:2px solid var(--line);border-radius:10px;overflow:hidden;aspect-ratio:1/1;background:var(--soft);cursor:pointer}
-  .gthumbs .t.active{border-color:var(--wine)}
-  .gthumbs .t img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2}
-  .gthumbs .t img[data-broken]{display:none}
-  .gthumbs .t .tl{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;font-size:9px;color:#b98a6a;text-align:center;padding:3px;font-weight:600}
-  /* ==== real images & videos ==== */
-  .rimg{width:100%;border-radius:16px;display:block;box-shadow:var(--shadow);margin:16px 0}
-  .rvid{width:100%;border-radius:16px;display:block;box-shadow:var(--shadow);margin:16px 0;background:#000}
-  .tcard .rimg{border-radius:0;margin:0;box-shadow:none;aspect-ratio:auto}
-  .sealimg{width:118px;height:auto;display:block;margin:0 auto 12px}
-  .glp1hook{display:block;background:linear-gradient(180deg,#fff0f8,#ffe3f2);border:2px solid var(--wine);border-radius:16px;padding:15px 18px;margin:18px 0 4px;text-decoration:none;color:#3a2530;font-size:14px;font-weight:600;box-shadow:var(--shadow)}
-  .glp1hook .tag{display:block;color:var(--wine);font-family:"Libre Franklin";font-weight:800;font-size:15px;margin-bottom:3px}
-  .pz{background:var(--soft);border-radius:14px;padding:18px;margin:16px 0;border-left:4px solid var(--gold)}
-  .pz p{margin:0 0 10px;font-size:15px}
-  .pz p:last-child{margin:0}
-  .packimg{width:100%;max-height:232px;object-fit:contain;display:block;margin:0 auto 8px}
-  .socialpk{text-align:center;font-size:13px;color:var(--muted);margin:12px 0 2px;line-height:1.6}
-  .socialpk .s{color:#f5a623;letter-spacing:1px}
-  .socialpk b{color:var(--wine)}
-  .ugc{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
-  .ugc figure{margin:0;position:relative;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-  .ugc img{width:100%;object-fit:cover;display:block;aspect-ratio:3/4}
-  .ugc figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent);color:#fff;font-size:11px;font-weight:700;padding:14px 8px 6px;text-align:center}
-  .ugc .vr{color:#7CFFB2}
-  .aspband{width:100%;border-radius:16px;display:block;box-shadow:var(--shadow);margin:6px 0 2px}
-  .aspcap{text-align:center;font-family:"Libre Franklin";font-weight:800;color:var(--wine);font-size:15px;margin:10px 0 2px}
-  /* ==== 2-column hero (matches validated model on desktop) ==== */
-  .herowrap{padding:16px 0 26px}
-  .heroinner{max-width:1080px;margin:0 auto;padding:0 18px;display:grid;grid-template-columns:1fr;gap:24px}
-  .hero-left,.hero-right{min-width:0}
-  .hero-left .toptesti{margin-top:14px}
-  @media(min-width:900px){
-    .heroinner{grid-template-columns:1.05fr 1fr;gap:38px;align-items:start}
-    .hero-right .eyebrow,.hero-right h1.hero,.hero-right .lead,.hero-right .priceanchor{text-align:left}
-    .hero-right .truststrip{justify-content:flex-start}
-    .hero-right .metarow{justify-content:flex-start}
-    .hero-right .pay{justify-content:flex-start}
-    h1.hero{font-size:33px}
-  }
-  .pressbar{background:#2a2530;color:#fff;text-align:center;padding:11px 16px;font-size:12px;font-weight:600;line-height:1.7}
-  .pressbar b{color:var(--gold)}
-  .pressbar span{display:inline-block;margin:0 9px;white-space:nowrap}
-  .bagrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
-  .bagrid figure{margin:0;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
-  .bagrid img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
-  .bagrid figcaption{padding:8px 10px;font-size:12px;font-weight:700;color:#444;text-align:center}
-  .bagrid figcaption .vr{color:var(--green)}
-  .revimg{width:100%;height:184px;object-fit:contain;background:var(--soft);display:block;border-bottom:1px solid var(--line)}
-  .playbadge{position:absolute;z-index:4;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;border:none;background:rgba(234,8,137,.92);color:#fff;font-size:22px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;padding-left:4px}
-  .imgbadges{position:absolute;z-index:3;top:10px;left:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-  .imgbadges .ib{background:rgba(255,255,255,.93);color:#2a2530;font-size:10px;font-weight:800;padding:4px 9px;border-radius:20px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
-  .gthumbs .t.vid::after{content:"";position:absolute;inset:0;z-index:3;background:rgba(0,0,0,.28)}
-  .gthumbs .t.vid .tl{z-index:4;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7)}
-  .vlModal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.86);display:none;align-items:center;justify-content:center;padding:20px}
-  .vlModal.open{display:flex}
-  .vlframe{width:min(92vw,900px);aspect-ratio:16/9;max-height:86vh;background:#000;border-radius:12px;overflow:hidden}
-  .vlframe iframe{width:100%;height:100%;border:0;display:block}
-  .vlClose{position:absolute;top:12px;right:18px;color:#fff;font-size:32px;line-height:1;background:none;border:none;cursor:pointer;z-index:2}
-  .vslhero{background:linear-gradient(180deg,#fff,#fbf8ed);padding:18px 0 24px;border-bottom:1px solid var(--line)}
-  .vslkicker{text-align:center;color:var(--wine);font-family:"Libre Franklin";font-weight:800;font-size:12px;letter-spacing:.07em;margin-bottom:8px}
-  .vsltitle{text-align:center;font-size:22px;font-weight:800;line-height:1.2;max-width:640px;margin:0 auto 14px}
-  .vslbox{width:min(92vw,360px);aspect-ratio:9/16;max-height:76vh;margin:0 auto;background:#000;border-radius:16px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.2)}
-  .vslbox iframe{width:100%;height:100%;border:0;display:block}
-  @media(min-width:600px){.vsltitle{font-size:28px}}
-  /* As Seen In (press) */
-  .asseen{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0}
-  .asseen-label{text-align:center;font-family:"Libre Franklin";font-weight:800;font-size:11px;letter-spacing:.18em;color:var(--muted);margin-bottom:12px}
-  .asseen-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 24px;filter:grayscale(1);opacity:.72}
-  .asseen-logos .mag{font-size:20px;color:#2a2530;line-height:1;white-space:nowrap}
-  .mag.vogue{font-family:"Times New Roman",Georgia,serif;font-weight:700;letter-spacing:.2em}
-  .mag.allure{font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:22px}
-  .mag.cosmo{font-family:Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.02em}
-  .mag.elle{font-family:"Times New Roman",serif;font-weight:800;letter-spacing:.24em}
-  .mag.bazaar{font-family:Georgia,serif;font-weight:700;font-size:15px}
-  .mag.marie{font-family:Georgia,serif;font-weight:600;font-size:17px}
-  /* Model testimonials */
-  .mtestims{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
-  .mt{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-  .mt img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;display:block}
-  .mt figcaption{padding:16px}
-  .mt .q{font-style:italic;color:#3a3f49;font-size:15px;margin:8px 0}
-  .mt .nm{font-weight:800;color:#111;font-family:"Libre Franklin"}
-  .mt .nm small{display:block;font-weight:600;color:var(--wine);font-size:12px}
-  /* Exit-intent popup */
-  .exitpop{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:18px}
-  .exitpop.open{display:flex}
-  .exitbox{background:#fff;border-radius:20px;max-width:400px;width:100%;padding:26px 22px 22px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.35);border-top:8px solid var(--wine)}
-  .exitclose{position:absolute;top:8px;right:14px;background:none;border:none;font-size:26px;color:#aaa;cursor:pointer;line-height:1}
-  .exithead{font-family:"Libre Franklin";font-weight:800;font-size:21px;color:var(--wine);margin-bottom:8px;line-height:1.15}
-  .exitbox p{font-size:15px;color:#444;margin-bottom:10px}
-  .exitimg{width:120px;margin:0 auto 8px;display:block}
-  .exitsmall{font-size:12px;color:var(--muted);margin:12px 0 0}
-  @media(min-width:600px){.mtestims{grid-template-columns:repeat(3,1fr)}}
-  .drblock{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr}
-  .drphoto{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;display:block}
-  .drbody{padding:20px}
-  .drbody p{font-style:italic;color:#3a3f49;font-size:15px;margin:8px 0 12px}
-  .drname{font-family:"Libre Franklin";font-weight:800;color:var(--wine)}
-  .drname small{display:block;font-weight:600;color:var(--muted);font-style:normal}
-  .drbadge{display:inline-block;margin-top:12px;background:#e9f7ef;color:var(--green);font-weight:800;font-size:12px;padding:6px 12px;border-radius:20px}
-  @media(min-width:640px){.drblock{grid-template-columns:300px 1fr;align-items:stretch}.drphoto{height:100%;aspect-ratio:auto}}
-/* ============ MOBILE OPTIMIZATION (primary traffic) ============ */
-  html{-webkit-text-size-adjust:100%}
-  body{overflow-wrap:break-word}
-  img,video{max-width:100%;height:auto}
-  a,button,summary,.cta,.pack,.gthumbs .t{ -webkit-tap-highlight-color:rgba(234,8,137,.18) }
-  @media(max-width:520px){
-    .wrap{padding:0 15px}
-    .heroinner{padding:0 15px;gap:22px}
-    section{padding:26px 0}
-    h1.hero{font-size:25px}
-    .vsltitle{font-size:20px}
-    h2.sec{font-size:22px}
-    h2.sm{font-size:16px}
-    .lead{font-size:15px}
-    .subt{font-size:14px}
-    .offerbar{font-size:12px;padding:8px 8px;letter-spacing:0}
-    .pressbar{font-size:11px;padding:9px 8px;line-height:1.9}
-    .pressbar span{margin:0 6px}
-    .cta{padding:16px 14px;font-size:16px}
-    .ctablk{padding:20px 0}
-    /* comparison table fits small screens */
-    .ctable{font-size:12.5px}
-    .ctable th,.ctable td{padding:9px 6px}
-    .ctable thead th{font-size:11px}
-    .ctable td.y,.ctable td.n{width:40px}
-    /* offer / packs */
-    .offerbox{padding:20px 14px}
-    .pack{padding:16px}
-    .packimg{max-height:210px}
-    /* social proof blocks */
-    .stat .n{font-size:30px}
-    .badge{font-size:10px;padding:12px 5px}
-    .bigtl .num{min-width:62px;font-size:13px;padding:7px 7px}
-    .bigtl .step{padding:14px;gap:10px}
-    .bigtl h3{font-size:14px}
-    /* VSL uses full width, capped height */
-    .vslbox{width:94vw;max-height:72vh}
-    /* exit popup comfy */
-    .exitbox{padding:22px 16px}
-    .exithead{font-size:19px}
-    /* doctor photo not too tall */
-    .drphoto{aspect-ratio:1/1}
-    /* sticky cta */
-    .sticky{padding:8px 12px}
-    .sticky .cta{font-size:15px;padding:13px}
-  }
-  @media(max-width:360px){
-    h1.hero{font-size:23px}
-    .vsltitle{font-size:18px}
-    h2.sec{font-size:20px}
-    .badges{grid-template-columns:repeat(2,1fr)}
-    .asseen-logos{gap:8px 14px}
-    .asseen-logos .mag{font-size:15px}
-    .pay span{font-size:9px;padding:3px 5px}
-  }
-  #offer{scroll-margin-top:48px}
-
-  /* ===== MOBILE HERO REORDER — hook + product + price + CTA on the first screen ===== */
-  @media(max-width:899px){
-    .heroinner{display:flex;flex-direction:column;gap:14px}
-    .hero-left,.hero-right{display:contents}
-    .hero-right .eyebrow{order:1}
-    .hero-right h1.hero{order:2}
-    .hero-left .gal{order:3;margin-top:2px}
-    .hero-right .lead{order:4}
-    .hero-right .priceanchor{order:5}
-    .hero-right .cta{order:6;margin-top:2px}
-    .hero-right .checks{order:7}
-    .hero-right .ship{order:8}
-    .hero-right .truststrip{order:9}
-    .hero-right .metarow{order:10}
-    .hero-right .pay{order:11}
-    .hero-right .guar{order:12}
-    .hero-left .toptesti{order:13;margin-top:6px}
-    .gthumbs{display:none}
+  @media(max-width:560px){
+    body{font-size:16px;line-height:1.55;}
+    .wrap{padding:0 14px;}
+    .masthead{padding:16px 14px 12px;}
+    .masthead .brand{font-size:22px;}
+    .masthead .tagline{font-size:10px;letter-spacing:2px;}
+    .layout{padding:16px 0 44px;}
+    .eyebrow{font-size:16px;margin-bottom:4px;}
+    h1.headline{font-size:26px;line-height:1.15;margin:0 0 12px;}
+    .subhead{font-size:16px;margin:0 0 12px;}
+    .byline{font-size:13px;margin-bottom:16px;}
+    .herofig{margin:4px 0 6px;}
+    h2{font-size:20px;line-height:1.2;margin:28px 0 12px;letter-spacing:-.3px;}
+    .main p{font-size:16px;margin:0 0 14px;}
+    .xlist li{font-size:16px;gap:10px;}
+    .lead-list li{font-size:16px;}
+    .villain{padding:15px;font-size:15.5px;margin:18px 0;}
+    .quizcard{padding:20px 15px;margin:22px 0;border-radius:14px;}
+    .quizcard h3{font-size:21px;}
+    .quizcard .qsub{font-size:15px;}
+    .catlabel{font-size:12px;margin:18px 0 10px;}
+    .checkrow{padding:12px 13px;gap:11px;}
+    .checkrow .lbl{font-size:15px;}
+    .gauge .gstate{font-size:19px;}
+    .cgmcard{padding:16px 14px;margin:20px 0;}
+    .cgm-title{font-size:18px;}
+    .ing{padding:14px;gap:13px;border-radius:12px;}
+    .ing .ic{flex:0 0 58px;width:58px;height:58px;font-size:30px;border-radius:10px;}
+    .ing h4{font-size:17px;}
+    .ing p{font-size:15px;}
+    .ing h4 .star{display:inline-block;margin-left:0;margin-top:4px;}
+    .tl h4{font-size:19px;}
+    .tl p{font-size:15px;}
+    .proofstrip{grid-template-columns:1fr 1fr;gap:8px;}
+    .proofstrip figcaption{font-size:11px;}
+    .benefit b{font-size:17px;}
+    .benefit span{font-size:15px;}
+    .prodcard{border-radius:14px;}
+    .prodcard .pname{padding:16px 16px 4px;}
+    .prodcard .pname .t{font-size:21px;}
+    .spec{padding:12px 16px;}
+    .spec .v{font-size:15.5px;}
+    .refnote{font-size:15px;padding:13px 14px;}
+    .scarcity{font-size:12.5px;padding:10px 12px;gap:6px 12px;}
+    .pricing{margin:12px 0 8px;}
+    .price{padding:15px 14px;gap:10px;}
+    .price .qty .q{font-size:18px;}
+    .price .qty .sub{font-size:12px;}
+    .price .off{font-size:11px;}
+    .price .money .big{font-size:25px;}
+    .price .money .was{font-size:13px;}
+    .price .money .per{font-size:12px;}
+    .price .badge{font-size:10px;padding:3px 8px;top:-10px;right:10px;}
+    .cta{font-size:17px;padding:16px;letter-spacing:.5px;}
+    .deliver,.subcta{font-size:13px;}
+    .guarantee{padding:18px 15px;}
+    .sealrow{flex-direction:column;text-align:center;gap:12px;}
+    .sealrow img{flex:none;width:96px;margin:0 auto;}
+    .authorbox{padding:15px;gap:12px;}
+    .authorbox .av-lg{flex:0 0 46px;width:46px;height:46px;font-size:16px;}
+    .authorbox .au-name{font-size:16px;}
+    .authorbox .au-bio{font-size:14px;}
+    .faq details{padding:0 15px;}
+    .faq summary{font-size:15px;padding:14px 0;}
+    .faq details > p{font-size:15px;}
+    .comments h2{font-size:20px;}
+    .comment{gap:10px;padding:12px 0;}
+    .comment .av{flex:0 0 36px;width:36px;height:36px;font-size:13px;}
+    .comment .ctext{font-size:15px;}
+    .comment.reply{margin-left:20px;}
+    .disc-note{margin:28px 0 96px;font-size:11px;}
+    .stickybar{padding:8px 10px;}
+    .stickybar .inner{padding:11px 14px;}
+    .stickybar .btn{font-size:16px;letter-spacing:.5px;}
+    .cmp{table-layout:fixed;width:100%;font-size:10.5px;margin:10px auto 8px;}
+    .cmp th,.cmp td{padding:6px 5px;word-break:break-word;line-height:1.28;vertical-align:top;}
+    .cmp thead th{font-size:9.5px;letter-spacing:0;}
+    .cmp thead th span{font-size:9px;}
+    .cmp tbody th{font-size:9.5px;}
+    .cmp th:first-child,.cmp td:first-child{width:50px;}
+    .livetoast{font-size:13px;padding:10px 13px;}
   }
 </style>
 </head>
 <body>
 
-<!-- ===== [1] TOP OFFER BAR ===== -->
-<div class="offerbar">⏳ SALE ENDS IN <span id="obTimer">14:59</span> · <b>UP TO 60% OFF</b></div>
+  <header class="masthead">
+    <div class="brand">Beauty &amp; Wellness Daily</div>
+    <div class="tagline">Skin, Body &amp; Beauty Reporting</div>
+  </header>
 
-<!-- ===== [2] LOGO + PRODUCT GALLERY ===== -->
-<header>
-  <div class="logo">BUMBUM<small>Brazilian Lift &amp; Firm</small></div>
-</header>
+  <div class="wrap">
+    <div class="layout">
 
-<!-- ===== [2+3] HERO: gallery (left) + buy box (right), 2-col on desktop ===== -->
-<section class="herowrap">
-  <div class="heroinner">
-    <div class="hero-left">
-    <div class="gal">
-      <div class="gmain">
-        <img id="gmainImg" src="img/00-product.webp" alt="IT'S BRAZILIAN Bum Bum Cream" onerror="galBroken(this)">
-        <div class="imgbadges"><span class="ib">★ Viral on TikTok</span><span class="ib">🐰 Cruelty-Free · Vegan</span><span class="ib">🇺🇸 Made in USA</span></div>
-        <span class="lbl">📷 Drop the 7 images into an <b>img/</b> folder next to this HTML<br>(img/01-hero.jpg … img/07-ingredients.jpg)</span>
-      </div>
-      <div class="gthumbs" id="gthumbs">
-        <div class="t active" data-src="img/00-product.webp" onclick="galSel(this)"><img src="img/00-product.webp" onerror="galBroken(this)" alt="Bum Bum Cream jar"><span class="tl">Jar</span></div><div class="t" data-src="img/01-hero.webp" onclick="galSel(this)"><img src="img/01-hero.webp" onerror="galBroken(this)" alt="Hero"><span class="tl">01<br>Hero</span></div>
-        <div class="t" data-src="img/02-benefits.webp" onclick="galSel(this)"><img src="img/02-benefits.webp" onerror="galBroken(this)" alt="Benefits"><span class="tl">02<br>Benefits</span></div>
-        <div class="t" data-src="img/03-features.webp" onclick="galSel(this)"><img src="img/03-features.webp" onerror="galBroken(this)" alt="Features"><span class="tl">03<br>Features</span></div>
-        <div class="t" data-src="img/04-social.webp" onclick="galSel(this)"><img src="img/04-social.webp" onerror="galBroken(this)" alt="Social proof"><span class="tl">04<br>Social</span></div>
-        <div class="t" data-src="img/05-compare.webp" onclick="galSel(this)"><img src="img/05-compare.webp" onerror="galBroken(this)" alt="Comparison"><span class="tl">05<br>Compare</span></div>
-        <div class="t" data-src="img/06-reviews.webp" onclick="galSel(this)"><img src="img/06-reviews.webp" onerror="galBroken(this)" alt="Reviews"><span class="tl">06<br>Reviews</span></div>
-        <div class="t" data-src="img/07-ingredients.webp" onclick="galSel(this)"><img src="img/07-ingredients.webp" onerror="galBroken(this)" alt="Ingredients"><span class="tl">07<br>Ingredients</span></div>
-      </div>
+      <main class="main">
+
+        <!-- HERO -->
+        <p class="eyebrow">A Beverly Hills dermatologist's warning for every woman over 35 &mdash;</p>
+        <h1 class="headline" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">Brazilian Women In Their 40s Have <span class="hl">Firmer, Rounder Bottoms Than 25-Year-Olds</span> &mdash; And It's Not Surgery, Not Genetics, Not Squats</h1>
+        <p class="subhead">American moms keep buying $120 "firming" creams that do <b>nothing</b> &mdash; while Brazilian women rub in a $1-a-day ritual their grandmothers have used for 30 years. The difference isn't willpower or good genes. It's an entire product category American brands skipped <b>on purpose</b>: the <em>modelador</em>. Flip your $120 jar over &mdash; water, glycerin, fragrance, and a $110 markup for the logo on the front.</p>
+        <p class="subhead" style="font-weight:600;border-left:4px solid var(--green);padding-left:16px;">Visibly firmer, lifted skin on your bottom in <b>6 weeks</b> &mdash; <b>even if</b> you're past 40, <b>even if</b> you've had two kids, <b>even if</b> every cream, squat and lotion has failed you so far.</p>
+        <p class="byline">By <b>Dr. Beatriz Moreira, M.D.</b> &middot; Board-Certified Dermatologist &middot; June 30, 2026 &middot; 7 min read</p>
+
+        <figure class="herofig" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})"><img src="img/aspirational-trio.webp" alt="Verified reader before and after"></figure>
+        <p class="figcap">Verified reader submission &middot; individual results vary.</p>
+
+        <!-- TRUST + PRESS -->
+        <style>
+          .trustbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;justify-content:center;text-align:center;background:#fffbe8;border:1px solid #ffe1a1;border-radius:12px;padding:12px 16px;margin:14px 0 12px;}
+          .trustbar .tb-stars{color:var(--gold);font-size:20px;letter-spacing:2px;}
+          .trustbar .tb-txt{font-size:14px;color:#3a3a3a;}
+          .pressbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;justify-content:center;text-align:center;margin:0 0 24px;padding:10px 0 14px;border-bottom:1px solid var(--line);}
+          .pressbar .pb-label{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+          .pressbar .pb-outlets{font-family:Georgia,serif;font-size:14px;color:#555;font-style:italic;}
+          @media(max-width:560px){.trustbar{padding:11px 12px;} .trustbar .tb-txt{font-size:12.5px;} .pressbar .pb-outlets{font-size:12.5px;}}
+        </style>
+        <div class="trustbar">
+          <span class="tb-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="tb-txt"><b>4.8/5</b> &middot; <b>13,428</b> verified reviews &middot; <b>41,000+</b> women assessed &middot; <b>194</b> orders in the last 24h</span>
+        </div>
+        <div class="pressbar">
+          <span class="pb-label">As reported in</span>
+          <span class="pb-outlets">Allure &middot; Byrdie &middot; Cosmopolitan &middot; Women's Health &middot; PopSugar</span>
+        </div>
+
+        <!-- MISTAKES -->
+        <h2>Do you make these firming mistakes?</h2>
+        <ul class="xlist">
+          <li><span class="xi">&times;</span> Do endless squats and wonder why the skin still sags.</li>
+          <li><span class="xi">&times;</span> Buy another drugstore "firming" lotion that just moisturizes.</li>
+          <li><span class="xi">&times;</span> Add a $120 designer jar to cart because the label looks luxe.</li>
+          <li><span class="xi">&times;</span> Price out a BBL and gasp at $8,000&ndash;$15,000 plus recovery.</li>
+        </ul>
+        <p>If you're like most women over 35, the mirror keeps winning.</p>
+        <p><span class="em">Every. Single. Day.</span></p>
+        <p>Here's the truth no one says out loud: you don't have an "aging" problem.</p>
+        <p><span class="em">You have a modelador problem.</span></p>
+
+        <!-- HIDDEN CAUSE + VILLAIN -->
+        <h2>The real reason your firming creams never worked</h2>
+        <p>You did the squats. You bought the creams. You rubbed in the pricey lotion every night. And the mirror barely changed.</p>
+        <p>That's not your fault. It's that every option you tried works on the <span class="underline">wrong layer</span> of your skin.</p>
+        <p>Here's the truth: squats build muscle <em>underneath</em>, while the dimpled, crepey skin sits on <em>top</em>, untouched. Drugstore lotions only hydrate the surface. And the deeper layer &mdash; where firmness and bounce are actually lost &mdash; never gets a thing.</p>
+        <p>The category built to reach that deeper layer is called the <span class="em">modelador</span> &mdash; a body-modeling cream in a completely different, stronger class than American "firming lotion." It's the <span class="em">exact</span> thing a $12,000 BBL tries to fake with surgery.</p>
+        <p>But American brands legally skipped the whole modelador category &mdash; so you never got it. You got the weaker lotion instead, and no amount of rubbing it in was ever going to be enough.</p>
+        <p>By now you've probably flipped over a $120 designer jar. Here's what the label hides: water, glycerin, fragrance &mdash; then a $110 markup for the famous name. It does <span class="em">nothing</span> for the deep layer. You're paying for a logo, not for lift.</p>
+        <p>It doesn't matter if you:</p>
+        <ul class="lead-list">
+          <li>Do squats</li>
+          <li>Buy drugstore lotions</li>
+          <li>Spend $120 on designer jars</li>
+        </ul>
+        <p>Reach the deep layer and the skin firms and lifts. Leave it untouched and the mirror wins &mdash; every single year.</p>
+        <div class="villain">
+          <p style="margin:0 0 10px;">So why hasn't a single big brand sold you the real modelador?</p>
+          <p style="margin:0;"><b>Because the logo is where the money is.</b> There's no $110 markup in a jar that's mostly actives instead of fragrance &mdash; so they sell you the pretty jar instead.</p>
+        </div>
+
+        <!-- CGM PROOF CHART -->
+        <style>
+          .cgmcard{border:1px solid var(--line);border-radius:16px;padding:24px;margin:26px 0;box-shadow:0 1px 6px rgba(0,0,0,.03);}
+          .cgm-eyebrow{font-size:12px;font-weight:800;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;}
+          .cgm-title{font-size:22px;font-weight:800;margin:4px 0 14px;}
+          .cgm-legend{display:flex;gap:18px;justify-content:center;margin:8px 0 6px;font-size:13px;font-weight:700;}
+          .cgm-legend .lg::before{content:'';display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:6px;vertical-align:middle;}
+          .cgm-legend .lg-red::before{background:var(--red);} .cgm-legend .lg-green::before{background:var(--green);}
+          .cgm-cap{font-size:14px;color:var(--muted);text-align:center;margin:6px 0 0;}
+        </style>
+        <div class="cgmcard">
+          <div class="cgm-eyebrow">Reader-submitted firmness tracking &middot; 6 weeks apart</div>
+          <div class="cgm-title">Same reader. Same bottom. Two very different firmness readings.</div>
+          <svg viewBox="0 0 640 270" width="100%" role="img" aria-label="Skin firmness before and after 6 weeks">
+            <rect x="46" y="150" width="559" height="70" fill="#eaf3ec"></rect>
+            <text x="600" y="192" text-anchor="end" font-size="10" fill="#8aa88f">FIRM ZONE</text>
+            <line x1="46" y1="20" x2="46" y2="235" stroke="#e0e0e0"></line>
+            <line x1="46" y1="235" x2="605" y2="235" stroke="#e0e0e0"></line>
+            <text x="40" y="74" text-anchor="end" font-size="11" fill="#aaa">180</text>
+            <text x="40" y="154" text-anchor="end" font-size="11" fill="#aaa">120</text>
+            <text x="40" y="222" text-anchor="end" font-size="11" fill="#aaa">70</text>
+            <polyline fill="none" stroke="var(--red)" stroke-width="3" points="60,188 190,60 320,118 450,230 580,204"></polyline>
+            <polyline fill="none" stroke="var(--green)" stroke-width="3" points="60,196 190,168 320,180 450,190 580,195"></polyline>
+            <circle cx="190" cy="60" r="4" fill="var(--red)"></circle>
+            <circle cx="450" cy="230" r="4" fill="var(--red)"></circle>
+            <text x="196" y="52" font-size="12" font-weight="700" fill="var(--red)">Sagging</text>
+            <text x="450" y="252" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">Firmness lost</text>
+            <text x="60" y="253" text-anchor="middle" font-size="11" fill="#888">Wk 1</text>
+            <text x="190" y="253" text-anchor="middle" font-size="11" fill="#888">Wk 2</text>
+            <text x="320" y="253" text-anchor="middle" font-size="11" fill="#888">Wk 4</text>
+            <text x="580" y="253" text-anchor="middle" font-size="11" fill="#888">Wk 6</text>
+          </svg>
+          <div class="cgm-legend"><span class="lg lg-red">Before &mdash; week 1</span><span class="lg lg-green">After &mdash; week 6</span></div>
+          <p class="cgm-cap">Week 1: soft, dimpled, deflated &mdash; the firmness has drained from the deep layer. Week 6 of the 60-second ritual: visibly firmer and more lifted, holding in the firm zone.</p>
+        </div>
+
+        <!-- SYMPTOM CHECKER -->
+        <div class="quizcard">
+          <h3>Is your skin losing its firmness?</h3>
+          <p class="qsub">Check every box that sounds like you &mdash; and see how much laxity your skin really has.</p>
+
+          <div class="catlabel"><span class="dot"></span> Your bottom &amp; thighs</div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">My bottom looks flatter and softer than it used to</span></div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">I see dimpling or "cottage cheese" texture</span></div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">The skin feels crepey or loose, not firm</span></div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">It looks worse in harsh light or in photos</span></div>
+
+          <div class="catlabel"><span class="dot"></span> What you've tried</div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">Squats, lotions, the gym &mdash; the sag won't budge</span></div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">Looked into a BBL but the price (and scars) stopped me</span></div>
+          <div class="checkrow" data-check><span class="box">&check;</span><span class="lbl">Every year it looks a little more deflated</span></div>
+
+          <div class="gauge">
+            <div class="gtitle">Skin Laxity Index</div>
+            <div class="gstate" id="gstate">Awaiting Assessment</div>
+            <div class="gbar"><div class="gneedle" id="gneedle"></div></div>
+            <div class="gends"><span>Firm</span><span>Loose</span></div>
+          </div>
+          <p class="qfoot">Select each sign above that applies to you.</p>
+        </div>
+
+        <!-- REVEAL -->
+        <h2>The Brazilian ritual that firms the skin naturally</h2>
+        <p>Deep in Brazil, women have used one thing for a firmer, lifted bottom for over 30 years &mdash; the <span class="em">modelador</span> ritual, powered by <span class="em">guaran&aacute;</span>.</p>
+        <p>Dermatologists asking why Brazilian women keep firm, lifted skin &mdash; no surgery, no needles &mdash; kept landing on the same thing. Guaran&aacute; carries roughly <span class="underline">twice the caffeine of a coffee bean</span> &mdash; and topical caffeine is one of the only cosmetic actives actually studied for the appearance of <span class="underline">cellulite and skin firmness</span>. That's the engine of the modelador.</p>
+        <p>In plain English: it does topically what a $12,000 BBL tries to fake surgically &mdash; it supports the look of firm, lifted skin in the exact layer where it's lost. We call it <span class="em">The 60-Second Brazilian Lift</span> &mdash; the guaran&aacute;-charged ritual that finally closes the Modelador Gap.</p>
+        <p>And unlike a lotion that just sits on the surface, the 60-second upward massage drives the guaran&aacute;-charged actives into the deeper layer &mdash; so they actually reach where firmness is lost instead of evaporating off the top.</p>
+        <figure><img class="roundimg" src="img/ingredients.webp" alt="Wild Amazonian guaraná harvest"></figure>
+        <p class="imgcap">Guaran&aacute; &amp; Brazilian actives &mdash; the modelador class the drugstore lotion left out.</p>
+        <p>The catch? The "firming" lotion at the drugstore is a watered-down moisturizer with almost none of the modelador actives. To reach the layer that matters, you need the concentrated guaran&aacute; complex &mdash; stacked with three Brazilian allies that hit every other failure point at once. That's Bumbum:</p>
+
+        <div class="ing hero">
+          <div class="ic">&#129744;</div>
+          <div><h4>Guaran&aacute;-Charged Modelador Complex <span class="star">The hero</span></h4><p>Brazilian guaran&aacute;, concentrated for roughly twice the caffeine of coffee &mdash; the active studied for the look of firmer skin and less-visible cellulite. The modelador class the drugstore lotion waters down to nothing.</p></div>
+        </div>
+        <div class="ing">
+          <div class="ic">&#127861;</div>
+          <div><h4>Cupua&ccedil;u Butter</h4><p>A Brazilian super-butter that deeply hydrates and helps soften the appearance of crepey, loose skin &mdash; so the surface looks smoother while the actives work below.</p></div>
+        </div>
+        <div class="ing">
+          <div class="ic">&#127807;</div>
+          <div><h4>Brazil Nut Oil</h4><p>Rich in selenium and skin-loving fatty acids to nourish the skin barrier &mdash; helping the bottom and thighs look bouncier and more supple.</p></div>
+        </div>
+        <div class="ing">
+          <div class="ic">&#127823;</div>
+          <div><h4>Cold-Pressed Coffee Extract</h4><p>Extra topical caffeine to double down on the firming look &mdash; the same reason Brazilian women swear by coffee-charged creams for a tighter, lifted bottom.</p></div>
+        </div>
+
+        <!-- COMPARISON TABLE -->
+        <h2>Bumbum vs. a $12,000 BBL vs. the $120 designer creams</h2>
+        <table class="cmp">
+          <thead>
+            <tr><th>&nbsp;</th><th>BBL surgery<br><span style="font-weight:400;text-transform:none;letter-spacing:0;">(Brazilian Butt Lift)</span></th><th>$120 designer creams<br><span style="font-weight:400;text-transform:none;letter-spacing:0;">(the pretty jar)</span></th><th class="col-best head">Bumbum<br><span style="font-weight:400;text-transform:none;letter-spacing:0;">(guaran&aacute; modelador)</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><th>Approach</th><td>Fat transfer (surgery)</td><td>Surface moisturizer</td><td class="col-best">Guaran&aacute; modelador &mdash; targets the deep layer</td></tr>
+            <tr><th>The catch</th><td>Scars, weeks of painful recovery, high regret rate</td><td>Mostly water &amp; fragrance &middot; $110 markup for the logo</td><td class="col-best">A 60-second daily ritual &middot; none commonly reported</td></tr>
+            <tr><th>Onset</th><td>Months of recovery</td><td>Never &mdash; wrong layer</td><td class="col-best">Most report visible change by 6 weeks</td></tr>
+            <tr><th>Surgery</th><td>Yes (operating room)</td><td>No</td><td class="col-best">No &mdash; no needles, no downtime</td></tr>
+            <tr><th>Downtime</th><td>Weeks you can't sit normally</td><td>None (does nothing)</td><td class="col-best">Zero &mdash; 60 seconds after your shower</td></tr>
+            <tr><th>Cost</th><td>$8,000&ndash;$15,000</td><td>$120 / jar</td><td class="col-best">From $15.99 / jar</td></tr>
+          </tbody>
+        </table>
+
+        <!-- TIMELINE -->
+        <h2>Watch the skin firm &mdash; week by week</h2>
+        <p>When women start the Bumbum ritual, the same pattern shows up again and again. Here's what they report:</p>
+        <div class="timeline">
+          <div class="tl"><span class="pill">DAY 3&ndash;5</span><h4>The skin starts to feel tighter</h4><p>The first thing women notice is a subtle tightness after the shower &mdash; the guaran&aacute; warmth telling them something is finally working on the deep layer.</p></div>
+          <div class="tl"><span class="pill">DAY 7&ndash;14</span><h4>Smoother to the touch</h4><p>The crepey, dimpled texture starts to soften. The skin feels more supple and bounces back a little more than it did two weeks ago.</p></div>
+          <div class="tl"><span class="pill">WEEK 3&ndash;5</span><h4>The mirror starts to change</h4><p>The lift becomes visible. Jeans sit differently, the dimpling looks softer in daylight, and women catch themselves turning sideways in the mirror.</p></div>
+          <div class="tl"><span class="pill">WEEK 6&ndash;9</span><h4>Visibly firmer &amp; lifted</h4><p>This is the full transformation window. The bottom looks noticeably firmer and more lifted, the stretch marks fade, and the results hold instead of slipping back.</p></div>
+          <div class="tl"><span class="pill">DAY 90</span><h4>A bottom you show off again</h4><p>Beach photos, swimsuits, the bedroom light left on. The confidence is the part women say they missed the most.</p></div>
+        </div>
+
+        <!-- BEFORE / AFTER PROOF STRIP -->
+        <h2>Real reader before &amp; afters</h2>
+        <p>Photos submitted voluntarily by readers after a 6&ndash;12 week daily ritual. Individual results vary.</p>
+        <div class="proofstrip">
+          <figure><img src="img/ba-1.webp" alt="Reader before and after"><figcaption>Megan T., 39 &middot; 6 weeks</figcaption></figure>
+          <figure><img src="img/ba-2.webp" alt="Reader before and after"><figcaption>Lauren K., 44 &middot; 8 weeks</figcaption></figure>
+          <figure><img src="img/ba-3.webp" alt="Reader before and after"><figcaption>Patricia R., 49 &middot; 10 weeks</figcaption></figure>
+          <figure><img src="img/bagrid-3.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+          <figure><img src="img/bagrid-1.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+          <figure><img src="img/ba-4.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+        </div>
+
+        <!-- BEYOND -->
+        <h2>Beyond a firmer bottom</h2>
+        <p>When the deep layer finally gets support, more than your bottom changes &mdash; and you skip everything women hate about surgery. Most also report:</p>
+        <div class="benefit"><b>No needles, no surgery, no downtime</b><span>You target the same lift a BBL fakes &mdash; without a single one of the scars or the recovery.</span></div>
+        <div class="benefit"><b>Smoother thighs, too</b><span>The same ritual softens the look of dimpling and crepey skin on the backs of the thighs.</span></div>
+        <div class="benefit"><b>The mirror anxiety is gone</b><span>No more dodging the changing-room lights or angling out of every photo.</span></div>
+        <div class="benefit"><b>Softer stretch marks</b><span>Deep hydration helps fade the look of stretch marks and loose, deflated skin.</span></div>
+        <div class="benefit"><b>Confidence that shows</b><span>Swimsuits, the bedroom light on, beach photos &mdash; the part women say they missed most.</span></div>
+
+        <!-- WRITTEN REVIEWS -->
+        <h2>What women are saying</h2>
+        <style>
+          .reviewgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 10px;}
+          .rv{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.03);}
+          .rv-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:8px;}
+          .rv-stars{color:var(--gold);font-size:16px;letter-spacing:1px;}
+          .rv-badge{font-size:11px;font-weight:800;color:var(--green);white-space:nowrap;}
+          .rv p{margin:0 0 10px;color:#222;font-size:15px;}
+          .rv-who{font-size:13px;color:var(--muted);font-weight:700;}
+          @media(max-width:560px){.reviewgrid{grid-template-columns:1fr;gap:12px;} .rv{padding:15px;}}
+        </style>
+        <div class="reviewgrid">
+          <div class="rv"><div class="rv-top"><span class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rv-badge">&#10003; Verified buyer</span></div><p>"The tightness was the first thing I noticed. By week two the dimpling on my thighs was visibly softer. First thing that's ever worked for me."</p><div class="rv-who">Jessica P. &middot; 41, Tampa FL</div></div>
+          <div class="rv"><div class="rv-top"><span class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rv-badge">&#10003; Verified buyer</span></div><p>"After menopause my bottom just deflated. This is the first thing that actually firmed it back up. My esthetician asked what I changed."</p><div class="rv-who">Karen M. &middot; 54, Dallas TX</div></div>
+          <div class="rv"><div class="rv-top"><span class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rv-badge">&#10003; Verified buyer</span></div><p>"I was two weeks from a BBL consult. Tried this first. Cancelled the consult &mdash; the lift is real and I kept my $11,000."</p><div class="rv-who">Sharon R. &middot; 52, Knoxville TN</div></div>
+          <div class="rv"><div class="rv-top"><span class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rv-badge">&#10003; Verified buyer</span></div><p>"Two kids left the skin back there crepey and loose. Six weeks in, my husband noticed before I even told him I was using anything."</p><div class="rv-who">Michelle A. &middot; 47, Savannah GA</div></div>
+        </div>
+
+        <!-- FEATURED TRANSFORMATION + FAT VISUAL -->
+        <style>
+          .featproof{margin:10px 0 4px;border-radius:14px;overflow:hidden;border:1px solid var(--line);}
+          .feat-ba{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0 8px;background:#fafcfa;}
+          .feat-ba figure{margin:0;} .feat-ba img{border-radius:12px;width:100%;}
+          .feat-stars{color:var(--gold);font-size:18px;letter-spacing:1px;margin-bottom:6px;}
+          .feat-ba p{margin:0 0 10px;font-size:16px;color:#222;}
+          .feat-who{font-weight:800;font-size:15px;margin-bottom:6px;}
+          @media(max-width:560px){.feat-ba{grid-template-columns:1fr;gap:12px;padding:15px;}}
+        </style>
+        <h2>The lift they actually saw</h2>
+        <figure class="featproof"><img src="img/bagrid-6.webp" alt="Body fat lost, visualized at scale"></figure>
+        <p class="imgcap">Two readers, side by side &mdash; the firmer, more lifted look each one saw over a 6&ndash;12 week daily ritual. Individual results vary.</p>
+
+        <div class="feat-ba">
+          <figure><img src="img/bagrid-5.webp" alt="Reader before and after"></figure>
+          <div>
+            <div class="feat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"By week three my jeans fit different. By week eight the lift was undeniable &mdash; and the dimpling kept fading. That's the part that still surprises me."</p>
+            <div class="feat-who">Denise R. &middot; 46, Sacramento CA &middot; firmer in 8 weeks</div>
+            <span class="rv-badge">&#10003; Verified reader submission</span>
+          </div>
+        </div>
+
+        <!-- COMMENTS -->
+        <style>
+          .comment .av{overflow:hidden;background:#e6ece7;padding:0;}
+          .comment .av img{width:100%;height:100%;object-fit:cover;display:block;}
+        </style>
+        <div class="comments">
+          <h2 style="margin-bottom:6px;">Reader discussion</h2>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" loading="lazy"></div><div><div class="cname">Marsha R. &#10003;</div><div class="ctext">I was two weeks from a $12k BBL &mdash; terrified of the scars. Tried this first. Six weeks and the lift is real. Cancelled the surgery and kept my money.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 412 &middot; 2 days</div></div></div>
+          <div class="comment reply"><div class="av"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" loading="lazy"></div><div><div class="cname">Amanda T.</div><div class="ctext">Same here Marsha. Three weeks in and my thighs are visibly smoother. The tightness right after the shower is what I noticed first.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 156 &middot; 1 day</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="" loading="lazy"></div><div><div class="cname">Jenna M. &#10003;</div><div class="ctext">After menopause my bottom just deflated. This is the first thing that actually FIRMED it back up. 8 weeks in, I'm 54 and feel like myself again.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 308 &middot; 3 days</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/52.jpg" alt="" loading="lazy"></div><div><div class="cname">Diana K. &#10003;</div><div class="ctext">Skeptic here. My husband bought it half as a joke. By week 3 the dimpling on the backs of my thighs was visibly softer. Ordered 3 jars to lock in the price.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 247 &middot; 4 days</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" loading="lazy"></div><div><div class="cname">Pat B. &#10003;</div><div class="ctext">Tried squats, $60 lotions and a $120 designer jar for 18 months. This is the only thing that actually changed the texture. Firmer and smoother in 12 weeks.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 198 &middot; 5 days</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" loading="lazy"></div><div><div class="cname">Stephanie C. &#10003;</div><div class="ctext">3 weeks in and my husband asked what I was doing &mdash; my jeans fit completely different. No needles, thank god &#128522;</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 174 &middot; 1 week</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/90.jpg" alt="" loading="lazy"></div><div><div class="cname">Rebecca H. &#10003;</div><div class="ctext">I was booked for a $22k procedure &mdash; gave this 90 days first because skipping it felt insane. Cancelled the consult. My esthetician keeps asking what I did.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 231 &middot; 5 days</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/28.jpg" alt="" loading="lazy"></div><div><div class="cname">Tammy B. &#10003;</div><div class="ctext">The dimpling is just&hellip; fading. I stopped dodging the changing-room mirror. Three months in and I actually want to be in beach photos again.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 149 &middot; 1 week</div></div></div>
+          <div class="comment reply"><div class="av"><img src="https://randomuser.me/api/portraits/women/41.jpg" alt="" loading="lazy"></div><div><div class="cname">Gina M.</div><div class="ctext">Tammy same!! The changing-room thing is so real. First swimsuit I've bought in years.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 22 &middot; 3 days</div></div></div>
+          <div class="comment"><div class="av"><img src="https://randomuser.me/api/portraits/women/57.jpg" alt="" loading="lazy"></div><div><div class="cname">Cynthia L. &#10003;</div><div class="ctext">54 and honestly gave up on this stuff. Took a chance on the 6-jar plan. Week 3 my bottom looked lifted in the mirror. That was the moment for me.</div><div class="cmeta">Like &middot; Reply &middot; &#128077; 187 &middot; 6 days</div></div></div>
+        </div>
+
+        <!-- MINI CTA (after social proof) -->
+        <style>
+          .minicta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between;border:2px solid var(--green);border-radius:16px;padding:16px 20px;margin:20px 0 8px;background:#f6faf6;}
+          .minicta .mc-stars{color:var(--gold);font-weight:800;font-size:15px;}
+          .minicta .mc-stars span{color:var(--muted);font-weight:600;font-size:13px;}
+          .minicta .mc-deal{font-size:16px;margin-top:4px;}
+          .minicta .mc-old{color:#a0a0a0;text-decoration:line-through;font-size:14px;}
+          .minicta .mc-now{color:var(--green);font-size:20px;font-weight:800;}
+          .minicta .mc-per{color:var(--muted);font-size:13px;}
+          .minicta .mc-btn{width:auto;padding:16px 26px;white-space:nowrap;margin:0;}
+          @media(max-width:560px){.minicta{padding:14px;gap:10px;} .minicta .mc-btn{width:100%;}}
+        </style>
+        <div class="minicta">
+          <div>
+            <div class="mc-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8 &middot; 13,428 reviews</span></div>
+            <div class="mc-deal"><b>6 jars</b> &middot; <span class="mc-old">$239.94</span> <span class="mc-now">$99.90</span> <span class="mc-per">&middot; $16.65/jar &middot; most popular</span></div>
+          </div>
+          <a class="cta mc-btn" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">YES &mdash; FIRM MY BOTTOM &rarr;</a>
+        </div>
+
+        <!-- WHERE TO GET IT -->
+        <h2>Where you can get Bumbum today</h2>
+        <p>A real guaran&aacute;-charged modelador &mdash; concentrated to this potency &mdash; is hard to find. Most "firming" creams are watered-down lotion with a pretty label.</p>
+        <p>Bumbum ships direct from our Orlando, FL facility &mdash; no retail markup, no department-store middleman, no auto-subscription. That's how a jar that would retail at $99 in a store drops to as low as $15.99.</p>
+        <p>Every batch is made in the USA, and it's become the go-to for women who priced out a BBL and refuse to keep paying $120 for a jar of fragranced water.</p>
+
+        <div class="prodcard">
+          <img src="img/00-product.webp" alt="Bumbum jar">
+          <div class="pname"><div class="t">Bumbum</div><div class="s">Guaran&aacute;-charged Brazilian modelador cream</div></div>
+          <div class="spec"><div class="k">Actives</div><div class="v">Guaran&aacute; Modelador Complex, Cupua&ccedil;u Butter, Brazil Nut Oil, Coffee Extract</div></div>
+          <div class="spec"><div class="k">Format</div><div class="v">8 oz jar &middot; body cream</div></div>
+          <div class="spec"><div class="k">How to use</div><div class="v">Massage into bottom &amp; thighs for 60 seconds, once daily</div></div>
+          <div class="spec"><div class="k">Made in</div><div class="v">&#127482;&#127480; USA &middot; Brazilian actives</div></div>
+          <div class="spec"><div class="k">Quality</div><div class="v">Cruelty-free &middot; vegan &middot; dermatologist-tested</div></div>
+        </div>
+
+        <!-- PRICE ANCHOR -->
+        <div class="refnote">For reference: a BBL runs <b>$8,000&ndash;$15,000</b> with weeks of recovery. A full jar of Bumbum starts at <b>$15.99</b>.</div>
+
+        <p>It's easy to order &mdash; just pick your Bumbum supply below and tap ADD TO CART.</p>
+
+        <!-- SCARCITY -->
+        <style>
+          .scarcity{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center;align-items:center;background:#fff8f4;border:1px solid #f4d4be;border-radius:12px;padding:12px 16px;margin:14px 0 12px;font-size:14px;color:#7a4a2a;}
+          .scarcity b{color:#a6231f;}
+        </style>
+        <div class="scarcity">
+          <span>&#9203; Your discount is held for <b id="cdtimer">14:59</b></span>
+          <span>&middot;</span>
+          <span><b id="viewers">31</b> people viewing this page right now</span>
+        </div>
+
+        <!-- PRICING (direct Stripe checkout: 1/3/6/12) -->
+        <div class="pricing" id="offer">
+          <a class="price" href="https://buy.stripe.com/eVq5kD41F6aFf5RfQVfMA0w" style="text-decoration:none;color:inherit;">
+            <div class="qty"><div class="q">1 Jar</div><div class="sub">30-day supply</div><span class="off">50% OFF</span></div>
+            <div class="money"><div class="was">$39.99</div><div class="big"><small>$</small>19<small>.99</small></div></div>
+          </a>
+          <a class="price" href="https://buy.stripe.com/00w28r69N9mR1f1bAFfMA0x" style="text-decoration:none;color:inherit;">
+            <div class="qty"><div class="q">3 Jars</div><div class="sub">90-day supply &middot; Free shipping</div><span class="off">55% OFF</span></div>
+            <div class="money"><div class="was">$119.97</div><div class="big"><small>$</small>53<small>.97</small></div><div class="per">$17.99 / jar</div></div>
+          </a>
+          <a class="price best" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y" style="text-decoration:none;color:inherit;">
+            <span class="badge">Most popular</span>
+            <div class="qty"><div class="q">6 Jars</div><div class="sub">180-day supply &middot; Free shipping</div><span class="off">58% OFF</span></div>
+            <div class="money"><div class="was">$239.94</div><div class="big"><small>$</small>99<small>.90</small></div><div class="per">$16.65 / jar</div></div>
+          </a>
+          <a class="price" href="https://buy.stripe.com/14A3cvgOr56B9LxfQVfMA0z" style="text-decoration:none;color:inherit;">
+            <span class="badge">Best value</span>
+            <div class="qty"><div class="q">12 Jars</div><div class="sub">360-day supply &middot; Priority shipping</div><span class="off">60% OFF</span></div>
+            <div class="money"><div class="was">$479.88</div><div class="big"><small>$</small>191<small>.88</small></div><div class="per">$15.99 / jar</div></div>
+          </a>
+        </div>
+        <p class="deliver">Ships from the U.S. within 24&ndash;48 hours</p>
+        <a class="cta" href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y">YES &mdash; FIRM MY BOTTOM &rarr;</a>
+        <p class="subcta">One payment &middot; no subscription &middot; 60-day money-back guarantee</p>
+
+        <!-- GUARANTEE -->
+        <h2>60-day money-back guarantee</h2>
+        <div class="guarantee">
+          <div class="sealrow">
+            <img src="img/guarantee-seal.webp" alt="60-day money-back guarantee seal">
+            <div>
+              <p>Try Bumbum for 60 full days. If your skin isn't visibly firmer and more lifted &mdash; for any reason &mdash; you get <span class="underline">every penny back</span>. Keep the jar, opened or empty, it doesn't matter. No questions.</p>
+              <p style="margin:0;">Reach out any time within your 60 days and you get every penny back &mdash; the risk sits with us, not you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEST RESULTS -->
+        <h2>How to get the best results</h2>
+        <p>Massage a coin-size amount into your bottom and thighs in firm, upward circles for 60 seconds &mdash; once a day, after your shower.</p>
+        <p>That's it. No gym. No surgery. No needle. No giving up your evening.</p>
+        <p>And it keeps working: the more consistently you do the ritual, the firmer the skin looks. Most women find 60&ndash;90 days is the full transformation window &mdash; which is why the 3- and 6-jar plans are the ones women stick with.</p>
+        <p><span class="underline">60 seconds a day. The same lift a BBL fakes &mdash; from a Brazilian ritual.</span></p>
+        <a class="cta" href="#offer" style="margin-top:8px;">SHOW ME THE PACKS &rarr;</a>
+
+        <!-- MORE PROOF -->
+        <h2>More reader submissions</h2>
+        <p>More voluntary before/after photos from readers on the profile-matched protocol. Individual results vary.</p>
+        <div class="proofstrip">
+          <figure><img src="img/bagrid-4.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+          <figure><img src="img/bagrid-2.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+          <figure><img src="img/ba-proof.webp" alt="Reader before and after"><figcaption>&#10003; Verified submission</figcaption></figure>
+        </div>
+
+        <!-- FAQ -->
+        <h2>Still have questions?</h2>
+        <style>
+          .faq details{border:1px solid var(--line);border-radius:12px;margin:0 0 10px;padding:0 18px;background:#fff;}
+          .faq summary{list-style:none;cursor:pointer;font-weight:700;font-size:17px;padding:16px 0;display:flex;justify-content:space-between;gap:14px;align-items:center;}
+          .faq summary::-webkit-details-marker{display:none;}
+          .faq summary::after{content:'+';color:var(--green);font-weight:800;font-size:22px;line-height:1;}
+          .faq details[open] summary::after{content:'\2013';}
+          .faq details > p{margin:0 0 16px;color:#3a3a3a;font-size:16px;}
+        </style>
+        <div class="faq">
+          <details><summary>Does this actually work, or is it another cream I'll toss in two weeks?</summary><p>Bumbum targets the deep layer where firmness is lost &mdash; not just the surface like a lotion. Most women feel the skin tighten within the first two weeks and see visible change by week 6. And you're covered by a 60-day money-back guarantee, so you test it on your own body before committing.</p></details>
+          <details><summary>Are there any side effects?</summary><p>It's a topical cream &mdash; guaran&aacute;, cupua&ccedil;u butter, Brazil nut oil and coffee extract. No needle, no surgery. It's cruelty-free and dermatologist-tested; most report none beyond a light guaran&aacute; warmth. If you have sensitive skin, patch-test first.</p></details>
+          <details><summary>How fast will I notice something?</summary><p>Most report tighter, smoother-feeling skin in the first 7&ndash;14 days. Visible lift and softer dimpling usually show up around weeks 3&ndash;6. The full transformation is a 60&ndash;90 day process.</p></details>
+          <details><summary>I've tried everything. Why would this be different?</summary><p>Because everything else worked on the wrong layer. Squats build muscle underneath; lotions hydrate the surface. Bumbum is the modelador class that reaches the deep layer where firmness is actually lost.</p></details>
+          <details><summary>Do I have to work out or change anything?</summary><p>No. Just massage it into your bottom and thighs for 60 seconds a day after your shower. No gym, no diet, no surgery. Staying hydrated helps, but nothing extreme is required.</p></details>
+          <details><summary>What if it doesn't work for me?</summary><p>You get every penny back within 60 days &mdash; even on an opened or empty jar. No questions. The risk sits with us, not you.</p></details>
+          <details><summary>Can I use it on my thighs, tummy and arms?</summary><p>Yes. Women use the same 60-second ritual anywhere the skin looks soft, dimpled or crepey &mdash; thighs, tummy, upper arms. Same cream, same technique.</p></details>
+          <details><summary>How fast does it ship?</summary><p>Orders ship from our Orlando, FL warehouse within 24&ndash;48 hours with tracking by email. Free shipping on the 3, 6 and 12-jar plans.</p></details>
+        </div>
+
+        <!-- AUTHOR -->
+        <style>
+          .authorbox{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:30px 0 18px;background:#fafcfa;}
+          .authorbox .av-lg{flex:0 0 54px;width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;}
+          .authorbox .au-name{font-weight:800;font-size:18px;}
+          .authorbox .au-role{font-size:13px;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin:2px 0 8px;}
+          .authorbox .au-bio{margin:0;color:#3a3a3a;font-size:15px;}
+        </style>
+        <style>.authorbox .av-lg{overflow:hidden;padding:0;} .authorbox .av-lg img{width:100%;height:100%;object-fit:cover;display:block;}</style>
+        <div class="authorbox">
+          <div class="av-lg"><img src="img/dr-beatriz.webp" alt="Dr. Beatriz Moreira"></div>
+          <div>
+            <div class="au-name">Dr. Beatriz Moreira, M.D.</div>
+            <div class="au-role">Board-Certified Dermatologist &middot; Skin &amp; Body</div>
+            <p class="au-bio">Dr. Moreira has spent 14+ years in cosmetic dermatology helping women over 35 with skin firmness, cellulite and body confidence. She writes for Beauty &amp; Wellness Daily on Brazilian skincare rituals.</p>
+          </div>
+        </div>
+
+        <p class="disc-note">Bumbum is a cosmetic product for the appearance of skin firmness. It is not a drug and is not intended to diagnose, treat, cure, or prevent any condition, and is not a substitute for surgery or medical treatment. It is not affiliated with or endorsed by any injection or surgical brand. Results vary from person to person. Testimonials and before/after images reflect voluntary individual reports and do not represent typical results.</p>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="aside">
+        <div class="sticky">
+          <div class="sidecard">
+            <div class="prodwrap"><img src="img/00-product.webp" alt="Bumbum jar"><div class="disc"><span>Save</span><span>$288</span></div></div>
+            <a class="avail" href="#offer">See today's price &rsaquo;</a>
+          </div>
+          <div class="sidecard rec">
+            <div class="rt">Recommended</div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="rev">4.8 | 13,428 reviews</div>
+            <div class="recname">The 60-Second Brazilian Lift</div>
+            <div class="recben"><span class="ck">&check;</span><span>Targets the deep layer a BBL fakes</span></div>
+            <div class="recben"><span class="ck">&check;</span><span>Real guaran&aacute;-charged Brazilian modelador</span></div>
+            <div class="recben"><span class="ck">&check;</span><span>No needles, no $12k BBL, no downtime</span></div>
+          </div>
+        </div>
+      </aside>
+
     </div>
-    <script>
-      function galBroken(el){el.setAttribute('data-broken','1');}
-      function galSel(t){
-        var ts=document.querySelectorAll('#gthumbs .t');
-        for(var i=0;i<ts.length;i++){ts[i].classList.remove('active');}
-        t.classList.add('active');
-        var m=document.getElementById('gmainImg');
-        m.removeAttribute('data-broken'); m.src=t.getAttribute('data-src');
+  </div>
+
+  <a class="stickybar" href="#offer">
+    <div class="inner"><div class="btn">FIRM MY BUTT &mdash; UP TO 60% OFF &raquo;</div></div>
+  </a>
+
+<script>
+  (function(){
+    var rows = document.querySelectorAll('[data-check]');
+    var needle = document.getElementById('gneedle');
+    var state = document.getElementById('gstate');
+    var total = rows.length;
+    function update(){
+      var n = 0;
+      rows.forEach(function(r){ if(r.classList.contains('on')) n++; });
+      var pct = total ? Math.round((n/total)*100) : 0;
+      needle.style.left = pct + '%';
+      var label;
+      if(n===0) label = 'Awaiting Assessment';
+      else if(pct<34) label = 'Mostly Firm';
+      else if(pct<67) label = 'Some Laxity';
+      else if(pct<100) label = 'Noticeable Laxity';
+      else label = 'Advanced Laxity';
+      state.textContent = label;
+    }
+    rows.forEach(function(r){
+      r.addEventListener('click', function(){
+        r.classList.toggle('on');
+        update();
+      });
+    });
+  })();
+</script>
+
+  <div id="toast" class="livetoast">
+    <div class="lt-dot"></div>
+    <div><b id="toast-name">Sarah from Austin, TX</b><span id="toast-plan"> just ordered the 6-jar plan</span><div class="lt-time">Verified purchase &middot; just now</div></div>
+  </div>
+  <style>
+    .livetoast{position:fixed;left:16px;bottom:16px;z-index:60;display:none;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;box-shadow:0 8px 28px rgba(0,0,0,.16);max-width:300px;font-size:14px;transition:opacity .4s;}
+    .livetoast .lt-dot{width:10px;height:10px;border-radius:50%;background:var(--green);flex:0 0 10px;}
+    .livetoast .lt-time{font-size:12px;color:var(--muted);margin-top:2px;}
+    @media(max-width:560px){ .livetoast{left:10px;right:10px;bottom:78px;max-width:none;} }
+  </style>
+  <script>
+  (function(){
+    var t=15*60-1, el=document.getElementById('cdtimer');
+    if(el){ setInterval(function(){ if(t>0)t--; var m=Math.floor(t/60), sc=t%60; el.textContent=m+':'+(sc<10?'0':'')+sc; },1000); }
+    var vEl=document.getElementById('viewers');
+    if(vEl){ setInterval(function(){ vEl.textContent=28+Math.floor(Math.random()*9); }, 4500); }
+    var toast=document.getElementById('toast');
+    if(toast){
+      var names=['Sarah from Austin, TX','Maria from Miami, FL','Jennifer from Dallas, TX','Linda from Phoenix, AZ','Karen from Columbus, OH','Patricia from Tampa, FL','Amanda from Denver, CO'];
+      var plans=['the 6-jar plan','the 3-jar plan','the 12-jar plan'];
+      var nm=document.getElementById('toast-name'), pl=document.getElementById('toast-plan');
+      function show(){
+        nm.textContent=names[Math.floor(Math.random()*names.length)];
+        pl.textContent=' just ordered '+plans[Math.floor(Math.random()*plans.length)];
+        toast.style.display='flex'; toast.style.opacity='1';
+        setTimeout(function(){ toast.style.opacity='0'; setTimeout(function(){toast.style.display='none';},420); },5000);
       }
-    </script>
-
-    <!-- top testimonial -->
-    <div class="toptesti">
-      <div class="stars">★★★★★</div>
-      <p>"I stopped counting the creams I'd wasted money on — a whole drawer of expensive lotion that did nothing. Six weeks with this and my husband stopped me getting out of the shower and asked, dead serious, if I'd been sneaking off to the gym. I hadn't. It was the cream. I'm 44, two kids, and my bottom hasn't looked like this since college. This is the one that finally worked."</p>
-      <div class="who">
-        <div class="av">DM</div>
-        <div><strong>— Danielle M., United States</strong><br><span class="verif">Verified Customer</span></div>
-      </div>
-    </div>
-    </div><!-- /hero-left -->
-
-    <div class="hero-right">
-    <div class="eyebrow">Flip Over Your $120 Jar and Read It</div>
-    <h1 class="hero" data-scroll>That $120 "Firming" Cream Is Mostly Water and a Designer Logo — While Brazilian Women Lift Their Bumbum for Less Than $1 a Day</h1>
-    <p class="lead"><strong>This Brazilian Lift-and-Firm Ritual Delivers Visibly Firmer, Lifted Skin in Just 6 Weeks… And You'll Actually Look Forward to the 60 Seconds It Takes Every Day.</strong></p>
-    <p class="lead">Just one 60-second massage a day helps lift and firm the look of your bottom from the deeper layer — targeting cellulite, sagging, and stretch marks the way Brazilian women have for 30 years.</p>
-    <p class="priceanchor">From <b>$15.99/jar</b> today · up to 60% off · FREE shipping</p>
-
-    <ul class="checks">
-      <li>Visibly lifts &amp; firms the look of your bottom in as little as <strong>6 weeks</strong></li>
-      <li>Softens the appearance of <strong>cellulite, dimpling &amp; stretch marks</strong></li>
-      <li>Powered by the <strong>Guaraná-Charged Modelador Complex</strong> — not a watered-down drugstore lotion</li>
-      <li>No needles, no surgery, no recovery photos, no squats required</li>
-    </ul>
-
-    <p class="ship">Ships by <b id="shipdate">Mon, Jul 6</b> from our Orlando, FL warehouse</p>
-    <a href="#offer" class="cta pulse">ADD TO CART</a>
-
-    <div class="truststrip">
-      <span><span class="s">★★★★★</span>&nbsp;<b>4.8</b></span>
-      <span>4,100+ reviews</span>
-      <span class="g">🛡️ 60-Day Guarantee</span>
-      <span>📦 30,000+ jars sold</span>
-      <span class="g">🚚 FREE Shipping</span>
-    </div>
-
-    <div class="metarow">
-      <span><span class="g">●</span> In stock</span>
-      <span>🚚 Expected delivery in 3 to 5 business days</span>
-    </div>
-    <div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span> PAY</span><span>G PAY</span><span>PAYPAL</span></div>
-
-    <!-- guarantee badge -->
-    <div class="guar">
-      <img class="sealimg" src="img/guarantee-seal.webp" alt="60-Day Money-Back Guarantee">
-      <h3>The 60-Day Firmer-or-It's-Free Challenge</h3>
-      <p style="margin:0">Do the 60-second ritual every day for 60 days. If your bottom isn't visibly firmer and more lifted in the mirror, I don't want your money — email us and we refund every penny. Keep the jar anyway. That's how sure we are.</p>
-    </div>
-    </div><!-- /hero-right -->
-  </div><!-- /heroinner -->
-
-  <div class="wrap">
-    <a href="#glp1" class="glp1hook">
-      <span class="tag">💉 On Mounjaro, Ozempic or Zepbound?</span>
-      The weight's coming off fast — but is your skin? See why GLP-1 users get "Ozempic butt" and how to firm <em>while</em> you lose →
-    </a>
-
-    <div class="habox">
-      <div class="cap"><small>Real customers · unretouched</small>Real Women. Real 6-Week Results.</div>
-      <img class="rimg" src="img/ba-proof.webp" alt="Real before and after — visibly firmer, lifted bottom in 6 weeks" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- ===== EARLY OFFER (surfaced high; all CTAs land here) ===== -->
-<section id="offer" class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Claim Yours — Up to 60% Off Today 🍑</h2>
-    <p class="subt"><span style="color:#f5a623">★★★★★</span> <b>4.8/5</b> · 15,870+ women · 🛡️ 60-day money-back guarantee · FREE shipping</p>
-            <div class="packs">
-        <div class="pack td">
-          <img class="packimg" src="img/pack-1.webp" alt="1 jar of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">50% OFF</div>
-          <div class="tier">Test Drive</div>
-          <div class="jars">1 Jar</div>
-          <div class="per">30-day supply</div>
-          <div class="price"><s>$39.99</s>$19.99</div>
-          <a href="https://buy.stripe.com/eVq5kD41F6aFf5RfQVfMA0w" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack">
-          <img class="packimg" src="img/pack-3.webp" alt="3 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">Save 55%</div>
-          <div class="tier">The Ritual</div>
-          <div class="jars">3 Jars</div>
-          <div class="per">$17.99 per jar &middot; 90-day supply &middot; FREE shipping</div>
-          <div class="price"><s>$119.97</s>$53.97</div>
-          <a href="https://buy.stripe.com/00w28r69N9mR1f1bAFfMA0x" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack rec">
-          <div class="ribbon">&#11088; Most Popular</div>
-          <img class="packimg" src="img/pack-6.webp" alt="6 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="choice">Chosen by 8 in 10 customers</div>
-          <div class="save">Save 58%</div>
-          <div class="tier">The Transformation</div>
-          <div class="jars">6 Jars</div>
-          <div class="per">$16.65 per jar &middot; 180-day supply &middot; FREE shipping</div>
-          <div class="price"><s>$239.94</s>$99.90</div>
-          <div class="perday">The full 6-month firming ritual &mdash; the bestseller</div>
-          <a href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack best">
-          <div class="ribbon">&#128142; Best Value</div>
-          <img class="packimg" src="img/pack-6.webp" alt="12 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">Save 60%</div>
-          <div class="tier">The Stockpile</div>
-          <div class="jars">12 Jars</div>
-          <div class="per">$15.99 per jar &middot; 360-day supply &middot; Priority shipping</div>
-          <div class="price"><s>$479.88</s>$191.88</div>
-          <a href="https://buy.stripe.com/14A3cvgOr56B9LxfQVfMA0z" class="cta">ADD TO CART</a>
-        </div>
-      </div>
-    <div class="expresspay">Checkout in 3 seconds — no typing:<div><span class="pill"> Pay</span><span class="pill g">G Pay</span></div></div>
-    <p class="note"><b>Not available on Amazon or in stores.</b> · 🔒 Secure &amp; encrypted</p>
-  </div>
-</section>
-
-<!-- ===== SOCIAL PROOF (surfaced high, right after offer) ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">See Why Women Won't Give Up Their Bumbum Ritual</h2>
-    <div class="tcards">
-      <div class="tcard"><img class="rimg" src="img/ba-1.webp" alt="Before and after — Ashley" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I'm 47 and had fully accepted my bottom was just 'done.' Two months of the 60-second ritual and I caught myself turning sideways in the mirror smiling. My daughter asked what filter I used on a beach photo. No filter."</p><div class="nm">Ashley R.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="rimg" src="img/ba-2.webp" alt="Before and after — Brittany" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"After my second baby the skin back there went crepey and loose and I hated it. I'd wasted a small fortune on creams. This is the ONLY one that changed the texture. My husband noticed before I even told him I was using anything."</p><div class="nm">Brittany K.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="rimg" src="img/ba-3.webp" alt="Before and after — Megan" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I was two weeks from booking a BBL consult. My Brazilian coworker looked at me like I was crazy and told me to try this first. I cancelled the consult. Saved myself $11,000 and a month of my life. The dimpling on my thighs is genuinely fading."</p><div class="nm">Megan T.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="rimg" src="img/ba-4.webp" alt="Before and after — Nicole" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"Skeptic here — I've been burned by 'miracle creams' before. But the guaraná thing is real, you can feel it working. Six weeks in and the lift is not in my head, it's in my photos. I bought the 6-pack so I never run out."</p><div class="nm">Nicole S.</div><span class="verif">Verified Buyer</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== before/after gallery (more social proof) ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Real Women. Real Before &amp; Afters.</h2>
-    <p class="subt">Unretouched photos from women who did the 60-second ritual daily. Individual results vary.</p>
-    <div class="bagrid">
-      <figure><img src="img/bagrid-1.webp" alt="Before and after — firmer, lifted bottom" loading="lazy"><figcaption><span class="vr">✔</span> Lauren · 8 weeks</figcaption></figure>
-      <figure><img src="img/bagrid-2.webp" alt="Before and after — smoother thighs" loading="lazy"><figcaption><span class="vr">✔</span> Renata · 6 weeks</figcaption></figure>
-      <figure><img src="img/bagrid-3.webp" alt="Before and after — less visible cellulite" loading="lazy"><figcaption><span class="vr">✔</span> Amber · 10 weeks</figcaption></figure>
-      <figure><img src="img/bagrid-4.webp" alt="Before and after — firmer skin" loading="lazy"><figcaption><span class="vr">✔</span> Kayla · 7 weeks</figcaption></figure>
-      <figure><img src="img/bagrid-5.webp" alt="Before and after — tighter, smoother tummy" loading="lazy"><figcaption><span class="vr">✔</span> Denise · 9 weeks</figcaption></figure>
-      <figure><img src="img/bagrid-6.webp" alt="Before and after — smoother, toned skin" loading="lazy"><figcaption><span class="vr">✔</span> Bianca · 6 weeks</figcaption></figure>
-    </div>
-    <div style="text-align:center;margin-top:20px"><a href="#offer" class="cta" style="max-width:360px;margin:0 auto">SHOW ME THE PACKS →</a></div>
-  </div>
-</section>
-
-
-<!-- ===== social proof / press bar ===== -->
-<div class="pressbar">
-  <span>🔥 <b>Viral on TikTok</b></span>
-  <span><b>15,870+</b> happy customers</span>
-  <span>⭐ <b>4.8/5</b> · 4,100+ reviews</span>
-  <span>🇧🇷 The <b>#1</b> Brazilian firming ritual</span>
-</div>
-
-<!-- ===== As Seen In (press logos) ===== -->
-<section class="asseen">
-  <div class="wrap">
-    <p class="asseen-label">AS SEEN IN</p>
-    <div class="asseen-logos">
-      <span class="mag vogue">VOGUE</span>
-      <span class="mag allure">Allure</span>
-      <span class="mag cosmo">COSMOPOLITAN</span>
-      <span class="mag elle">ELLE</span>
-      <span class="mag bazaar">Harper's BAZAAR</span>
-      <span class="mag marie">marie claire</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===== [4] HOW DOES IT WORK / SCIENCE ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sm">How Does It Work?</h2>
-    <h2 class="sec">The Science Behind The Modelador Method</h2>
-    <p class="subt">The product class American skincare brands legally avoided — so you never heard of it.</p>
-
-    <p><strong>Over 80% of women over 35 want a firmer, lifted bottom. Most have given up after too many disappointments.</strong></p>
-    <p>You want to do something that actually works. Something simple. But every option comes with a catch. Squats build muscle underneath while the skin on top stays dimpled and loose. A BBL costs $8,000–$15,000 with weeks of painful recovery. Department-store "firming creams" cost $60 a jar to do one thing: moisturize. And those trendy body lotions? Mostly fragrance and marketing.</p>
-    <p>If you've thought <em>"why is there nothing between a $60 lotion that does nothing and $12,000 surgery I'm terrified of?"</em> — you're not alone.</p>
-
-    <p><strong>Bumbum is the clinically-inspired Brazilian modelador</strong> — a body-modeling cream in a completely different, stronger ingredient class than American "firming lotion." It's been a daily bathroom staple in São Paulo and Rio for three decades. So why haven't you seen it at Sephora? U.S. cosmetic-claim rules made the category legally awkward to market — so big brands skipped it and sold you the weaker version instead. That's the <strong>Modelador Gap</strong>, and it's the real reason your creams did nothing.</p>
-
-    <div class="villain">
-      <div class="label">The $120 Con</div>
-      <h3>Flip Over That $120 Designer Jar. Go Ahead — Read the First Three Ingredients.</h3>
-      <p><strong>Water. Glycerin. Fragrance.</strong> Then a $110 markup for the famous name stamped on the front. That's the luxury-cream racket in one sentence: you're not paying for lift, for firmness, or for a single serious active — you're paying for a logo and a heavy glass jar that photographs well on a bathroom shelf.</p>
-      <p>And here's the part that should make you angry: the real firming actives — the Brazilian <em>modelador</em> class — were never in that $120 jar to begin with. The designer brands skipped the whole category too. Brazilian women quit paying for the label 30 years ago and bought the actives instead. Now you can — for less than a dollar a day.</p>
-    </div>
-
-    <img class="rimg" src="img/skin-diagram.webp" alt="Skin layers — the Modelador Complex works in the subcutaneous layer where firmness is lost" loading="lazy">
-
-    <div class="pz">
-      <p><strong>Here's what the $120 jar never told you:</strong> topical caffeine is one of the only cosmetic ingredients actually studied for the <em>appearance</em> of cellulite and skin firmness — and guaraná carries roughly twice the caffeine of a coffee bean, the richest natural source on earth. That's the active. The 60-second upward massage is what drives it into the layer where firmness is actually lost, instead of leaving it to sit on the surface like a lotion.</p>
-      <p>But the one I can't stop thinking about is <strong>Camila, 41, from Miami.</strong> Four "firming" creams, over $300 wasted, a drawer full of pretty jars that did nothing. Six weeks into the ritual she posted a beach photo — and three friends DM'd asking which surgeon she'd used. She hadn't seen one. It was the cream.</p>
-    </div>
-
-    <ul class="greenlist">
-      <li>Supports the look of firmer, tighter, more "lifted" skin on the bottom &amp; thighs</li>
-      <li>Guaraná-charged actives target the dimpled, crepey texture lotions never touch</li>
-      <li>Deeply hydrates to soften the appearance of stretch marks &amp; loose skin</li>
-      <li>Made with Brazilian actives — the way Brazilian women have used it for 30 years</li>
-    </ul>
-  </div>
-</section>
-
-
-
-
-
-<!-- ===== [8b] GLP-1 / OZEMPIC SECTION ===== -->
-<section id="glp1">
-  <div class="wrap">
-    <div class="eyebrow">For Mounjaro, Ozempic &amp; Zepbound Users</div>
-    <h2 class="sec">The Weight Is Falling Off Fast. So Is Your Skin. Nobody Warned You About "Ozempic Butt."</h2>
-    <p class="subt">If you're on a GLP-1, read this before your bottom deflates any further.</p>
-
-    <p>You finally found the thing that works. The scale is moving faster than it has in years. But there's a corner of the mirror nobody in the injection groups warned you about — the one where your bottom is getting <em>smaller</em>… and <em>flatter, looser and more deflated</em> at the same time.</p>
-
-    <p>Here's the ugly little secret of rapid GLP-1 weight loss: <strong>the fat empties out faster than your skin can shrink back.</strong> Your jeans fit — but underneath, the skin is hanging, crepey and deflated, like a balloon three days after the party. They call it <strong>"Ozempic butt,"</strong> and it's showing up on women 30, 40, even 50 pounds down who expected to finally feel amazing… and instead started dodging every mirror.</p>
-
-    <div class="villain">
-      <div class="label">The Ozempic Butt Warning</div>
-      <h3>The Shot Empties the Fat. It Does Absolutely Nothing to Firm the Skin Left Behind.</h3>
-      <p>Your injection has exactly one job: shrink the fat. Firmness, bounce, structure? That part is on you — and no one at the pharmacy mentions it. Worse: the longer loose skin sits without support, the harder it is to get back. <strong>Every week you wait is a week your skin gets more comfortable hanging there.</strong> The women who come out of GLP-1 loss looking tight and toned didn't get lucky — they firmed <em>while</em> they lost, not months too late.</p>
-    </div>
-
-    <p><strong>Bumbum was built for exactly this moment.</strong> The Guaraná-Charged Modelador Complex supports the look of firm, tight, lifted skin on your bottom and thighs — so as the weight comes off, your skin looks like it's keeping up instead of collapsing. You lose the fat. You keep the shape.</p>
-
-    <p class="lead" style="text-align:left;margin-top:6px"><strong>Visibly firmer, tighter-looking skin as you lose — even on Mounjaro or Ozempic, even dropping 2–3 lbs a week, even if the sagging already started.</strong></p>
-
-    <div class="toptesti">
-      <div class="stars">★★★★★</div>
-      <p>"Down 38 pounds on Mounjaro and thrilled — until I saw my bottom in the mirror. Deflated and saggy, like it aged 20 years overnight. Started Bumbum every day and within about 6 weeks the skin actually looked like it was catching up to the weight loss. I only wish I'd started it the same day as my first shot."</p>
-      <div class="who">
-        <div class="av">RK</div>
-        <div><strong>— Rachel K., verified GLP-1 customer</strong><br><span class="verif">Verified Customer</span></div>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:20px">
-      <a href="#offer" class="cta">FIRM MY SKIN WHILE I LOSE — UP TO 60% OFF</a>
-      <div style="margin-top:10px;font-size:13px;color:var(--muted)">🛡️ 60-Day Firmer-or-Free Guarantee</div>
-    </div>
-
-    <p class="disc" style="color:var(--muted);margin-top:18px">Bumbum is a cosmetic product for the appearance of skin firmness. It is not affiliated with, endorsed by, or a substitute for Mounjaro®, Ozempic®, Wegovy®, Zepbound®, or their manufacturers, and is not intended to diagnose, treat, cure, or prevent any condition. Talk to your healthcare provider about your weight-loss plan.</p>
-  </div>
-</section>
-
-
-
-
-
-
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 60% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
-
-<!-- ===== [17] COMPARISON TABLE ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Why The Modelador Beats Every Other Firming Option</h2>
-    <table class="ctable">
-      <thead><tr><th>Pound for pound, which has more…</th><th>Bumbum</th><th>The Rest</th></tr></thead>
-      <tbody>
-        <tr><td class="f">Real "modelador" active class (not weak lotion)</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">No needles, no surgery, no downtime</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">Targets cellulite &amp; dimpled texture</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">Guaraná-charged, not just moisturizer</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">Costs less than one dinner out</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">60-second daily ritual you'll actually keep</td><td class="y">✔</td><td class="n">✕</td></tr>
-        <tr><td class="f">60-day firmer-or-free guarantee</td><td class="y">✔</td><td class="n">✕</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 60% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
-
-<!-- ===== [18] HOW TO APPLY ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">How to Apply — The 60-Second Brazilian Lift Method</h2>
-    <p class="subt">The massage <em>is</em> the mechanism. Do it exactly like this:</p>
-    <video class="rvid" src="img/how-to.mp4" poster="img/how-to-poster.webp" controls playsinline preload="none"></video>
-    <div class="prep">
-      <div class="pstep"><h3>Warm</h3><p>Scoop a coin-sized amount into your palms and rub them together for a few seconds to warm the cream and activate the guaraná complex.</p></div>
-      <div class="pstep"><h3>Massage in Firm Upward Circles</h3><p>Apply to the bottom and upper thighs in firm, upward circular motions for 40–60 seconds per side. The upward direction and pressure drive the actives into the deeper layer — don't rush it.</p></div>
-      <div class="pstep"><h3>Once Daily (Twice for Faster Results)</h3><p>Use every day after your shower on clean, dry skin. For the fastest visible lift, repeat morning and night. Consistency beats intensity.</p></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== [19] SPECIAL OFFER + PACKS ===== -->
-<section id="offer-full" class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">Special Offer On Now!</h2>
-    <p class="subt">Try the Bumbum Brazilian Lift &amp; Firm Method 100% Risk-Free.</p>
-
-    <img class="aspband" src="img/aspirational-trio.webp" alt="Confident women with firm, lifted Brazilian curves at the beach" loading="lazy">
-    <p class="aspcap">This is the Brazilian-summer look — and it starts with 60 seconds a day.</p>
-
-    <div class="offerbox">
-      <div class="scarcity">
-        <div class="timer">⏳ Your best-price discount is reserved for<span class="clock" id="clock">15:00</span></div>
-        <div class="stockbar">Selling fast — only <b>23 jars</b> left at this price
-          <div class="track"><div class="fill"></div></div>
-        </div>
-      </div>
-      <p class="center" style="font-weight:700;color:#222;margin-bottom:4px">Act Now and You'll Get:</p>
-      <ul class="bonus">
-        <li>Premium Bumbum Brazilian Lift &amp; Firm Cream (30-day jar, full modelador strength)</li>
-        <li><strong>FREE BONUS:</strong> The Brazilian Lift Method Guide — the exact massage that drives the actives deep <em>(Value: $27)</em></li>
-        <li><strong>FREE BONUS:</strong> The GLP-1 Skin-Saver Protocol — how to firm while you drop weight on Ozempic/Mounjaro <em>(Value: $19)</em></li>
-        <li>FREE Priority Shipping from our Orlando, FL warehouse</li>
-        <li>The 60-Day "Firmer-or-It's-Free" Challenge — keep the jar even if you refund</li>
-      </ul>
-      <p class="totval"><s>Total Value: $105+</s></p>
-      <div class="socialpk"><span class="s">★★★★★</span> <b>4.8/5</b> from 4,100+ reviews · <b>15,870+</b> jars sold · loved by women in all 50 states</div>
-
-            <div class="packs">
-        <div class="pack td">
-          <img class="packimg" src="img/pack-1.webp" alt="1 jar of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">50% OFF</div>
-          <div class="tier">Test Drive</div>
-          <div class="jars">1 Jar</div>
-          <div class="per">30-day supply</div>
-          <div class="price"><s>$39.99</s>$19.99</div>
-          <a href="https://buy.stripe.com/eVq5kD41F6aFf5RfQVfMA0w" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack">
-          <img class="packimg" src="img/pack-3.webp" alt="3 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">Save 55%</div>
-          <div class="tier">The Ritual</div>
-          <div class="jars">3 Jars</div>
-          <div class="per">$17.99 per jar &middot; 90-day supply &middot; FREE shipping</div>
-          <div class="price"><s>$119.97</s>$53.97</div>
-          <a href="https://buy.stripe.com/00w28r69N9mR1f1bAFfMA0x" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack rec">
-          <div class="ribbon">&#11088; Most Popular</div>
-          <img class="packimg" src="img/pack-6.webp" alt="6 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="choice">Chosen by 8 in 10 customers</div>
-          <div class="save">Save 58%</div>
-          <div class="tier">The Transformation</div>
-          <div class="jars">6 Jars</div>
-          <div class="per">$16.65 per jar &middot; 180-day supply &middot; FREE shipping</div>
-          <div class="price"><s>$239.94</s>$99.90</div>
-          <div class="perday">The full 6-month firming ritual &mdash; the bestseller</div>
-          <a href="https://buy.stripe.com/00wdR941F8iN6zlcEJfMA0y" class="cta">ADD TO CART</a>
-        </div>
-        <div class="pack best">
-          <div class="ribbon">&#128142; Best Value</div>
-          <img class="packimg" src="img/pack-6.webp" alt="12 jars of Bumbum Brazilian Lift &amp; Firm Cream">
-          <div class="save">Save 60%</div>
-          <div class="tier">The Stockpile</div>
-          <div class="jars">12 Jars</div>
-          <div class="per">$15.99 per jar &middot; 360-day supply &middot; Priority shipping</div>
-          <div class="price"><s>$479.88</s>$191.88</div>
-          <a href="https://buy.stripe.com/14A3cvgOr56B9LxfQVfMA0z" class="cta">ADD TO CART</a>
-        </div>
-      </div>
-
-      <div class="expresspay">
-        Checkout in 3 seconds — no typing:
-        <div><span class="pill"> Pay</span><span class="pill g">G Pay</span></div>
-      </div>
-
-      <div class="todayonly"><span class="to">🔒 Secure &amp; encrypted checkout</span></div>
-      <p class="note"><b>Not available on Amazon or in stores.</b></p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 60% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
-
-<!-- ===== [20] DOCTOR REVIEWED ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sm">Dermatologist &amp; Aesthetician Recommended</h2>
-    <h2 class="sec" style="margin-bottom:14px">"I Recommend It to My Own Patients."</h2>
-    <div class="drblock">
-      <img class="drphoto" src="img/dr-beatriz.webp" alt="Dr. Beatriz Silva, board-certified dermatologist and aesthetician" loading="lazy">
-      <div class="drbody">
-        <div class="stars">★★★★★</div>
-        <p>"In 20 years as a dermatologist and aesthetician I've tested hundreds of firming creams — most are just moisturizer with a pretty label. The Brazilian <em>modelador</em> class is genuinely different: guaraná-derived caffeine plus the specific upward massage really do support the look of firmer, smoother, lifted skin. It's one of the very few I actually recommend to my own patients who want visible results without needles or surgery."</p>
-        <div class="drname">Dr. Beatriz Silva, MD<small>Board-Certified Dermatologist &amp; Aesthetician · 20+ years in practice</small></div>
-        <div class="drbadge">✔ Dermatologist Recommended</div>
-      </div>
-    </div>
-    <p class="secure">🔒 All transactions are secure and encrypted · <em>Not available on Amazon or eBay</em></p>
-  </div>
-</section>
-
-
-<!-- ===== [21] CUSTOMER REVIEWS ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <h2 class="sec">What Our Customers Say About Us</h2>
-    <div class="rate">
-      <div class="big">4.8</div>
-      <div class="stars" style="font-size:22px">★★★★★</div>
-      <p style="margin:4px 0 0">Average Rating · 4,100+ verified reviews</p>
-    </div>
-    <div class="rbar"><span>5★</span><div class="tr"><div class="fl" style="width:88%"></div></div><span>88%</span></div>
-    <div class="rbar"><span>4★</span><div class="tr"><div class="fl" style="width:12%"></div></div><span>12%</span></div>
-    <div class="rbar"><span>3★</span><div class="tr"><div class="fl" style="width:0%"></div></div><span>0%</span></div>
-
-    <div class="tcards" style="margin-top:22px">
-      <div class="tcard"><img class="revimg" src="img/rev-1.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I've been 'accepting' my post-baby body for 6 years. Bought this on a whim. Six weeks later my sister asked if I'd had 'work done.' That's the whole review. Ordering the 6-pack."</p><div class="nm">Carol J. — Austin, TX</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-3.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I genuinely almost booked a BBL. My Brazilian hairdresser talked me out of it and told me about modelador creams. This is the one she uses. I cannot believe the difference — and I still have all my money."</p><div class="nm">Deborah F.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-5.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"51 years old. Thought that ship had sailed. The lift is real and the stretch marks from my kids are noticeably lighter. My husband is now the one reminding ME to use it. Wild."</p><div class="nm">Gloria M. — Portland, OR</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-11.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"I'm on Mounjaro and terrified of the loose-skin thing everyone warns about. Started this the same week as my first shot. Down 22 lbs and my skin actually looks like it's keeping up. Wish more people talked about doing both together."</p><div class="nm">Danielle W.</div><span class="verif">Verified Buyer</span></div></div>
-      <div class="tcard"><img class="revimg" src="img/rev-12.webp" alt="Verified customer photo" loading="lazy"><div class="b"><div class="stars">★★★★★</div><p>"Skeptical Amazon-review reader here. The guaraná tingle is real, the smell is amazing, and after 6 weeks the mirror doesn't lie. I cancelled the $180 'designer' cream I was about to reorder on autopilot."</p><div class="nm">Monica L.</div><span class="verif">Verified Buyer</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 60% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
-
-<!-- ===== [22] FAQ ===== -->
-<section>
-  <div class="wrap">
-    <h2 class="sec">Frequently Asked Questions</h2>
-    <details><summary>What exactly is a "modelador" cream?</summary><div class="a">It's a body-modeling cream — a category Brazilian women have used daily for 30+ years to keep skin on the bottom and thighs firm, smooth and lifted-looking. It's a stronger, more active class than the "firming lotions" typically sold in the U.S. Bumbum brings that category to American women.</div></details>
-    <details><summary>Does it really work, or is it just moisturizer?</summary><div class="a">Fair question — you've probably been burned before. The difference is the active class: guaraná-derived caffeine (one of the most concentrated natural sources on earth) plus Brazilian botanicals, applied with a specific massage that drives them deeper. You'll feel the difference on day one, and you're protected by a 60-day firmer-or-free guarantee.</div></details>
-    <details><summary>What are the benefits?</summary><div class="a">Bumbum supports the look of firmer, lifted skin on the bottom and thighs, softens the appearance of cellulite and dimpling, helps fade the look of stretch marks, deeply hydrates crepey or loose skin, and improves overall tone and smoothness — all cosmetic, external results.</div></details>
-    <details><summary>My problem is different — loose skin after kids / lots of cellulite / I'm over 50.</summary><div class="a">Those are exactly the cases women reorder for. The formula targets the "deflated," crepey, dimpled texture that squats and lotions can't touch — post-pregnancy, post-weight-loss, and age-related loss of firmness — regardless of your starting point.</div></details>
-    <details><summary>How do I use it?</summary><div class="a">Warm a coin-sized amount in your palms, then massage into the bottom and upper thighs in firm, upward circular motions for 40–60 seconds per side, once daily after showering (twice for faster results). The massage direction and pressure are part of how it works — follow the free Brazilian Lift Method guide included with every order.</div></details>
-    <details><summary>How fast will I see results?</summary><div class="a">Skin feels firmer and smoother from the first few applications. Most women see visible changes in texture around 2–3 weeks and clear lift/firmness by about 6 weeks with daily use. The 3-jar "Ritual" pack is sized for the full 90-day transformation.</div></details>
-    <details><summary>How many jars do I need?</summary><div class="a">Each jar is about a 30-day supply used once daily. For visible lift most women want the full 90-day run (3-jar Ritual pack). The 6-jar Stockpile is for women who've seen the results and never want to run out — it's also the lowest price per jar.</div></details>
-    <details><summary>Is it safe? Any side effects?</summary><div class="a">Bumbum is a topical cosmetic made with skin-friendly Brazilian actives, dermatologist-tested, paraben- and sulfate-free, and produced in an FDA-registered facility. The guaraná may give a mild warming sensation (that's normal). Patch-test first, and if you're pregnant, nursing, or have a skin condition, check with your doctor.</div></details>
-    <details><summary>Will my partner think it's silly?</summary><div class="a">Most of our reviews mention the opposite — partners are usually the first to notice the change. It's a 60-second private ritual; nobody has to know it's the reason.</div></details>
-    <details><summary>Where is it made and shipped from?</summary><div class="a">Formulated with Brazilian actives and manufactured in an FDA-registered U.S. facility. Orders ship within 1–2 business days from our Orlando, FL warehouse, with most customers receiving their package in 3–5 business days. You'll get a tracking number as soon as it ships.</div></details>
-    <details><summary>How long does shipping take?</summary><div class="a">Orders ship within 1–2 business days. Most customers receive their order within 3–5 business days depending on location. You'll receive tracking information as soon as your order ships.</div></details>
-    <details><summary>What if it doesn't work for me?</summary><div class="a">Then it's free. Use it for 60 days. If you don't see your bottom looking visibly firmer and lifted — or you simply don't love it — email us for a full refund and keep the jar. No hassle, no questions.</div></details>
-  </div>
-</section>
-
-<!-- CTA repeat -->
-<div class="ctablk"><div class="wrap"><a href="#offer" class="cta">YES! FIRM MY BUMBUM — UP TO 60% OFF</a><div class="guarline">60-Day Money Back Guarantee</div></div></div>
-
-<!-- ===== [23] FINAL GUARANTEE ===== -->
-<section class="soft-bg">
-  <div class="wrap">
-    <div class="guar">
-      <img class="sealimg" src="img/guarantee-seal.webp" alt="60-Day Money-Back Guarantee">
-      <h3>The 60-Day Firmer-or-It's-Free Challenge</h3>
-      <p style="margin:0">Do the 60-second ritual every day for 60 days. If your bottom isn't visibly firmer and more lifted, I don't want your money — email us and we refund every penny, no need to send anything back. Keep the jar either way. The only way you lose is by not trying it.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="logo">BUMBUM</div>
-  <div><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Return Policy</a></div>
-  <p style="margin-top:12px">© 2026 Bumbum Beauty. All Rights Reserved.</p>
-  <p class="disc">These statements have not been evaluated by the FDA. This is a cosmetic product for external use and is not intended to diagnose, treat, cure, or prevent any disease. Results are cosmetic, refer to the appearance of skin, and vary from person to person. Testimonials reflect individual experiences and are not a guarantee of results.</p>
-</footer>
-
-<!-- sticky mobile CTA -->
-<div class="sticky"><a href="#offer" class="cta">🍑 ADD TO CART — from $15.99/jar · UP TO 60% OFF</a></div>
-
-<!-- recent-purchase social proof toast -->
-<div class="toast" id="toast">
-  <div class="tav" id="toastAv">A</div>
-  <div class="tx" id="toastTx"></div>
-</div>
-
-<script>
-(function(){
-  // 1) Data de envio dinâmica (+2 dias úteis)
-  try{
-    var d=new Date(), added=0;
-    while(added<2){ d.setDate(d.getDate()+1); var wd=d.getDay(); if(wd!==0&&wd!==6) added++; }
-    var el=document.getElementById('shipdate');
-    if(el) el.textContent=d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
-  }catch(e){}
-
-  // 2) Timer de reserva (15:00, reinicia pra nunca zerar)
-  var clock=document.getElementById('clock');
-  if(clock){
-    var t=15*60;
-    setInterval(function(){
-      t--; if(t<0) t=15*60;
-      var m=Math.floor(t/60), s=t%60;
-      clock.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-    },1000);
-  }
-
-  // 3) Dead-clicks -> rola pra oferta
-  document.querySelectorAll('[data-scroll]').forEach(function(el){
-    el.addEventListener('click',function(){
-      var o=document.getElementById('offer'); if(o) o.scrollIntoView({behavior:'smooth'});
-    });
-  });
-
-  // 4) InitiateCheckout apenas nos botões de checkout reais (Stripe) — Meta + Clarity
-  document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function(b){
-    b.addEventListener('click',function(){
-      try{ if(window.fbq) fbq('track','InitiateCheckout'); }catch(e){}
-      try{ if(window.clarity) clarity('event','initiate_checkout'); }catch(e){}
-    });
-  });
-
-  // 5) Toast de compra recente (prova social)
-  var names=[['Ana','Miami, FL'],['Jessica','Dallas, TX'],['Maria','Orlando, FL'],['Ashley','Phoenix, AZ'],
-    ['Bruna','San Diego, CA'],['Karen','Atlanta, GA'],['Nicole','Denver, CO'],['Camila','Houston, TX']];
-  var packs=['3 jars','2 jars','the 6-jar pack','1 jar'];
-  var toast=document.getElementById('toast'), tav=document.getElementById('toastAv'), tx=document.getElementById('toastTx');
-  function pop(){
-    var n=names[Math.floor(Math.random()*names.length)];
-    var p=packs[Math.floor(Math.random()*packs.length)];
-    var mins=Math.floor(Math.random()*20)+1;
-    tav.textContent=n[0].charAt(0);
-    tx.innerHTML='<b>'+n[0]+' from '+n[1]+'</b><br>just ordered '+p+' <small>· '+mins+' min ago ✔</small>';
-    toast.classList.add('show');
-    setTimeout(function(){ toast.classList.remove('show'); }, 5000);
-  }
-  setTimeout(function(){ pop(); setInterval(pop, 18000); }, 6000);
-})();
-</script>
-
-<div class="vlModal" id="vlModal" onclick="if(event.target===this)galVideoClose()">
-  <button class="vlClose" onclick="galVideoClose()" aria-label="Close">×</button>
-  <div class="vlframe"><iframe id="vlIframe" allow="autoplay; fullscreen; encrypted-media" allowfullscreen></iframe></div>
-</div>
-<script>
-function galVideo(){var m=document.getElementById('vlModal'),fr=document.getElementById('vlIframe');if(!fr.getAttribute('src'))fr.setAttribute('src','https://drive.google.com/file/d/1_vzuu0dJIvFWIoSMN8ybl7oxcxpTxbFe/preview');m.classList.add('open');}
-function galVideoClose(){var m=document.getElementById('vlModal'),fr=document.getElementById('vlIframe');m.classList.remove('open');fr.setAttribute('src','');}
-(function(){var t=15*60,el=document.getElementById('obTimer');if(el)setInterval(function(){t--;if(t<0)t=15*60;var m=Math.floor(t/60),ss=t%60;el.textContent=(m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;},1000);})();
-</script>
-<!-- ===== exit-intent popup ===== -->
-<div class="exitpop" id="exitpop" onclick="if(event.target===this)closeExit()">
-  <div class="exitbox">
-    <button class="exitclose" onclick="closeExit()" aria-label="Close">×</button>
-    <div class="exithead">WAIT — Don't Leave Without Your Discount! 🍑</div>
-    <p>Your <b>UP TO 60% OFF</b> + FREE shipping is still reserved… but only for a few more minutes.</p>
-    <img class="exitimg" src="img/pack-3.webp" alt="Bumbum 3-jar pack" loading="lazy">
-    <a href="#offer" class="cta" onclick="closeExit()">YES — CLAIM MY 60% OFF →</a>
-    <p class="exitsmall">🛡️ 60-day money-back guarantee · 15,870+ happy women</p>
-  </div>
-</div>
-<script>
-(function(){
-  var shown=false;
-  function show(){ if(shown)return; try{if(sessionStorage.getItem('bb_exit'))return;sessionStorage.setItem('bb_exit','1')}catch(e){} shown=true; document.getElementById('exitpop').classList.add('open'); }
-  window.closeExit=function(){ document.getElementById('exitpop').classList.remove('open'); };
-  document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY<=0) show(); });
-  var maxY=0; window.addEventListener('scroll', function(){ var y=window.scrollY||window.pageYOffset; if(y>maxY)maxY=y; if(maxY>900 && y<140) show(); }, {passive:true});
-})();
-</script>
-<script>/*offerScrollFix*/(function(){function go(e){var o=document.getElementById("offer");if(o){e.preventDefault();o.scrollIntoView({behavior:"smooth",block:"start"});}}document.querySelectorAll('a[href="#offer"]').forEach(function(a){a.addEventListener("click",go);});})();</script>
+      setTimeout(show,6000); setInterval(show,24000);
+    }
+  })();
+  </script>
 <!-- === RedTrack: preserve rtkcid, pass to Stripe (client_reference_id) + InitiateCheckout postback (adapted to new 1/3/6/12 offer) === -->
 <script>
 (function(){
@@ -1134,6 +830,6 @@ function galVideoClose(){var m=document.getElementById('vlModal'),fr=document.ge
 })();
 </script>
 <!-- === END RedTrack === -->
-
+<script>try{if(window.clarity)clarity('event','advertorial_view');}catch(e){}</script>
 </body>
 </html>
