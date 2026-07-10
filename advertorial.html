@@ -179,6 +179,8 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
     .wrap{padding:0 16px;}
     .layout{flex-direction:column;gap:0;padding:20px 0 44px;}
     .aside{display:none;}
+    body{padding-bottom:80px;}
+    .stickybar .btn{white-space:nowrap;}
     .eyebrow{font-size:18px;}
     h1.headline{font-size:32px;letter-spacing:-.5px;}
     .subhead{font-size:18px;}
@@ -261,7 +263,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
     .comment .av{flex:0 0 36px;width:36px;height:36px;font-size:13px;}
     .comment .ctext{font-size:15px;}
     .comment.reply{margin-left:20px;}
-    .disc-note{margin:28px 0 96px;font-size:11px;}
+    .disc-note{margin:28px 0 20px;font-size:11px;}
     .stickybar{padding:8px 10px;}
     .stickybar .inner{padding:11px 14px;}
     .stickybar .btn{font-size:16px;letter-spacing:.5px;}
@@ -272,6 +274,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
     .cmp tbody th{font-size:9.5px;}
     .cmp th:first-child,.cmp td:first-child{width:50px;}
     .livetoast{font-size:13px;padding:10px 13px;}
+  }
+  @media(max-width:400px){
+    h1.headline{font-size:24px;}
+    .masthead .brand{font-size:20px;}
+    .stickybar .btn{font-size:15px;letter-spacing:.3px;}
+    .price{padding:14px 12px;gap:8px;}
+    .price .money .big{font-size:23px;}
   }
 </style>
 </head>
