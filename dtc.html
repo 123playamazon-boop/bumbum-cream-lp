@@ -680,5 +680,51 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 </script>
 <!-- === END RedTrack === -->
 <script>try{if(window.clarity)clarity('event','viewed_offer');}catch(e){}</script>
+<!-- ===== EXIT-INTENT POPUP (urgency + guarantee) ===== -->
+<style>
+  .exitpop{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(20,10,15,.62);padding:18px;}
+  .exitpop .card{position:relative;max-width:440px;width:100%;background:#fff;border-radius:20px;padding:30px 26px 24px;box-shadow:0 24px 70px rgba(0,0,0,.35);text-align:center;animation:exppop .25s ease;}
+  @keyframes exppop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+  .exitpop .x{position:absolute;top:12px;right:14px;width:32px;height:32px;border:0;background:#f1eef0;border-radius:50%;font-size:18px;color:#666;cursor:pointer;line-height:1;}
+  .exitpop .seal{width:92px;height:92px;margin:0 auto 4px;display:block;}
+  .exitpop .ey{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#ea0889;}
+  .exitpop h3{font-size:25px;line-height:1.12;margin:6px 0 10px;color:#1b1b1b;font-weight:800;letter-spacing:-.3px;}
+  .exitpop p{font-size:16px;line-height:1.55;color:#3a3a3a;margin:0 0 14px;}
+  .exitpop .urg{display:inline-block;background:#fff3f0;border:1px solid #f4d4be;color:#a6231f;font-weight:800;font-size:14px;border-radius:10px;padding:8px 14px;margin:0 0 14px;}
+  .exitpop .cta{display:block;width:100%;background:#ea0889;color:#fff;border:0;border-radius:12px;padding:17px;font-size:18px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;box-shadow:0 8px 20px rgba(234,8,137,.32);}
+  .exitpop .no{display:inline-block;margin-top:12px;font-size:13px;color:#9a9a9a;background:none;border:0;cursor:pointer;text-decoration:underline;}
+  @media(max-width:560px){.exitpop .card{padding:26px 18px 20px;} .exitpop h3{font-size:22px;} .exitpop p{font-size:15px;}}
+</style>
+<div class="exitpop" id="exitpop" role="dialog" aria-modal="true" aria-label="Wait before you go">
+  <div class="card">
+    <button class="x" id="exitX" aria-label="Close">&times;</button>
+    <img class="seal" src="img/guarantee-seal.webp" alt="60-day money-back guarantee">
+    <div class="ey">Wait &mdash; before you go</div>
+    <h3>Don&rsquo;t Let The Mirror Win Another Year</h3>
+    <p>You came this close. Your <b>up to 60% off</b> is still held right now &mdash; but this batch is limited, and it may be gone when you come back.</p>
+    <div class="urg">&#9203; Your discount is still active &mdash; for now</div>
+    <p>And you risk <b>nothing</b>: try it 60 full days. If your skin isn&rsquo;t visibly firmer, you get <b>every penny back</b> &mdash; even on an opened jar. The only way to lose is to close this and stay exactly where you are.</p>
+    <a class="cta" id="exitCta" href="#offer">YES &mdash; FIRM MY BUTT IN 6 WEEKS &rarr;</a>
+    <button class="no" id="exitNo">No thanks, maybe next summer</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='bb_exit_shown', pop=document.getElementById('exitpop'); if(!pop) return;
+  var shown=false;
+  function show(){ if(shown)return; try{if(sessionStorage.getItem(KEY))return;}catch(e){} shown=true; try{sessionStorage.setItem(KEY,'1');}catch(e){} pop.style.display='flex'; try{if(window.clarity)clarity('event','exit_popup');}catch(e){} }
+  function hide(){ pop.style.display='none'; }
+  document.getElementById('exitX').addEventListener('click',hide);
+  document.getElementById('exitNo').addEventListener('click',hide);
+  document.getElementById('exitCta').addEventListener('click',function(){ hide(); var o=document.getElementById('offer'); if(o){o.scrollIntoView({behavior:'smooth'});} });
+  pop.addEventListener('click',function(e){ if(e.target===pop) hide(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') hide(); });
+  // desktop: pointer leaves toward the top of the window
+  document.addEventListener('mouseout',function(e){ if(e.clientY<=0 && !e.relatedTarget){ show(); } });
+  // mobile: gentle back-button trap (one interception per session)
+  try{ history.pushState(null,'',location.href); window.addEventListener('popstate',function(){ if(!shown) show(); }); }catch(e){}
+})();
+</script>
+<!-- ===== END EXIT-INTENT POPUP ===== -->
 </body>
 </html>
