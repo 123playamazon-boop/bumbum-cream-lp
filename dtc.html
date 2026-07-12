@@ -726,5 +726,37 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 })();
 </script>
 <!-- ===== END EXIT-INTENT POPUP ===== -->
+<!-- ===== IN-APP BROWSER NUDGE (open in Safari/Chrome so Apple Pay works) ===== -->
+<style>
+  #iabnudge{position:fixed;top:0;left:0;right:0;z-index:10001;display:none;background:linear-gradient(90deg,#ea0889,#ff5aa8);color:#fff;padding:11px 42px 11px 14px;box-shadow:0 4px 16px rgba(0,0,0,.28);font-size:14px;line-height:1.35;}
+  #iabnudge .in{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;text-align:center;font-weight:600;}
+  #iabnudge b{font-weight:800;}
+  #iabnudge .btn{display:inline-block;background:#fff;color:#c40a6f;font-weight:800;border-radius:8px;padding:7px 15px;text-decoration:none;white-space:nowrap;}
+  #iabnudge .x{position:absolute;top:9px;right:10px;width:26px;height:26px;border:0;background:rgba(255,255,255,.22);color:#fff;border-radius:50%;font-size:15px;line-height:1;cursor:pointer;}
+  @media(max-width:560px){#iabnudge{font-size:13px;padding:10px 38px 10px 12px;} #iabnudge .in{gap:7px;}}
+</style>
+<div id="iabnudge"><button class="x" id="iabX" aria-label="Close">&times;</button><div class="in" id="iabin"></div></div>
+<script>
+(function(){
+  var ua=navigator.userAgent||'';
+  if(!/FBAN|FBAV|FB_IAB|FBIOS|FB4A|Instagram|Line\/|Snapchat|TikTok|musical/i.test(ua)) return;
+  try{ if(sessionStorage.getItem('iab_dismiss')) return; }catch(e){}
+  var isAndroid=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua);
+  var bar=document.getElementById('iabnudge'), box=document.getElementById('iabin'), html='';
+  if(isAndroid){
+    var intent='intent://'+location.href.replace(/^https?:\/\//,'')+'#Intent;scheme=https;package=com.android.chrome;end';
+    html='<span>&#9889; For <b>1-tap checkout</b> with Google&nbsp;Pay, open in Chrome:</span><a class="btn" href="'+intent+'">Open in Chrome &rarr;</a>';
+  } else if(isIOS){
+    html='<span>&#9889; For <b>1-tap Apple&nbsp;Pay</b> at checkout, tap <b>&#8943;</b> (top&#8209;right) then <b>Open in Safari</b></span>';
+  } else {
+    html='<span>&#9889; For <b>faster 1-tap checkout</b>, open this page in your browser (menu &rarr; Open in browser).</span>';
+  }
+  box.innerHTML=html; bar.style.display='block';
+  document.body.style.paddingTop=(bar.offsetHeight||46)+'px';
+  document.getElementById('iabX').addEventListener('click',function(){ bar.style.display='none'; document.body.style.paddingTop=''; try{sessionStorage.setItem('iab_dismiss','1');}catch(e){} });
+  try{ if(window.clarity) clarity('event','inapp_nudge_shown'); }catch(e){}
+})();
+</script>
+<!-- ===== END IN-APP BROWSER NUDGE ===== -->
 </body>
 </html>
