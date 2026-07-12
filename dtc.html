@@ -245,7 +245,32 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 
       <!-- LEFT: gallery -->
       <div class="gallery">
-        <div class="main"><img src="img/00-product.webp" alt="Bumbum cream jar"><div class="badge">8 OZ JAR · BODY CREAM</div></div>
+        <style>
+          .carousel{position:relative;border-radius:16px;overflow:hidden;background:var(--green-soft2);border:1px solid var(--line);}
+          .carousel .cslides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+          .carousel .cslides::-webkit-scrollbar{display:none;}
+          .carousel .cslide{position:relative;flex:0 0 100%;scroll-snap-align:center;}
+          .carousel .cslide img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;}
+          .carousel .cbtn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.9);box-shadow:0 2px 10px rgba(0,0,0,.18);font-size:24px;line-height:1;color:#333;cursor:pointer;z-index:3;display:flex;align-items:center;justify-content:center;padding:0;}
+          .carousel .cprev{left:8px;} .carousel .cnext{right:8px;}
+          .carousel .cdots{position:absolute;bottom:10px;left:0;right:0;display:flex;gap:6px;justify-content:center;z-index:3;}
+          .carousel .cdots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.7);box-shadow:0 1px 3px rgba(0,0,0,.25);cursor:pointer;padding:0;transition:.2s;}
+          .carousel .cdots button.on{background:var(--green);width:22px;border-radius:4px;}
+          @media(max-width:560px){.carousel .cbtn{width:34px;height:34px;font-size:21px;}}
+        </style>
+        <div class="carousel">
+          <div class="cslides" id="cslides">
+            <div class="cslide"><img src="img/00-product.webp" alt="Bumbum cream jar"><div class="badge">8 OZ JAR &middot; BODY CREAM</div></div>
+            <div class="cslide"><img src="img/slide-ba.webp" alt="Before and after &mdash; cellulite smoothed, skin firmed and lifted" loading="lazy"></div>
+            <div class="cslide"><img src="img/slide-result.webp" alt="Firm, smooth, glowing skin" loading="lazy"></div>
+            <div class="cslide"><img src="img/slide-ingredients.webp" alt="Guaran&aacute;, cupua&ccedil;u butter and a&ccedil;a&iacute; actives" loading="lazy"></div>
+            <div class="cslide"><img src="img/slide-apply.webp" alt="The 60-second daily massage ritual" loading="lazy"></div>
+            <div class="cslide"><img src="img/slide-guarantee.webp" alt="60-day money-back guarantee" loading="lazy"></div>
+          </div>
+          <button class="cbtn cprev" type="button" aria-label="Previous">&#8249;</button>
+          <button class="cbtn cnext" type="button" aria-label="Next">&#8250;</button>
+          <div class="cdots" id="cdots"></div>
+        </div>
         <div class="tiles">
           <div class="tile"><span class="ic">&#128293;</span>Firms &amp; lifts in 6 weeks</div>
           <div class="tile"><span class="ic">&#127825;</span>Guaran&aacute; modelador</div>
@@ -782,5 +807,17 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 })();
 </script>
 <!-- ===== END IN-APP BROWSER NUDGE ===== -->
+<script>
+(function(){
+  var track=document.getElementById('cslides'); if(!track) return;
+  var dots=document.getElementById('cdots'), n=track.children.length, i;
+  for(i=0;i<n;i++){ var b=document.createElement('button'); b.type='button'; b.setAttribute('data-i',i); if(i===0)b.className='on'; dots.appendChild(b); }
+  var wrap=track.parentNode;
+  wrap.querySelector('.cprev').addEventListener('click',function(){ track.scrollBy({left:-track.clientWidth,behavior:'smooth'}); });
+  wrap.querySelector('.cnext').addEventListener('click',function(){ track.scrollBy({left:track.clientWidth,behavior:'smooth'}); });
+  dots.addEventListener('click',function(e){ var d=e.target.getAttribute('data-i'); if(d!==null) track.scrollTo({left:track.clientWidth*(+d),behavior:'smooth'}); });
+  var t; track.addEventListener('scroll',function(){ clearTimeout(t); t=setTimeout(function(){ var idx=Math.round(track.scrollLeft/track.clientWidth), j; for(j=0;j<dots.children.length;j++){ dots.children[j].className=(j===idx?'on':''); } },60); },{passive:true});
+})();
+</script>
 </body>
 </html>
