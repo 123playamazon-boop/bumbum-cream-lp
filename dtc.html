@@ -851,5 +851,44 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 })();
 </script>
 <!-- END LIVE SALES TOAST -->
+  <!-- Param passthrough (dev) -->
+  <script>
+  function repassarParametrosParaLinks() {
+    const parametrosAtuais = new URLSearchParams(window.location.search);
+    if (parametrosAtuais.toString() === "") return;
+    const links = document.querySelectorAll("a");
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+        return;
+      }
+      try {
+        const urlDoLink = new URL(link.href);
+        let linkFoiAlterado = false;
+        parametrosAtuais.forEach((valor, chave) => {
+          if (urlDoLink.searchParams.get(chave) !== valor) {
+            urlDoLink.searchParams.set(chave, valor);
+            linkFoiAlterado = true;
+          }
+        });
+        if (linkFoiAlterado) {
+          link.href = urlDoLink.toString();
+        }
+      } catch (erro) {}
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    repassarParametrosParaLinks();
+    const observer = new MutationObserver(function (mutations) {
+      let novos = false;
+      for (const mutation of mutations) {
+        if (mutation.addedNodes.length > 0) { novos = true; break; }
+      }
+      if (novos) { repassarParametrosParaLinks(); }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+  </script>
+  <!-- End param passthrough -->
 </body>
 </html>
