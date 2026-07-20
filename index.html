@@ -988,7 +988,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
           if(isStripe||isInternal||isShopify) u.searchParams.set('rtkcid', rtkcid);
         }
         if(isInternal) CARRY.forEach(function(k){ var v=P.get(k); if(v) u.searchParams.set(k,v); });
-        a.href=u.toString();
+        var out=u.toString();
+        if(rtkcid && isShopify && /\/cart\//.test(u.pathname)){ out += (out.indexOf('?')>-1?'&':'?') + 'attributes[rtkcid]=' + encodeURIComponent(rtkcid); }
+        a.href=out;
       }catch(e){}
     });
     if(!rtkcid) return;
