@@ -993,17 +993,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
         a.href=out;
       }catch(e){}
     });
-    if(!rtkcid) return;
-    document.querySelectorAll('a[href*="/cart/"]').forEach(function(a){
-      a.addEventListener('click', function(){
-        var info=VARIANT_PACK[variantId(a.href)]||{pack:'',value:''};
-        var pb='https://'+RTK_DOMAIN+'/postback?clickid='+encodeURIComponent(rtkcid)
-              +'&type=InitiateCheckout&status=approved'
-              +(info.pack?('&pack='+info.pack):'')
-              +(info.value?('&value='+info.value):'');
-        try{ navigator.sendBeacon ? navigator.sendBeacon(pb) : (new Image().src=pb); }catch(e){}
-      });
-    });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', decorate);
   else decorate();
