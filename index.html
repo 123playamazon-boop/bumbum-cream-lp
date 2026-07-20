@@ -299,7 +299,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 
         <!-- HERO -->
         <p class="eyebrow">A Beverly Hills dermatologist breaks her silence on the $120 &ldquo;firming&rdquo; cream in your bathroom &mdash;</p>
-        <h1 class="headline" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">Brazilian Women In Their 40s Have <span class="hl">Firmer, Rounder Butts Than Girls Half Their Age</span> &mdash; And It's Not Surgery, Not Genetics, Not A Single Squat</h1>
+        <h1 class="headline" style="cursor:pointer" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">Brazilian Women 40+ Have <span class="hl">Firmer, Rounder Butts Than 25-Year-Olds</span> &mdash; And It's A $1-A-Day Cream, Not A $12,000 BBL</h1>
         <p class="subhead">American women have been <b>quietly conned</b>. We keep throwing $120 at &ldquo;firming&rdquo; creams that do <b>absolutely nothing</b> &mdash; while Brazilian women rub in a <b>$1-a-day ritual</b> their grandmothers have used for 30 years. It was never willpower or good genes. It&rsquo;s an entire product category American brands <b>buried on purpose</b>: the <em>modelador</em>. Flip your $120 jar over and read the back &mdash; water, glycerin, fragrance, and a $110 markup for the logo on the front.</p>
         <p class="subhead" style="font-weight:600;border-left:4px solid var(--green);padding-left:16px;">Visibly firmer, lifted skin on your butt in <b>6 weeks</b> &mdash; <b>even if</b> you're past 40, <b>even if</b> you've had two kids, <b>even if</b> you're convinced nothing will <em>ever</em> work back there again.</p>
         <p class="byline">By <b>Dr. Beatriz Moreira, M.D.</b> &middot; Board-Certified Dermatologist &middot; June 30, 2026 &middot; 7 min read</p>
@@ -1131,5 +1131,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
   });
   </script>
   <!-- End param passthrough -->
+<style>.main .subhead,.main .xlist li,.main .checkrow{cursor:pointer;}</style>
+<script>/* DEADCLICK-TO-OFFER */
+(function(){var m=document.querySelector(".main");if(!m)return;m.addEventListener("click",function(e){var t=e.target;if(t.closest&&t.closest("a,button,input,textarea,select,summary,details,label,.pricing,.minicta,.stickybar,.exitpop,.faq"))return;try{if(window.getSelection&&String(window.getSelection()).length>0)return;}catch(_){}var o=document.getElementById("offer");if(o)o.scrollIntoView({behavior:"smooth"});});})();
+</script>
 </body>
 </html>
