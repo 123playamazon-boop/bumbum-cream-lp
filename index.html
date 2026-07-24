@@ -292,6 +292,25 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
     .price .money .big{font-size:23px;}
   }
 </style>
+<!-- Start NB Pixel Snippet -->
+<script>
+!(function (e, n, t, i, p, a, s) {
+  e[i] ||
+    (((p = e[i] =
+      function () {
+        p.process ? p.process.apply(p, arguments) : p.queue.push(arguments);
+      }).queue = []),
+    (p.t = +new Date()),
+    ((a = n.createElement(t)).async = 1),
+    (a.src =
+      'https://static.newsbreak.com/business/tracking/nbpixel.js?t=' +
+      864e5 * Math.ceil(new Date() / 864e5)),
+    (s = n.getElementsByTagName(t)[0]).parentNode.insertBefore(a, s));
+})(window, document, 'script', 'nbpix'),
+  nbpix('init', 'ID-2044894884434694145'),
+  nbpix('event', 'pageload');
+</script>
+<!-- End NB Pixel Snippet -->
 </head>
 <body>
 
@@ -1098,5 +1117,13 @@ h2{font-family:Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.3px}
 .ed-nav a.on{color:#cc0000;border-bottom:3px solid #cc0000;padding-bottom:6px}
 @media(max-width:600px){.headline{font-size:30px}.main p:not([class]),.subhead,.lead-drop{font-size:17.5px}.ed-brand{font-size:18px}}
 </style>
+<!-- NB InitiateCheckout on buy click -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('a[href*="/cart/"]').forEach(function(el){
+    el.addEventListener('click',function(){ try{ nbpix('event','initiate_checkout'); }catch(e){} });
+  });
+});
+</script>
 </body>
 </html>
