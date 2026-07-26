@@ -135,6 +135,31 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
 .foot{text-align:center;font-size:12px;color:var(--muted);padding:8px 0 50px}
 .foot a{color:var(--muted)}
 @media(max-width:560px){h1{font-size:26px}h2{font-size:22px}.probs{grid-template-columns:1fr 1fr}.ingrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.statwrap{grid-template-columns:1fr}.doc{grid-template-columns:1fr}.doc img{width:100%;height:auto}.rgrid{grid-template-columns:1fr}}
+.cmp{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 8px;text-align:center}
+.cmp thead th{background:#1b1b1b;color:#fff;font-size:12.5px}
+.cmp thead th.best{background:var(--red)}
+.cmp tbody th{text-align:left;font-weight:700;background:#fafafa;font-size:13px}
+.cmp td.best{background:var(--redbg);color:var(--redink);font-weight:800}
+.cmp .yes{color:var(--green);font-weight:900}.cmp .no{color:#c0392b;font-weight:900}
+.whatsin{border:2px solid var(--line);border-radius:16px;padding:18px;margin:22px 0;display:grid;grid-template-columns:1fr 1.2fr;gap:16px;align-items:center}
+.whatsin img{border-radius:12px;width:100%}
+.whatsin ul{list-style:none;padding:0;margin:0}
+.whatsin li{padding:7px 0 7px 28px;position:relative;font-size:15.5px}
+.whatsin li:before{content:'\2713';position:absolute;left:0;color:var(--green);font-weight:900}
+.swave{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.sc{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.sc .h{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.sc .av{width:30px;height:30px;border-radius:50%;background:var(--redbg);color:var(--red);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:13px;flex:0 0 30px}
+.sc .nm{font-weight:700;font-size:12.5px}.sc .st{color:var(--amber);font-size:12px;letter-spacing:1px}
+.sc p{margin:0;font-size:13.5px;color:#333}
+.vidrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.vidrow video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000}
+.bonus{list-style:none;padding:0;margin:16px auto;max-width:460px}
+.bonus li{padding:8px 0 8px 30px;position:relative;font-size:16px;font-weight:600}
+.bonus li:before{content:'\2713';position:absolute;left:2px;color:var(--green);font-weight:900;font-size:18px}
+.cscar{text-align:center;font-size:12.5px;color:var(--redink);margin:6px 0 0;font-weight:600}
+@media(max-width:560px){.whatsin{grid-template-columns:1fr}.swave{grid-template-columns:1fr}.vidrow{grid-template-columns:1fr}.cmp{font-size:12px}}
 </style>
 </head>
 <body>
@@ -212,6 +237,7 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
     <div class="t" style="font-weight:900;font-size:19px;color:#14181f">Try Bumbum &mdash; 60 Days Risk-Free</div>
     <p style="margin:6px 0 12px;font-size:14.5px;color:#444">Every order is backed by our 60-day money-back guarantee. All transactions are secure and encrypted.</p>
     <a class="cta" href="#offer" style="margin-top:0">Get Up To 64% Off &rarr;</a>
+    <p class="cscar">&#128666; Ships in 24h from the USA &middot; small-batch &mdash; may sell out</p>
   </div>
 
   <h2>Loved By Thousands of Women</h2>
@@ -229,6 +255,26 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
   </ul>
   <figure class="emofig"><img src="img/02-benefits.webp" alt="What Bumbum does" onerror="this.style.display='none'"></figure>
 
+  <h2>Bumbum vs. Everything Else You&rsquo;ve Tried</h2>
+  <table class="cmp">
+    <thead><tr><th></th><th>Drugstore<br>firming lotion</th><th>Spa cellulite<br>massage</th><th>Laser /<br>BBL</th><th class="best">Bumbum</th></tr></thead>
+    <tbody>
+      <tr><th>Reaches the deep (septae) layer</th><td class="no">&#10007;</td><td>Briefly</td><td>Surgically</td><td class="best">Daily</td></tr>
+      <tr><th>Softens cellulite &amp; stretch marks</th><td class="no">&#10007;</td><td class="no">&#10007;</td><td>Some</td><td class="best">Both</td></tr>
+      <tr><th>No needles, no downtime</th><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="no">&#10007;</td><td class="best">&#10003;</td></tr>
+      <tr><th>Typical cost</th><td>~$120/jar</td><td>$200+/visit</td><td>$8k&ndash;$15k</td><td class="best">from $25/jar</td></tr>
+      <tr><th>60-day money-back</th><td class="no">&#10007;</td><td class="no">&#10007;</td><td class="no">&#10007;</td><td class="best">&#10003;</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What Women Are Saying</h2>
+  <div class="swave">
+    <div class="sc"><div class="h"><div class="av">R</div><div><div class="nm">Rebecca &middot; verified</div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p>&ldquo;Ordered on a whim after my sister raved. Three weeks and the dimpling on my thighs is genuinely softer.&rdquo;</p></div>
+    <div class="sc"><div class="h"><div class="av">T</div><div><div class="nm">Toni &middot; verified</div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p>&ldquo;The stretch marks from my pregnancies are finally fading. Sixty seconds after my shower and that&rsquo;s it.&rdquo;</p></div>
+    <div class="sc"><div class="h"><div class="av">G</div><div><div class="nm">Gina &middot; verified</div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p>&ldquo;I was about to book a $9k procedure. Tried this first and cancelled the consult. My husband noticed before I told him.&rdquo;</p></div>
+    <div class="sc"><div class="h"><div class="av">M</div><div><div class="nm">Maribel &middot; verified</div><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p>&ldquo;I&rsquo;ve wasted so much money on creams. This is the first one that actually did something you can see.&rdquo;</p></div>
+  </div>
+
   <h2>How To Use &mdash; Just 60 Seconds</h2>
   <div class="steps">
     <div class="step"><div class="n">1</div><b>Apply</b><p>A small amount to your bottom and thighs after your shower.</p></div>
@@ -236,6 +282,12 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
     <div class="step"><div class="n">3</div><b>That&rsquo;s it</b><p>Once a day. No gym, no diet, no surgery required.</p></div>
   </div>
   <video controls playsinline preload="none" poster="img/how-to-poster.webp" style="max-width:400px;margin:6px auto 0"><source src="img/how-to-use.mp4" type="video/mp4"></video>
+
+  <p style="text-align:center;font-size:14px;color:var(--muted);margin-top:18px">See it in action &mdash; the 60-second ritual, and a real customer:</p>
+  <div class="vidrow">
+    <video controls playsinline preload="none" poster="img/routine_poster.webp"><source src="img/routine_demo.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="none" poster="img/testimonial-poster.webp"><source src="img/testimonial-real.mp4" type="video/mp4"></video>
+  </div>
 
   <h2>How Long Until I See A Difference?</h2>
   <div class="timeline">
@@ -278,6 +330,17 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
     <div class="rc"><img src="img/rev-10.webp" alt="Verified customer" onerror="this.style.display='none'"><div class="b"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="nm">Priya N. &middot; 44</div><p>&ldquo;The crepey skin after my second baby is what wore me down. This is the first thing that actually tightened it back.&rdquo;</p></div></div>
   </div>
 
+  <h2>What Comes In Every Jar</h2>
+  <div class="whatsin">
+    <img src="img/03-features.webp" alt="Bumbum jar and what's included" onerror="this.style.display='none'">
+    <ul>
+      <li><b>8 fl oz (237 mL) jar</b> &mdash; about 30 days of the daily 60-second ritual</li>
+      <li><b>The full guaran&aacute; modelador blend</b> &mdash; concentrated guaran&aacute;, cupua&ccedil;u butter &amp; Amazonian a&ccedil;a&iacute;</li>
+      <li><b>Quick-start routine card</b> &mdash; exactly how and where to apply for best results</li>
+      <li><b>60-day money-back guarantee</b> &mdash; keep the jar even if you send it back</li>
+    </ul>
+  </div>
+
   <h2 id="offer">Claim Up To 64% Off &mdash; Before This Batch Sells Out</h2>
   <p>You won&rsquo;t find Bumbum on a shelf next to the $120 designer jars &mdash; it ships direct from the brand, which is how a real guaran&aacute; modelador drops to as little as <b>$25 a jar</b>. For context: a BBL runs $8,000&ndash;$15,000 with weeks of recovery.</p>
   <div class="offer">
@@ -292,6 +355,12 @@ h3{font-size:18px;margin:0 0 4px;font-weight:800}
   </div>
   <div class="scarce">&#9203; Bumbum is small-batch and blended in the USA. When a batch sells out, restocking takes about 30 days &mdash; and this discount may not return with it. If it&rsquo;s in stock, this is the time.</div>
 
+  <ul class="bonus">
+    <li>Biggest discount &mdash; up to 64% off at today&rsquo;s price</li>
+    <li>Free US shipping on every kit</li>
+    <li>60-day money-back guarantee &mdash; keep the jar</li>
+    <li>Free lifetime customer support</li>
+  </ul>
   <a class="cta" href="https://itsbrazilianusa.com/cart/53027149545761:1">Claim Your Discount Before This Batch Is Gone &rarr;</a>
   <p class="subcta">One-time purchase &middot; no subscription &middot; free US shipping &middot; 60-day money-back guarantee</p>
 
