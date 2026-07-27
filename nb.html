@@ -129,6 +129,7 @@ h2{font-family:Georgia,serif;font-size:25px;line-height:1.26;margin:36px 0 10px;
 .foot{font-family:Arial,sans-serif;font-size:12px;color:#a0a0a0;text-align:center;padding:20px}
 @media(max-width:520px){h1.title{font-size:27px}.mast .brand{font-size:24px}.ing img{width:84px;height:84px}}
 .dlegend{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin:10px 0 2px;font-family:Arial,sans-serif;font-size:12.5px;color:#555}.dlegend span{display:inline-flex;align-items:center;gap:6px}.dlegend i{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.08)}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.10);padding:8px 12px;display:none}.stickybar a{display:block;max-width:520px;margin:0 auto;background:var(--rose);color:#fff;text-align:center;font-family:Arial,sans-serif;font-weight:900;font-size:16px;letter-spacing:.3px;text-transform:uppercase;text-decoration:none;padding:13px;border-radius:8px}.stickybar .mini{display:block;text-align:center;font-family:Arial,sans-serif;font-size:10.5px;color:#8a8a8a;margin-top:4px}body.showbar{padding-bottom:82px}
 </style>
 </head>
 <body>
@@ -169,6 +170,8 @@ h2{font-family:Georgia,serif;font-size:25px;line-height:1.26;margin:36px 0 10px;
   <p><b>I'm telling you because I spent four years and thousands of dollars trying to fix my flat, dimpled, sagging backside...</b></p>
   <p>If anything in this article spares another woman from that same frustrating loop... and helps her feel less invisible from behind... then the time I spent writing it will be worth the effort.</p>
   <p>So pour yourself something warm and settle in. What follows is the truth about what happened to my body this past year &mdash; and what made it possible.</p>
+  <a class="cta" href="sales.html">Check Current Availability &rarr;</a>
+  <p class="subcta">50% off &middot; Free shipping &middot; 180-day guarantee</p>
 
   <h2>The Eerie Moment I Realized My Backside Had Aged a Decade Overnight</h2>
   <p>Let's rewind to last year. I'd just turned 63 and I felt like my body had aged a decade overnight.</p>
@@ -400,5 +403,7 @@ h2{font-family:Georgia,serif;font-size:25px;line-height:1.26;margin:36px 0 10px;
 /* carry query string (clickid/rtkcid) onto the offer link so attribution flows advertorial -> sales.html -> Shopify */
 (function(){try{var qs=location.search;if(!qs)return;document.querySelectorAll('a[href^="sales.html"]').forEach(function(a){if(a.href.indexOf('?')===-1){a.href=a.getAttribute('href')+qs;}});}catch(e){}})();
 </script>
+<div class="stickybar" id="sbar"><a href="sales.html">Check Availability &mdash; 50% Off &rarr;</a><span class="mini">Free shipping &middot; 180-day money-back guarantee</span></div>
+<script>(function(){var b=document.getElementById("sbar");function s(){if(window.scrollY>480){b.style.display="block";document.body.classList.add("showbar");}else{b.style.display="none";document.body.classList.remove("showbar");}}window.addEventListener("scroll",s,{passive:true});s();})();</script>
 </body>
 </html>
