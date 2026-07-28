@@ -57,26 +57,29 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,
 })();
 </script>
 <style>
-:root{--ink:#1a1a1a;--muted:#6b6b6b;--line:#e6e6e6;--gold:#8a6d3b;--rose:#b3446c;--rosed:#8f2d54;--wrap:680px}
+:root{--ink:#1a1a1a;--muted:#6b6b6b;--line:#e6e6e6;--gold:#8a6d3b;--rose:#b3446c;--rosed:#8f2d54;--wrap:720px;--blue:#007BFF;--exred:#EE0000}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{margin:0;background:#F4F2ED;color:var(--ink);font-family:'Open Sans',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
 img,video{max-width:100%;height:auto;display:block;border-radius:6px}
 .adtop{font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a2a2a2;text-align:center;padding:6px 12px;background:#f7f7f7;border-bottom:1px solid var(--line)}
-.mast{border-bottom:1px solid #ddd;text-align:center;padding:16px 18px 12px}
-.mast .brand{font-family:Georgia,'Times New Roman',serif;font-weight:900;font-size:30px;letter-spacing:.5px;color:#141414;margin:0}
-.mast .brand span{font-style:italic;font-weight:400}
-.mast .strap{font-family:Arial,sans-serif;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#9a9a9a;margin-top:5px}
-.crumb{max-width:var(--wrap);margin:0 auto;padding:9px 18px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:#8a8a8a;border-bottom:1px solid var(--line)}
-.crumb b{color:var(--rose)}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px}
-.kicker{font-family:Arial,sans-serif;font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin:20px 0 6px}
-h1.title{font-family:Georgia,serif;font-size:33px;line-height:1.2;letter-spacing:-.4px;margin:2px 0 14px;font-weight:900}
-.byline{font-family:Arial,sans-serif;font-size:13px;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
-.byline b{color:#222}
-.byline .views{color:#8a8a8a}
-.share{display:flex;gap:8px;margin:12px 0 4px}
+.mast{background:var(--blue);padding:15px 0}
+.mastin{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.mast .brand{font-family:Georgia,'Times New Roman',serif;font-weight:800;font-size:34px;letter-spacing:.2px;color:#fff;margin:0}
+.mast .brand span{font-style:normal;font-weight:800}
+.sheet{max-width:var(--wrap);margin:22px auto 34px;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.13)}
+.crumb{padding:18px 28px 2px;font-family:'Open Sans',sans-serif;font-size:17px;font-weight:600;letter-spacing:0;color:var(--blue)}
+.crumb a{color:var(--blue)}.crumb b{color:var(--blue);font-weight:700}.crumb .sq{font-size:12px;vertical-align:middle}
+.wrap{padding:0 28px 30px}
+.excl{display:inline-block;background:var(--exred);color:#fff;font-weight:800;font-size:.72em;letter-spacing:.3px;padding:2px 9px;margin-right:11px;border-radius:0;vertical-align:middle;text-transform:uppercase;font-family:'Open Sans',Arial,sans-serif}
+figure.hero{border-top:4px solid var(--blue)}
+h1.title{font-family:'Open Sans',Arial,sans-serif;font-size:33px;line-height:1.24;letter-spacing:-.2px;margin:18px 0 12px;font-weight:800;color:#111}
+.dateline{font-family:'Open Sans',sans-serif;font-size:16px;color:#6c7a89;margin:10px 0 8px}
+.dateline .cal{margin-right:5px}
+.byrow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 0;margin:4px 0 16px}
+.byrow .by{font-family:'Open Sans',sans-serif;font-size:14px;color:#333}.byrow .by b{color:#111}
+.share{display:flex;gap:7px;margin:0}
 .share span{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:13px;font-weight:800;color:#fff;background:#c9c9c9}
-.share .fb{background:#1877f2}.share .tw{background:#111}.share .in{background:#0a66c2}.share .pi{background:#e60023}.share .em{background:#777}
+.share .fb{background:#1877f2}.share .tw{background:#4aa0eb}.share .in{background:#0a66c2}.share .pi{background:#e60023}.share .em{background:#111}
 figure{margin:18px 0}
 figcaption{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);text-align:center;margin-top:7px;font-style:italic}
 p{margin:0 0 17px}
@@ -127,29 +130,29 @@ h2{font-family:Georgia,serif;font-size:25px;line-height:1.26;margin:36px 0 10px;
 .disc b{color:#6a6a6a}
 .refs{font-family:Arial,sans-serif;font-size:11.5px;color:#9a9a9a;padding:0 18px}
 .foot{font-family:Arial,sans-serif;font-size:12px;color:#a0a0a0;text-align:center;padding:20px}
-@media(max-width:520px){h1.title{font-size:27px}.mast .brand{font-size:24px}.ing img{width:84px;height:84px}}
+@media(max-width:520px){h1.title{font-size:26px}.mast .brand{font-size:23px}.ing img{width:84px;height:84px}.mastin{padding:0 16px}.crumb{padding:14px 16px 2px;font-size:15px}.wrap{padding:0 16px 24px}.sheet{margin:12px auto 22px}.excl{font-size:.66em}}
 .dlegend{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin:10px 0 2px;font-family:Arial,sans-serif;font-size:12.5px;color:#555}.dlegend span{display:inline-flex;align-items:center;gap:6px}.dlegend i{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.08)}
 .stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.10);padding:8px 12px;display:none}.stickybar a{display:block;max-width:520px;margin:0 auto;background:var(--rose);color:#fff;text-align:center;font-family:Arial,sans-serif;font-weight:900;font-size:16px;letter-spacing:.3px;text-transform:uppercase;text-decoration:none;padding:13px;border-radius:8px}.stickybar .mini{display:block;text-align:center;font-family:Arial,sans-serif;font-size:10.5px;color:#8a8a8a;margin-top:4px}body.showbar{padding-bottom:82px}
 .ingx{border-top:1px solid var(--line);padding:22px 0}.ingx-n{font-family:Arial,sans-serif;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--rose)}.ingx h3{font-family:Georgia,serif;font-size:22px;line-height:1.25;margin:4px 0 12px}.ingx img{width:100%;max-height:430px;object-fit:cover;border-radius:8px;margin:0 0 12px}.ingx p{font-family:Arial,sans-serif;font-size:15.5px;line-height:1.6;margin:0 0 12px;color:#2a2a2a}
 .bawall{margin:16px 0}.bawall figure{margin:0 0 14px}.bawall img{width:100%;border-radius:8px}.bawall figcaption{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);text-align:center;margin-top:6px;font-style:italic}.holdgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.holdgrid img{width:100%;height:100%;object-fit:cover;border-radius:8px;aspect-ratio:4/5}
 .usa{border:2px solid var(--rose);border-radius:14px;padding:18px;margin:24px 0;background:#fff}.usa .flags{font-family:Arial,sans-serif;font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);text-align:center;margin-bottom:6px}.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.vscol{border-radius:10px;padding:14px;font-family:Arial,sans-serif;font-size:13.5px;line-height:1.5}.vscol .vsh{font-weight:900;margin-bottom:8px;font-size:14px}.vscol ul{margin:0;padding:0;list-style:none}.vscol li{padding:5px 0;border-top:1px solid rgba(0,0,0,.05)}.vscol.good{background:#eef7ef;border:1px solid #cfe6d0}.vscol.good .vsh{color:#1e7a34}.vscol.bad{background:#f7efef;border:1px solid #e6cfcf;color:#8a6a6a}.vscol.bad .vsh{color:#a13a3a}@media(max-width:520px){.vs{grid-template-columns:1fr}}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="adtop">Advertisement</div>
 <header class="mast">
-  <p class="brand">The Body <span>Magazine</span></p>
-  <div class="strap">Beauty · Confidence · Aging Well</div>
+  <div class="mastin"><p class="brand">The Body <span>Magazine</span></p></div>
 </header>
-<div class="crumb">Home &rsaquo; Beauty &rsaquo; <b>Body-Alternatives</b></div>
+<div class="sheet">
+<div class="crumb"><span class="sq">&#9642;</span> <a>Home</a> &gt; <a>Beauty</a> &gt; <b>Body-Alternatives</b></div>
 
 <div class="wrap">
-  <p class="kicker">Exclusive</p>
-  <h1 class="title">Two Months Ago My Backside Looked Every Bit of 63. Then a Stranger at the Swimsuit Shop Asked Which Surgeon Did My Brazilian Butt Lift. Here's the 30-Second Habit Women Everywhere Are Quietly Switching To</h1>
-  <div class="byline"><span>By <b>Margaret Caldwell</b>, Contributing Beauty Writer</span><span class="views">Sun, Sep 21, 2025 · 10:10 AM EST · 331,727 &#128065;</span></div>
-  <div class="share"><span class="fb">f</span><span class="tw">X</span><span class="in">in</span><span class="pi">P</span><span class="em">&#9993;</span></div>
+  <h1 class="title"><span class="excl">Exclusive</span>Two Months Ago My Backside Looked Every Bit of 63. Then a Stranger at the Swimsuit Shop Asked Which Surgeon Did My Brazilian Butt Lift. Here's the 30-Second Habit Women Everywhere Are Quietly Switching To</h1>
+  <div class="dateline"><span class="cal">&#128197;</span>Sun, Sep 21, 2025 &nbsp;|&nbsp; 10:10 AM EST &nbsp;&middot;&nbsp; 331,727 &#128065;</div>
+  <div class="byrow"><span class="by">By <b>Margaret Caldwell</b>, Contributing Beauty Writer</span><span class="share"><span class="fb">f</span><span class="tw">X</span><span class="in">in</span><span class="pi">P</span><span class="em">&#9993;</span></span></div>
 
-  <figure><img src="img/nb-native-ba.webp" alt="Before and after"><figcaption>Margaret, 63, shares her 90-day before-and-after &mdash; from one 30-second daily habit.</figcaption></figure>
+  <figure class="hero"><img src="img/nb-native-ba.webp" alt="Before and after"><figcaption>Margaret, 63, shares her 90-day before-and-after &mdash; from one 30-second daily habit.</figcaption></figure>
 
   <div class="seen">
     <div class="lab">As featured in</div>
@@ -465,7 +468,7 @@ h2{font-family:Georgia,serif;font-size:25px;line-height:1.26;margin:36px 0 10px;
     <div class="cmt"><div class="av" style="background:#b58ca0">J</div><div class="bd"><span class="nm">Janet Albright</span> &mdash; Thank you for such an honest write-up. Just added the 3-jar to my cart.<div class="meta">Like &middot; Reply &middot; 5h</div></div></div>
   </div>
 
-</div><!--/wrap-->
+</div><!--/wrap--></div><!--/sheet-->
 
 <div class="refs">References: 1. incidecoder.com/ingredients/palmitoyl-tripeptide-5 &nbsp; 2. corepeptides.com/palmitoyl-tripeptide-5-syn-coll-peptide-research</div>
 
