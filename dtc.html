@@ -125,6 +125,24 @@ body.showbar{padding-bottom:80px}
 .statstrip{display:flex;gap:10px;justify-content:center;text-align:center;margin:0 0 14px;flex-wrap:wrap}.statstrip>div{flex:1;min-width:110px;background:#fbeff4;border:1px solid #f0d5e0;border-radius:10px;padding:12px 8px}.statstrip b{display:block;font-size:23px;color:var(--rosed);line-height:1.1}.statstrip span{font-family:Arial;font-size:12px;color:#666}
 .gicon{width:78px;height:78px;flex:0 0 auto;border-radius:50%;background:#fbeff4;border:2px solid var(--rose);display:flex;align-items:center;justify-content:center;font-size:34px}
 .brandlogo{height:46px;width:auto;display:block}
+.selector{margin:14px 0 6px}
+.opt{display:block;position:relative;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:15px 16px;margin:0 0 14px;cursor:pointer}
+.opt input{position:absolute;opacity:0;width:0;height:0}
+.opt .optrow{display:flex;align-items:center;gap:13px}
+.optradio{width:24px;height:24px;border-radius:50%;border:2px solid #d8cfd3;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center}
+.opt input:checked ~ .optrow .optradio{border-color:var(--rose)}
+.opt input:checked ~ .optrow .optradio:after{content:"";width:11px;height:11px;border-radius:50%;background:var(--rose)}
+.opt.sel{background:#fdeef4;border-color:var(--rose);border-width:2px}
+.optl{flex:1;min-width:0}
+.optname{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--ink)}
+.optsub{font-family:Arial;font-size:12.5px;color:var(--muted);margin-top:2px}
+.optr{text-align:right;flex:0 0 auto}
+.optwas{font-family:Arial;font-size:13px;color:#9a9a9a;text-decoration:line-through}
+.optnow{font-family:Georgia,serif;font-size:25px;font-weight:800;color:var(--ink);line-height:1.05}
+.optsave{font-family:Arial;font-size:12px;font-weight:800;color:var(--rose);margin-top:1px}
+.optbadge{position:absolute;top:-11px;right:16px;font-family:Arial;font-size:11px;font-weight:800;letter-spacing:.05em;padding:4px 12px;border-radius:20px;text-transform:uppercase}
+.optbadge.pop{background:var(--rose);color:#fff}
+.optbadge.best{background:var(--ink);color:var(--amber)}
 </style>
 </head>
 <body>
@@ -190,13 +208,14 @@ body.showbar{padding-bottom:80px}
 <section id="offer" style="background:#fdf6f8">
   <h2>Claim Up To 64% Off &mdash; Before This Batch Sells Out</h2>
   <p class="lead">It ships direct from the brand &mdash; which is how a real guaran&aacute; modelador drops to as little as <b>$25 a jar</b>. Pick your supply below.</p>
-  <div class="packs">
-    <a class="pack" href="https://itsbrazilianusa.com/cart/53027149480225:1"><img src="img/pack-1.webp" alt="" onerror="this.style.display='none'"><div class="q">1 Jar</div><div class="was">$69.99</div><div class="now">$39.99</div><div class="per">$39.99/jar</div><div class="off">43% OFF</div></a>
-    <a class="pack best" href="https://itsbrazilianusa.com/cart/53027149512993:1"><span class="badge">Most popular</span><img src="img/pack-2.webp" alt="" onerror="this.style.display='none'"><div class="q">2 Jars</div><div class="was">$139.98</div><div class="now">$69.99</div><div class="per">$35.00/jar</div><div class="off">50% OFF</div></a>
-    <a class="pack" href="https://itsbrazilianusa.com/cart/53027149545761:1"><span class="badge">Full 90 days</span><img src="img/pack-3.webp" alt="" onerror="this.style.display='none'"><div class="q">3 Jars</div><div class="was">$209.97</div><div class="now">$89.99</div><div class="per">$30.00/jar</div><div class="off">57% OFF</div></a>
-    <a class="pack" href="https://itsbrazilianusa.com/cart/53028021895457:1"><span class="badge">Best value</span><img src="img/pack-6.webp" alt="" onerror="this.style.display='none'"><div class="q">6 Jars</div><div class="was">$419.94</div><div class="now">$149.99</div><div class="per">$25.00/jar</div><div class="off">64% OFF</div></a>
+  <div class="selector">
+    <label class="opt"><input type="radio" name="pack" data-cart="https://itsbrazilianusa.com/cart/53027149480225:1"><div class="optrow"><span class="optradio"></span><div class="optl"><div class="optname">1 Jar</div><div class="optsub">$39.99/jar &middot; Free shipping</div></div><div class="optr"><div class="optwas">$69.99</div><div class="optnow">$39.99</div><div class="optsave">SAVE 43%</div></div></div></label>
+    <label class="opt"><input type="radio" name="pack" data-cart="https://itsbrazilianusa.com/cart/53027149512993:1"><div class="optrow"><span class="optradio"></span><div class="optl"><div class="optname">2 Jars</div><div class="optsub">$35.00/jar &middot; Free shipping</div></div><div class="optr"><div class="optwas">$139.98</div><div class="optnow">$69.99</div><div class="optsave">SAVE 50%</div></div></div></label>
+    <label class="opt"><input type="radio" name="pack" checked data-cart="https://itsbrazilianusa.com/cart/53027149545761:1"><span class="optbadge pop">Most Popular</span><div class="optrow"><span class="optradio"></span><div class="optl"><div class="optname">3 Jars</div><div class="optsub">$30.00/jar &middot; Free shipping</div></div><div class="optr"><div class="optwas">$209.97</div><div class="optnow">$89.99</div><div class="optsave">SAVE 57%</div></div></div></label>
+    <label class="opt"><input type="radio" name="pack" data-cart="https://itsbrazilianusa.com/cart/53028021895457:1"><span class="optbadge best">Best Value</span><div class="optrow"><span class="optradio"></span><div class="optl"><div class="optname">6 Jars</div><div class="optsub">$25.00/jar &middot; Free shipping</div></div><div class="optr"><div class="optwas">$419.94</div><div class="optnow">$149.99</div><div class="optsave">SAVE 64%</div></div></div></label>
   </div>
-  <a class="cta big" href="https://itsbrazilianusa.com/cart/53027149545761:1">Get Up To 64% Off &rarr;</a>
+  <a class="cta big" id="buyCta" href="https://itsbrazilianusa.com/cart/53027149545761:1">Claim My Discount &rarr;</a>
+  <script>(function(){var o=[].slice.call(document.querySelectorAll('.selector .opt')),c=document.getElementById('buyCta');function cid(){try{return localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';}catch(e){return'';}}function sync(){o.forEach(function(x){var r=x.querySelector('input');x.classList.toggle('sel',r.checked);if(r.checked){var u=r.getAttribute('data-cart'),k=cid();if(k)u+=(u.indexOf('?')>-1?'&':'?')+'attributes[rtkcid]='+encodeURIComponent(k);c.setAttribute('href',u);}});}o.forEach(function(x){x.querySelector('input').addEventListener('change',sync);});sync();})();</script>
   <p class="subcta">&#128274; Secure checkout &middot; &#128666; Free US shipping &middot; one-time purchase, no subscription</p>
 
   <div class="bonusbox">
