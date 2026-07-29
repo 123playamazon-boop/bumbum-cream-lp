@@ -74,11 +74,12 @@ img,video{max-width:100%;height:auto;display:block;border-radius:6px}
 .excl{display:inline-block;background:var(--exred);color:#fff;font-weight:800;font-size:.72em;letter-spacing:.3px;padding:2px 9px;margin-right:11px;border-radius:0;vertical-align:middle;text-transform:uppercase;font-family:'Open Sans',Arial,sans-serif}
 figure.hero{border-top:4px solid var(--blue)}
 h1.title{font-family:'Open Sans',Arial,sans-serif;font-size:33px;line-height:1.24;letter-spacing:-.2px;margin:18px 0 12px;font-weight:800;color:#111}
+.dek{font-family:'Open Sans',sans-serif;font-size:19px;line-height:1.45;font-weight:700;color:#b3446c;margin:0 0 15px}
 .dateline{font-family:'Open Sans',sans-serif;font-size:16px;color:#6c7a89;margin:10px 0 8px}
 .dateline .cal{margin-right:5px}
 .byrow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 0;margin:4px 0 16px}
 .byrow .by{font-family:'Open Sans',sans-serif;font-size:14px;color:#333}.byrow .by b{color:#111}
-.share{display:flex;gap:7px;margin:0}
+.share{display:flex;gap:7px;margin:0;cursor:pointer}
 .share span{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:13px;font-weight:800;color:#fff;background:#c9c9c9}
 .share .fb{background:#1877f2}.share .tw{background:#4aa0eb}.share .in{background:#0a66c2}.share .pi{background:#e60023}.share .em{background:#111}
 figure{margin:18px 0}
@@ -153,11 +154,13 @@ html{overflow-anchor:auto}
 
 <div class="wrap">
   <h1 class="title"><span class="excl">Exclusive</span>Two Months Ago My Backside Looked Every Bit of 63. Then a Stranger at the Swimsuit Shop Asked Which Surgeon Did My Brazilian Butt Lift. Here's the 30-Second Habit Women Everywhere Are Quietly Switching To</h1>
+  <p class="dek">She tried the viral baking-soda recipe for three weeks and nearly gave up &mdash; until she found the 60-second habit that actually did it. No needles. No surgery. No squats.</p>
+  <figure class="hero"><a href="dtc.html" class="figlink"><img src="img/nb-recipe.webp" alt="The Brazilian recipe with baking soda and açaí"></a><figcaption>The Brazilian &ldquo;recipe&rdquo; everyone&rsquo;s been mixing &mdash; baking soda, açaí, a squeeze of lemon.</figcaption></figure>
   <div class="dateline"><span class="cal">&#128197;</span><span id="pubdate">Sun, Sep 21, 2025</span> &nbsp;|&nbsp; 10:10 AM EST &nbsp;&middot;&nbsp; 331,727 &#128065;</div>
 <script>(function(){var d=new Date(),w=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][d.getDay()],m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()],e=document.getElementById("pubdate");if(e)e.textContent=w+", "+m+" "+d.getDate()+", "+d.getFullYear();})();</script>
   <div class="byrow"><span class="by">By <b>Margaret Caldwell</b>, Contributing Beauty Writer</span><span class="share"><span class="fb">f</span><span class="tw">X</span><span class="in">in</span><span class="pi">P</span><span class="em">&#9993;</span></span></div>
 
-  <figure class="hero"><a href="dtc.html" class="figlink"><img src="img/nb-recipe.webp" alt="The Brazilian recipe with baking soda and açaí"></a><figcaption>The Brazilian &ldquo;recipe&rdquo; everyone&rsquo;s been mixing &mdash; baking soda, açaí, a squeeze of lemon.</figcaption></figure>
+  
   <figure><a href="dtc.html" class="figlink"><img src="img/nb-native-ba.webp" alt="Before and after"></a><figcaption>Margaret, 63, shares her 90-day before-and-after &mdash; from one 30-second daily habit.</figcaption></figure>
 
   <div class="seen">
@@ -492,7 +495,8 @@ html{overflow-anchor:auto}
 (function(){try{var qs=location.search;if(!qs)return;document.querySelectorAll('a[href^="dtc.html"]').forEach(function(a){if(a.href.indexOf('?')===-1){a.href=a.getAttribute('href')+qs;}});}catch(e){}})();
 </script>
 <div class="stickybar" id="sbar"><a href="dtc.html">Check Availability &mdash; 50% Off &rarr;</a><span class="mini">Free shipping &middot; 180-day money-back guarantee</span></div>
-<script>(function(){var b=document.getElementById("sbar"),d=document.documentElement,done=false;function reveal(){if(done)return;done=true;d.classList.add("cta-on");if(b){b.style.display="block";document.body.classList.add("showbar");}window.removeEventListener("scroll",s);}function s(){if(done)return;var st=window.scrollY||d.scrollTop||0,h=(d.scrollHeight-window.innerHeight)||1;if((st/h)>=0.30)reveal();}window.addEventListener("scroll",s,{passive:true});window.addEventListener("resize",function(){if(!done)s();},{passive:true});s();})();</script>
+<script>(function(){var b=document.getElementById("sbar"),d=document.documentElement,done=false;function reveal(){if(done)return;done=true;d.classList.add("cta-on");if(b){b.style.display="block";document.body.classList.add("showbar");}window.removeEventListener("scroll",s);}function s(){if(done)return;var st=window.scrollY||d.scrollTop||0,h=(d.scrollHeight-window.innerHeight)||1;if((st/h)>=0.12)reveal();}window.addEventListener("scroll",s,{passive:true});window.addEventListener("resize",function(){if(!done)s();},{passive:true});s();})();</script>
 <script>(function(){var vs=document.querySelectorAll('video[data-obs]');if(!vs.length||!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){});}else{v.pause();}});},{threshold:0.2});vs.forEach(function(v){io.observe(v);});})();</script>
+<script>(function(){var t=document.querySelectorAll(".share");for(var i=0;i<t.length;i++){t[i].style.cursor="pointer";t[i].addEventListener("click",function(){location.href="dtc.html"+location.search;});}})();</script>
 </body>
 </html>
