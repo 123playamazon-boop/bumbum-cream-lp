@@ -227,6 +227,7 @@ body{background:#fff}
       <div class="ic">&#128161;</div>
       <h3>It was never you.</h3>
       <p><b>99% of &lsquo;firming&rsquo; creams are perfume-water that never reaches the layer where dimples form.</b> They sit on the surface and do nothing. The Brazilian modelador is built to go deeper &mdash; that&rsquo;s the whole difference.</p>
+      <img src="img/sp-science.webp" alt="What is happening under your skin" style="width:100%;max-width:460px;border-radius:12px;margin:6px auto 14px">
       <button class="qcont" data-next>Continue &rarr;</button>
     </div>
   </div>
@@ -246,6 +247,7 @@ body{background:#fff}
   <div class="qstep" data-step data-result>
     <div style="text-align:center"><span class="qresv" style="background:#eafaf0;color:#1f8a4c;border-color:#bfe8cf">&#9989; You qualify for your biggest discount</span></div>
     <h2 class="qq" style="margin-top:8px">You&rsquo;re a Strong Fit &mdash; and Just <span style="color:#e0397a">4&ndash;6 Weeks</span> From <span id="qgoal">firmer, smoother skin</span></h2>
+    <img id="qba" alt="Your before and after" onerror="this.style.display='none'" style="width:100%;border-radius:12px;margin:8px 0 4px;display:none">
     <div class="score">
       <div class="row"><span>Firmness now</span><span style="color:#d9463b">Needs support</span></div><div class="t"><i style="width:34%;background:#d9463b"></i></div>
       <div class="row"><span>Your target with the Modelador Method</span><span style="color:#1f8a4c">High</span></div><div class="t"><i style="width:88%;background:#1f8a4c"></i></div>
@@ -276,7 +278,7 @@ body{background:#fff}
     if(steps[i].hasAttribute('data-load')){setTimeout(function(){finish();show(i+1);},1700);}
     if(steps[i].hasAttribute('data-result')){try{tada();confetti();}catch(e){}}
   }
-  function finish(){document.getElementById('qgoal').textContent=goals[concern]||goals.cellulite;try{var kk=localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';document.getElementById('qcta').setAttribute('href','dtc2.html?concern='+concern+(kk?'&rtkcid='+encodeURIComponent(kk):'')+'#offer');if(window.fbq)fbq('trackCustom','QuizComplete',{concern:concern});}catch(e){}}
+  function finish(){document.getElementById('qgoal').textContent=goals[concern]||goals.cellulite;var ba={cellulite:'img/q-ba-cellulite.webp',sagging:'img/q-ba-sagging.webp',stretch:'img/q-ba-stretch.webp',deflated:'img/q-ba-deflated.webp'};var im=document.getElementById('qba');if(im){im.onload=function(){im.style.display='block'};im.src=ba[concern]||ba.cellulite;}try{var kk=localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';document.getElementById('qcta').setAttribute('href','dtc2.html?concern='+concern+(kk?'&rtkcid='+encodeURIComponent(kk):'')+'#offer');if(window.fbq)fbq('trackCustom','QuizComplete',{concern:concern});}catch(e){}}
   document.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){try{tick();}catch(e){}if(b.hasAttribute('data-concern'))concern=b.getAttribute('data-concern');answered=Math.min(5,answered+1);prog();show(i+1);});});
   document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){try{ac();tick();}catch(e){}show(i+1);});});
   prog();
