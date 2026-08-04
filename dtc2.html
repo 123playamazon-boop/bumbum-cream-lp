@@ -143,7 +143,19 @@ body.showbar{padding-bottom:80px}
 .optbadge{position:absolute;top:-11px;right:16px;font-family:Arial;font-size:11px;font-weight:800;letter-spacing:.05em;padding:4px 12px;border-radius:20px;text-transform:uppercase}
 .optbadge.pop{background:var(--rose);color:#fff}
 .optbadge.best{background:var(--ink);color:var(--amber)}.giftrow{display:flex;align-items:center;gap:10px;margin:11px 0 2px;padding:9px 11px;background:linear-gradient(90deg,#fff6e9,#fdeef4);border:1px dashed var(--rose);border-radius:9px;font-family:'Open Sans',Arial,sans-serif;font-size:12.5px;line-height:1.35;color:#5a3b46}.giftrow img{width:46px;height:46px;object-fit:contain;flex:0 0 auto;border-radius:6px;background:#fff}.giftrow b{color:var(--ink)}.giftval{display:inline-block;background:var(--rose);color:#fff;font-weight:800;font-size:10.5px;padding:2px 7px;border-radius:20px;margin-left:3px;white-space:nowrap;letter-spacing:.03em}
-@media(max-width:768px){.stickybar{display:none!important}.showbar{padding-bottom:0!important}}</style>
+@media(max-width:768px){.stickybar{display:none!important}.showbar{padding-bottom:0!important}}
+/* ---- product carousel (hero) ---- */
+.pcarousel{position:relative}
+.pcar-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.pcar-track::-webkit-scrollbar{display:none}
+.pcar-track img{flex:0 0 100%;width:100%;height:auto;display:block;scroll-snap-align:center}
+.pcar-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:20px;line-height:36px;color:#222;cursor:pointer;z-index:3;padding:0}
+.pcar-nav.prev{left:8px}.pcar-nav.next{right:8px}
+.pcar-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;gap:6px;justify-content:center;z-index:3}
+.pcar-dots i{width:7px;height:7px;border-radius:50%;background:rgba(0,0,0,.28);cursor:pointer;transition:all .2s}
+.pcar-dots i.on{background:#e0397a;width:20px;border-radius:99px}
+@media(min-width:720px){.pcar-nav{opacity:0;transition:opacity .2s}.pcarousel:hover .pcar-nav{opacity:1}}
+</style>
 </head>
 <body>
 <style>
@@ -187,7 +199,19 @@ body.showbar{padding-bottom:80px}
       <a class="cta big" href="#offer">Claim Up To 64% Off &rarr;</a>
       <p class="subcta">Free US shipping &middot; 180-day money-back guarantee &middot; free bonus</p>
     </div>
-    <div class="heroimg"><img src="img/nb-dtc-hero.webp" alt="It's Brazilian Bumbum Cream"></div>
+    <div class="heroimg pcarousel" id="pcar">
+      <div class="pcar-track" id="pcarTrack">
+        <img src="img/01-hero.webp" alt="It&rsquo;s Brazilian Bumbum Cream — the secret of beauty clinics, now at home" loading="eager">
+        <img src="img/03-features.webp" alt="Reduces the look of cellulite &amp; stretch marks — fast-absorbing, non-greasy" loading="lazy">
+        <img src="img/07-ingredients.webp" alt="Brazil nut, shea butter and vitamin E" loading="lazy">
+        <img src="img/05-compare.webp" alt="Bumbum Cream vs ordinary firming creams" loading="lazy">
+        <img src="img/06-reviews.webp" alt="Over 15,000 women — real reviews" loading="lazy">
+        <img src="img/02-benefits.webp" alt="Confidence starts with curves you love" loading="lazy">
+      </div>
+      <button class="pcar-nav prev" id="pcarPrev" type="button" aria-label="Previous">&#8249;</button>
+      <button class="pcar-nav next" id="pcarNext" type="button" aria-label="Next">&#8250;</button>
+      <div class="pcar-dots" id="pcarDots"></div>
+    </div>
   </div>
 </section>
 
@@ -323,5 +347,16 @@ body.showbar{padding-bottom:80px}
 <div class="stickybar" id="sbar"><a href="#offer">Claim Up To 64% Off &mdash; + Free Bonus &rarr;</a></div>
 <script>(function(){var b=document.getElementById("sbar");function s(){if(window.scrollY>620){b.style.display="block";document.body.classList.add("showbar");}else{b.style.display="none";document.body.classList.remove("showbar");}}window.addEventListener("scroll",s,{passive:true});s();})();</script>
 <script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href*="/cart/"]').forEach(function(el){el.addEventListener('click',function(){try{nbpix('event','initiate_checkout');}catch(e){}try{if(window.fbq)fbq('track','InitiateCheckout',{currency:'USD'});}catch(e){}});});});</script>
+<script>(function(){var car=document.getElementById('pcar');if(!car)return;var track=document.getElementById('pcarTrack'),imgs=track.children,n=imgs.length,dots=document.getElementById('pcarDots'),i=0,timer,st;
+function set(idx){i=(idx%n+n)%n;for(var k=0;k<n;k++)dots.children[k].className=(k===i?'on':'');}
+function go(idx,user){set(idx);track.scrollTo({left:imgs[i].offsetLeft,behavior:'smooth'});if(user)restart();}
+for(var k=0;k<n;k++){(function(x){var d=document.createElement('i');if(x===0)d.className='on';d.addEventListener('click',function(){go(x,true);});dots.appendChild(d);})(k);}
+document.getElementById('pcarNext').addEventListener('click',function(){go(i+1,true);});
+document.getElementById('pcarPrev').addEventListener('click',function(){go(i-1,true);});
+track.addEventListener('scroll',function(){clearTimeout(st);st=setTimeout(function(){set(Math.round(track.scrollLeft/imgs[0].offsetWidth));},90);},{passive:true});
+function tick(){go(i+1,false);}function restart(){clearInterval(timer);timer=setInterval(tick,4500);}restart();
+car.addEventListener('mouseenter',function(){clearInterval(timer);});car.addEventListener('mouseleave',restart);
+track.addEventListener('touchstart',function(){clearInterval(timer);},{passive:true});
+})();</script>
 </body>
 </html>
