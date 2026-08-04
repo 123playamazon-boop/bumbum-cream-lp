@@ -266,13 +266,19 @@ body{background:#fff}
   var steps=[].slice.call(document.querySelectorAll('.qstep')), i=0, answered=0, concern='cellulite';
   var fill=document.getElementById('qfill');
   var goals={cellulite:'a firmer, dimple-smoothed backside',sagging:'firmer, visibly lifted skin',stretch:'smoother skin with softened stretch marks',deflated:'a re-plumped, lifted shape'};
+  var AC=null; function ac(){try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){}return AC;}
+  function beep(fq,d,t,g){var a=ac();if(!a)return;var o=a.createOscillator(),v=a.createGain();o.type=t||'triangle';o.frequency.value=fq;o.connect(v);v.connect(a.destination);var n=a.currentTime;v.gain.setValueAtTime(0.0001,n);v.gain.exponentialRampToValueAtTime(g||0.15,n+0.01);v.gain.exponentialRampToValueAtTime(0.0001,n+d);o.start(n);o.stop(n+d+0.02);}
+  function tick(){beep(660,0.09,'triangle',0.12);}
+  function tada(){[523,659,784,1046].forEach(function(fq,k){setTimeout(function(){beep(fq,0.3,'sine',0.16);},k*110);});}
+  function confetti(){var c=document.createElement('canvas');c.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:99999';document.body.appendChild(c);var x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;var col=['#e0397a','#ffd27a','#2f9e44','#16324f','#ff8fb1','#7ac6ff'],P=[];for(var k=0;k<150;k++)P.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.4,r:5+Math.random()*7,c:col[k%col.length],vy:2.5+Math.random()*3.5,vx:-1.5+Math.random()*3,a:Math.random()*6.28,va:-0.2+Math.random()*0.4});var t0=Date.now();(function loop(){var e=Date.now()-t0;x.clearRect(0,0,c.width,c.height);P.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.a+=p.va;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-p.r/2,-p.r/2,p.r,p.r*0.6);x.restore();});if(e<2800)requestAnimationFrame(loop);else c.remove();})();}
   function prog(){fill.style.width=Math.max(8,Math.round((answered/5)*100))+'%';}
   function show(n){steps[i].classList.remove('on');i=n;steps[i].classList.add('on');window.scrollTo({top:0,behavior:'smooth'});
     if(steps[i].hasAttribute('data-load')){setTimeout(function(){finish();show(i+1);},1700);}
+    if(steps[i].hasAttribute('data-result')){try{tada();confetti();}catch(e){}}
   }
-  function finish(){document.getElementById('qgoal').textContent=goals[concern]||goals.cellulite;try{var k=localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';document.getElementById('qcta').setAttribute('href','dtc2.html?concern='+concern+(k?'&rtkcid='+encodeURIComponent(k):'')+'#offer');if(window.fbq)fbq('trackCustom','QuizComplete',{concern:concern});}catch(e){}}
-  document.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){if(b.hasAttribute('data-concern'))concern=b.getAttribute('data-concern');answered=Math.min(5,answered+1);prog();show(i+1);});});
-  document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){show(i+1);});});
+  function finish(){document.getElementById('qgoal').textContent=goals[concern]||goals.cellulite;try{var kk=localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';document.getElementById('qcta').setAttribute('href','dtc2.html?concern='+concern+(kk?'&rtkcid='+encodeURIComponent(kk):'')+'#offer');if(window.fbq)fbq('trackCustom','QuizComplete',{concern:concern});}catch(e){}}
+  document.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){try{tick();}catch(e){}if(b.hasAttribute('data-concern'))concern=b.getAttribute('data-concern');answered=Math.min(5,answered+1);prog();show(i+1);});});
+  document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){try{ac();tick();}catch(e){}show(i+1);});});
   prog();
 })();
 </script>
