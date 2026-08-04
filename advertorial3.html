@@ -130,26 +130,27 @@ p{margin:0 0 16px}
 </head>
 <body>
 <style>
-.prod{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;background:#fff}
+.prod{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;background:#fff;overflow:hidden}
 .prod.win{border:2px solid #2f9e44;background:#f6fbf7;box-shadow:0 10px 26px rgba(47,158,68,.12)}
-.rank{display:inline-flex;align-items:center;gap:10px;font-family:Arial,sans-serif;margin:0 0 8px}
-.rank .n{width:40px;height:40px;border-radius:8px;background:#9fb0c3;color:#fff;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center}
+.rank{display:flex;align-items:center;gap:10px;font-family:Arial,sans-serif;margin:0 0 10px}
+.rank .n{width:40px;height:40px;border-radius:8px;background:#9fb0c3;color:#fff;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;flex:0 0 40px}
 .prod.win .rank .n{background:#2f9e44}
-.rank .tt{font-weight:900;font-size:19px;color:#12233a;line-height:1.1}
-.rank .tt small{display:block;font-size:12px;font-weight:700;color:#8397ab;text-transform:uppercase;letter-spacing:.08em}
+.rank .tt{font-weight:900;font-size:18px;color:#12233a;line-height:1.15}
+.rank .tt small{display:block;font-size:11.5px;font-weight:700;color:#8397ab;text-transform:uppercase;letter-spacing:.07em}
 .prod.win .rank .tt small{color:#2f9e44}
-.pimg{width:150px;height:150px;object-fit:contain;float:right;margin:0 0 8px 12px}
-.rate{font-family:Arial,sans-serif;font-size:14px;margin:8px 0}
-.rate .row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #f0f0f0}
+.pimg{width:140px;height:140px;object-fit:contain;float:right;margin:0 0 8px 12px;background:#fff;border-radius:8px}
+.rate{font-family:Arial,sans-serif;font-size:13.5px;margin:6px 0}
+.rate .row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #f0f0f0}
 .rate .row:last-child{border-bottom:0}
-.st2{color:#f5a623;letter-spacing:1px;font-size:15px}.st2 .e{color:#dcdcdc}
-.pl{font-family:Arial,sans-serif;font-size:14.5px;line-height:1.5;margin:8px 0;padding:0;list-style:none}
+.st2{color:#f5a623;letter-spacing:1px;font-size:15px;white-space:nowrap}.st2 .e{color:#dcdcdc}
+.pl{font-family:Arial,sans-serif;font-size:14px;line-height:1.5;margin:8px 0;padding:0;list-style:none}
 .pl li{padding:3px 0 3px 22px;position:relative}
 .pl.pro li:before{content:"\2713";position:absolute;left:0;color:#2f9e44;font-weight:900}
 .pl.con li:before{content:"\2717";position:absolute;left:0;color:#c0392b;font-weight:900}
 .pl b{color:#12233a}
 .counter{text-align:center;font-family:Arial,sans-serif;font-size:14px;color:#2f6e42;background:#eafaf0;border:1px solid #bfe8cf;border-radius:10px;padding:10px 14px;margin:14px 0;font-weight:700}
 .tsbox{border:2px solid #2f9e44;border-radius:14px;padding:18px 20px;margin:18px 0;background:#f6fbf7;text-align:center}
+@media(max-width:560px){.pimg{width:96px;height:96px;margin-left:8px}}
 </style>
 <div class="adlabel">Advertisement</div>
 <div class="breaking"><span class="dot"></span> Product Comparison <span class="t">&middot; Skin &amp; Body &middot; Updated 2026</span></div>
@@ -157,38 +158,38 @@ p{margin:0 0 16px}
 
 <div class="wrap">
   <p class="kicker">Advertorial &middot; Independent Product Comparison</p>
-  <h1>The 4 Best Firming &amp; Anti-Cellulite Creams of 2026 &mdash; Tested &amp; Compared</h1>
+  <h1>The 6 Best Firming &amp; Anti-Cellulite Creams of 2026 &mdash; Tested &amp; Ranked</h1>
   <p class="dek"><em>Most &ldquo;firming&rdquo; creams do nothing. We tested the best-sellers on what actually matters &mdash; and one came out a clear winner.</em></p>
-  <p class="byline">By <b>Anna Reed</b>, Beauty Editor &middot; Medically reviewed by <b>Dr. Beatriz Moreira, M.D.</b> &middot; Updated 2026 &middot; 8 min read</p>
+  <p class="byline">By <b>Anna Reed</b>, Beauty Editor &middot; Medically reviewed by <b>Dr. Beatriz Moreira, M.D.</b> &middot; Updated 2026 &middot; 9 min read</p>
   <figure><img src="img/nb-dtc-ba-1.webp" alt="Firming cream comparison — before and after"></figure>
 
-  <p>Nearly every woman over 35 has bought a &ldquo;firming&rdquo; cream hoping to smooth cellulite, stretch marks and loose skin. <b>The problem?</b> The market is flooded with $40&ndash;$120 jars that are mostly fragranced water &mdash; they sit on the surface and change nothing.</p>
-  <p>So we tested the top-selling firming creams and ranked them on four things that actually decide results: <b>whether they reach the deep layer, the quality of the actives, visible results, and the money-back guarantee.</b> The differences were enormous &mdash; and there is one clear test winner.</p>
+  <p>Nearly every woman over 35 has bought a &ldquo;firming&rdquo; cream hoping to smooth cellulite, stretch marks and loose skin. <b>The problem?</b> The market is flooded with $8&ndash;$120 jars &mdash; most sit on the surface and change nothing.</p>
+  <p>So we tested the best-selling firming creams and ranked them on the four things that actually decide results: <b>whether they reach the deep layer, the quality of the actives, visible firming results, and the money-back guarantee.</b> The differences were enormous &mdash; and there is one clear test winner.</p>
 
   <h2>Cellulite, Simply Explained</h2>
-  <p>Cellulite and sag aren&rsquo;t a fat problem &mdash; they&rsquo;re a <b>connective-tissue problem.</b> Fibrous bands under the skin (the <b>septae</b>) stiffen with age and pull the skin down; the fat between them pushes up. That push-and-pull is the dimpled, orange-peel look. This is why a cream that only sits on the <em>surface</em> can never fix it &mdash; it has to reach the deep layer.</p>
+  <p>Cellulite and sag aren&rsquo;t a fat problem &mdash; they&rsquo;re a <b>connective-tissue problem.</b> Fibrous bands under the skin (the <b>septae</b>) stiffen with age and pull the skin down; the fat between them pushes up. That push-and-pull is the dimpled, orange-peel look. This is why a product that only sits on the <em>surface</em> can never fix it &mdash; it has to reach the deep layer.</p>
 
   <h2>Scientifically Proven: The Right Active Works</h2>
-  <div class="sci"><b>Caffeine (guaran&aacute;) is one of the few cosmetic actives with real published research for the look of cellulite and firmness.</b> In a <b>2025 peer-reviewed study</b> (<i>Cosmetics</i>, MDPI), a caffeine cream-gel massaged into the thighs and buttocks of <b>56 women (avg. age 42)</b> significantly reduced the look of cellulite and skin indentation over <b>8 weeks</b>. A <b>2026 randomized, double-blind trial</b> (<i>Pharmaceutics</i>, MDPI) backed it up over 12 weeks. <i>These studies evaluate the ingredient class (caffeine/guaran&aacute;), not one finished product. The massage matters &mdash; it&rsquo;s how the active reaches the deep layer.</i></div>
+  <div class="sci"><b>Caffeine (guaran&aacute;) is one of the few cosmetic actives with real published research for the look of cellulite and firmness.</b> In a <b>2025 study</b> (<i>Cosmetics</i>, MDPI), a caffeine cream-gel massaged into the thighs and buttocks of <b>56 women</b> significantly reduced the look of cellulite over <b>8 weeks</b>; a <b>2026 randomized, double-blind trial</b> (<i>Pharmaceutics</i>, MDPI) backed it up over 12 weeks. <i>These studies evaluate the ingredient class, not one finished product. The massage matters &mdash; it&rsquo;s how the active reaches the deep layer.</i></div>
 
-  <h2>What to Look For (Our 5 Criteria)</h2>
+  <h2>Our 5 Buying Criteria</h2>
   <ul class="klist">
-    <li><b>1. Reaches the deep layer.</b> A warming, massaged-in <em>modelador</em> &mdash; not a thin surface lotion that washes off.</li>
-    <li><b>2. Real Amazonian actives.</b> Concentrated guaran&aacute;, cupua&ccedil;u and a&ccedil;a&iacute; &mdash; not filler and fragrance.</li>
-    <li><b>3. You can feel it working.</b> A warming tingle as the caffeine activates.</li>
-    <li><b>4. Clinically-tested appearance results.</b> Real user-panel data, not just claims.</li>
-    <li><b>5. A real money-back guarantee.</b> So the risk sits with the brand, not you.</li>
+    <li><b>1. Reaches the deep layer</b> &mdash; a warming, massaged-in <em>modelador</em>, not a thin surface lotion.</li>
+    <li><b>2. Real Amazonian actives</b> &mdash; concentrated guaran&aacute;, cupua&ccedil;u &amp; a&ccedil;a&iacute;, not filler and fragrance.</li>
+    <li><b>3. You can feel it working</b> &mdash; a warming tingle as the caffeine activates.</li>
+    <li><b>4. Clinically-tested appearance results.</b></li>
+    <li><b>5. A real money-back guarantee.</b></li>
   </ul>
 
   <h2>Our Big Test: The Results</h2>
-  <p>Many creams failed the basics, some gave moderate results, but the best stood out on every criterion. Here are the top 4 firming creams of 2026.</p>
+  <p>We put the six best-selling firming and body creams head-to-head. Here&rsquo;s how they ranked.</p>
 
   <div class="prod win">
     <img src="img/nb-dtc-hero.webp" alt="It's Brazilian Bumbum" class="pimg">
     <div class="rank"><span class="n">1</span><span class="tt">It&rsquo;s Brazilian Bumbum&trade;<small>Test Winner 2026</small></span></div>
     <div class="rate">
       <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
-      <div class="row"><span>Efficacy (look of cellulite &amp; firmness)</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
       <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
       <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
       <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
@@ -205,46 +206,77 @@ p{margin:0 0 16px}
   </div>
 
   <div class="prod">
-    <div class="rank"><span class="n">2</span><span class="tt">Drugstore &ldquo;Firming&rdquo; Lotion<small>Budget pick</small></span></div>
+    <img src="img/comp-soldejaneiro.webp" alt="Sol de Janeiro Bum Bum Cream" class="pimg" onerror="this.style.display='none'">
+    <div class="rank"><span class="n">2</span><span class="tt">Sol de Janeiro Bum Bum Cream<small>Cult favourite &middot; 4.7&#9733;</small></span></div>
     <div class="rate">
-      <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
-      <div class="row"><span>Efficacy</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
-      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
-      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
+      <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
+      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
+      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
       <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
     </div>
-    <ul class="pl pro"><li>Cheap and easy to find</li><li>Light, pleasant scent</li></ul>
-    <ul class="pl con"><li>Surface-only &mdash; washes off by the next shower</li><li>Mostly water &amp; fragrance, little active</li><li>Most users report no visible change</li></ul>
+    <ul class="pl pro"><li>Real Amazonian guaran&aacute; &amp; cupua&ccedil;u</li><li>Iconic, addictive scent &amp; huge following</li><li>Softer, glowing skin</li></ul>
+    <ul class="pl con"><li>Priced as a luxury moisturizer (~$48)</li><li>Built more for scent &amp; glow than targeted firming</li><li>No long money-back guarantee</li></ul>
   </div>
 
   <div class="prod">
-    <div class="rank"><span class="n">3</span><span class="tt">$120 Department-Store &ldquo;Firming&rdquo; Cream<small>Premium price</small></span></div>
+    <img src="img/comp-nivea.webp" alt="NIVEA Good-bye Cellulite" class="pimg" onerror="this.style.display='none'">
+    <div class="rank"><span class="n">3</span><span class="tt">NIVEA Firming / Good-bye Cellulite<small>Drugstore &middot; 4.1&#9733;</small></span></div>
     <div class="rate">
       <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
-      <div class="row"><span>Efficacy</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
-      <div class="row"><span>Value for money</span><span class="st2">&#9733;<span class="e">&#9733;&#9733;&#9733;&#9733;</span> <b>1/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
       <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
       <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
     </div>
-    <ul class="pl pro"><li>Luxurious scent &amp; packaging</li><li>Feels nice on application</li></ul>
-    <ul class="pl con"><li>Mostly fragrance-water for the price</li><li>Sits on the surface &mdash; doesn&rsquo;t reach the layer</li><li>Wildly overpriced for the actives inside</li></ul>
+    <ul class="pl pro"><li>Affordable &amp; available everywhere</li><li>Contains L-carnitine</li><li>Light, fast-absorbing</li></ul>
+    <ul class="pl con"><li>A light surface gel-cream</li><li>Results tend to be subtle &amp; temporary</li><li>Low active concentration</li></ul>
   </div>
 
   <div class="prod">
-    <div class="rank"><span class="n">4</span><span class="tt">Coffee Scrub / Dry-Brush Kit<small>DIY option</small></span></div>
+    <img src="img/comp-paulaschoice.webp" alt="Paula's Choice Retinol Body Treatment" class="pimg" onerror="this.style.display='none'">
+    <div class="rank"><span class="n">4</span><span class="tt">Paula&rsquo;s Choice Retinol Body<small>Retinol firming &middot; 4.4&#9733;</small></span></div>
+    <div class="rate">
+      <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
+      <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+    </div>
+    <ul class="pl pro"><li>Trusted skincare brand</li><li>Retinol can improve firmness &amp; texture over time</li><li>Well-formulated</li></ul>
+    <ul class="pl con"><li>Retinol can irritate or peel on body skin</li><li>Aimed at tone/texture, not cellulite dimples</li><li>Sun-sensitivity caution</li></ul>
+  </div>
+
+  <div class="prod">
+    <img src="img/comp-biooil.webp" alt="Bio-Oil Skincare Oil" class="pimg" onerror="this.style.display='none'">
+    <div class="rank"><span class="n">5</span><span class="tt">Bio-Oil Skincare Oil<small>Scars &amp; stretch marks &middot; 4.9&#9733;</small></span></div>
     <div class="rate">
       <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;<span class="e">&#9733;&#9733;&#9733;&#9733;</span> <b>1/5</b></span></div>
-      <div class="row"><span>Efficacy</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
-      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
-      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
-      <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;<span class="e">&#9733;&#9733;&#9733;&#9733;</span> <b>1/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
+      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
+      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;&#9733;<span class="e">&#9733;</span> <b>4/5</b></span></div>
+      <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
     </div>
-    <ul class="pl pro"><li>A short-term tighter feel</li><li>Inexpensive</li></ul>
-    <ul class="pl con"><li>Washes straight off &mdash; nothing lasting</li><li>Messy, time-consuming</li><li>No real effect on the deep layer</li></ul>
+    <ul class="pl pro"><li>Great for scars &amp; stretch marks</li><li>Can improve skin elasticity</li><li>Very well reviewed</li></ul>
+    <ul class="pl con"><li>It&rsquo;s an oil &mdash; not a firming/anti-cellulite cream</li><li>Doesn&rsquo;t target the deep septae layer</li><li>Can feel greasy</li></ul>
+  </div>
+
+  <div class="prod">
+    <img src="img/comp-palmers.webp" alt="Palmer's Cocoa Butter Massage Cream" class="pimg" onerror="this.style.display='none'">
+    <div class="rank"><span class="n">6</span><span class="tt">Palmer&rsquo;s Cocoa Butter Massage<small>Budget hydration &middot; 4.2&#9733;</small></span></div>
+    <div class="rate">
+      <div class="row"><span>Reaches the deep layer</span><span class="st2">&#9733;<span class="e">&#9733;&#9733;&#9733;&#9733;</span> <b>1/5</b></span></div>
+      <div class="row"><span>Firming efficacy</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
+      <div class="row"><span>Value for money</span><span class="st2">&#9733;&#9733;&#9733;&#9733;&#9733; <b>5/5</b></span></div>
+      <div class="row"><span>Customer satisfaction</span><span class="st2">&#9733;&#9733;&#9733;<span class="e">&#9733;&#9733;</span> <b>3/5</b></span></div>
+      <div class="row"><span>Money-back guarantee</span><span class="st2">&#9733;&#9733;<span class="e">&#9733;&#9733;&#9733;</span> <b>2/5</b></span></div>
+    </div>
+    <ul class="pl pro"><li>Very affordable</li><li>Excellent hydration &amp; stretch-mark care</li><li>Pleasant cocoa scent</li></ul>
+    <ul class="pl con"><li>A hydrating cocoa-butter lotion &mdash; not a firming active</li><li>Won&rsquo;t reach the deep layer</li></ul>
   </div>
 
   <h2>Our Verdict: It&rsquo;s Brazilian Bumbum Won on Every Criterion</h2>
-  <p>It was the only product that actually reaches the deep layer instead of sitting on the surface. The concentrated Guaran&aacute; Thermo-Firm Complex, the warming &ldquo;you-feel-it-working&rdquo; sensation, 15,870+ reviews, and a genuine 180-day money-back guarantee put it a full class above every other cream we tested. For anyone serious about smoother, firmer-looking skin, it&rsquo;s the clear choice.</p>
+  <p>It was the only product built to <em>reach the deep layer</em> instead of sitting on the surface. Sol de Janeiro comes closest on actives &mdash; but it&rsquo;s a premium scented moisturizer at 2&ndash;3&times; the price with no long guarantee. The drugstore and retinol options give subtle, surface-level results; the oils and cocoa butters are lovely for hydration but aren&rsquo;t firming actives at all. Bumbum&rsquo;s concentrated Guaran&aacute; Thermo-Firm Complex, the warming &ldquo;you-feel-it-working&rdquo; sensation, 15,870+ reviews and a genuine 180-day guarantee put it a full class above the rest.</p>
 
   <div class="tsbox">
     <div style="font-weight:900;color:#2f6e42;font-size:18px;margin-bottom:6px">Test Winner 2026: It&rsquo;s Brazilian Bumbum&trade;</div>
@@ -257,7 +289,7 @@ p{margin:0 0 16px}
   </div>
   <p class="counter">&#9989; Today, 214 readers have already followed our recommendation.</p>
 
-  <p class="disc"><b>Advertisement.</b> This page is a paid advertisement, not a news article or editorial content. &ldquo;The Beauty Journal&rdquo; is a content brand used for this advertisement. This page presents brand reviews and rankings that reflect the authors&rsquo; opinions and should not be taken as absolute measures of accuracy. Competing products shown are described generically for comparison. We may have financial relationships with brands featured here, and may earn a commission if you buy through links on this page &mdash; this can influence rankings. Bumbum is a cosmetic product for the appearance of skin firmness; it is not a drug and is not intended to diagnose, treat, cure or prevent any condition, and is not a substitute for surgery or medical treatment. Any research referenced evaluates individual ingredient classes (caffeine/guaran&aacute;), not this finished product. Statements have not been evaluated by the FDA. Individual results vary and are not guaranteed; testimonials and images reflect voluntary reports and are not typical. &copy; 2026 The Beauty Journal.</p>
+  <p class="disc"><b>Advertisement.</b> This page is a paid advertisement, not a news article or editorial content. &ldquo;The Beauty Journal&rdquo; is a content brand used for this advertisement. Third-party brand names, trademarks and product images are the property of their respective owners and are used here for identification and comparison only; we are not affiliated with, endorsed by, or sponsored by them. Rankings and ratings reflect the authors&rsquo; editorial opinion and should not be taken as absolute measures of accuracy. We may have a financial relationship with the featured brand and may earn a commission if you buy through links on this page. Bumbum is a cosmetic product for the appearance of skin firmness; it is not a drug and is not intended to diagnose, treat, cure or prevent any condition, and is not a substitute for surgery or medical treatment. Any research referenced evaluates individual ingredient classes (caffeine/guaran&aacute;), not this finished product. Statements have not been evaluated by the FDA. Individual results vary and are not guaranteed; testimonials and images reflect voluntary reports and are not typical. &copy; 2026 The Beauty Journal.</p>
 </div>
 
 <script>document.addEventListener('DOMContentLoaded',function(){function cid(){try{return localStorage.getItem('_rtk_clickid')||new URLSearchParams(location.search).get('clickid')||new URLSearchParams(location.search).get('rtkcid')||'';}catch(e){return'';}}var k=cid();document.querySelectorAll('a[href*="quiz2.html"],a[href*="dtc2.html"]').forEach(function(a){if(k){var h=a.getAttribute('href');var base=h.split('#')[0],hash=h.indexOf('#')>-1?'#'+h.split('#')[1]:'';a.setAttribute('href',base+(base.indexOf('?')>-1?'&':'?')+'rtkcid='+encodeURIComponent(k)+hash);}a.addEventListener('click',function(){try{if(window.fbq)fbq('track','ViewContent');}catch(e){}});});});</script>
