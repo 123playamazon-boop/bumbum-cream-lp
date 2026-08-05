@@ -182,9 +182,10 @@ p{margin:0 0 16px}
 </head>
 <body>
 <style>
-.prod{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;background:#fff;overflow:hidden;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
-.ctawrap{flex:0 0 100%;order:3;width:100%}
-.prod.win{border:2px solid #2f9e44;background:#f6fbf7;box-shadow:0 10px 26px rgba(47,158,68,.12)}
+.prod{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0;background:#fff;overflow:hidden;display:flex;gap:14px;align-items:flex-start}
+.prow{display:flex;gap:14px;align-items:flex-start;width:100%}
+.ctawrap{width:100%}
+.prod.win{display:block;border:2px solid #2f9e44;background:#f6fbf7;box-shadow:0 10px 26px rgba(47,158,68,.12)}
 .rank{display:flex;align-items:center;gap:10px;font-family:Arial,sans-serif;margin:0 0 10px}
 .rank .n{width:40px;height:40px;border-radius:8px;background:#9fb0c3;color:#fff;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;flex:0 0 40px}
 .prod.win .rank .n{background:#2f9e44}
@@ -192,7 +193,8 @@ p{margin:0 0 16px}
 .rank .tt small{display:block;font-size:11.5px;font-weight:700;color:#8397ab;text-transform:uppercase;letter-spacing:.07em}
 .prod.win .rank .tt small{color:#2f9e44}
 .pimg{width:118px;height:118px;object-fit:contain;background:#fff;border-radius:8px;flex:0 0 118px;order:2}
-.pbody{flex:1 1 auto;min-width:0;order:1}
+.prod.win .pimg{width:172px;height:172px;flex:0 0 172px}
+.pbody{flex:1 1 0%;min-width:0;order:1}
 .rate{font-family:Arial,sans-serif;font-size:13.5px;margin:6px 0}
 .rate .row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #f0f0f0}
 .rate .row:last-child{border-bottom:0}
@@ -204,7 +206,7 @@ p{margin:0 0 16px}
 .pl b{color:#12233a}
 .counter{text-align:center;font-family:Arial,sans-serif;font-size:14px;color:#2f6e42;background:#eafaf0;border:1px solid #bfe8cf;border-radius:10px;padding:10px 14px;margin:14px 0;font-weight:700}
 .tsbox{border:2px solid #2f9e44;border-radius:14px;padding:18px 20px;margin:18px 0;background:#f6fbf7;text-align:center}
-@media(max-width:560px){.pimg{width:84px;height:84px;flex-basis:84px}.prod{gap:10px;padding:14px}}
+@media(max-width:560px){.pimg{width:84px;height:84px;flex-basis:84px}.prod.win .pimg{width:104px;height:104px;flex:0 0 104px}.prod{gap:10px;padding:14px}}
 </style>
 <div class="adlabel">Advertisement</div>
 <header class="mast"><div class="in"><span class="brand">HEALTH<b>WIRE</b></span><span class="tag">Trusted Health &amp; Wellness Reporting</span></div></header>
@@ -250,6 +252,7 @@ p{margin:0 0 16px}
   <p>We put the six best-selling firming and body creams head-to-head. Here&rsquo;s how they ranked.</p>
 
   <div class="prod win">
+    <div class="prow">
     <img src="img/00-product.webp" alt="It's Brazilian Bumbum" class="pimg">
      <div class="pbody">
     <div class="rank"><span class="n">1</span><span class="tt">It&rsquo;s Brazilian Bumbum&trade;<small>Test Winner 2026</small></span></div>
@@ -270,6 +273,7 @@ p{margin:0 0 16px}
     </ul>
     <ul class="pl con"><li>Only available online</li><li>Sells out fast (small-batch)</li></ul>
      </div>
+    </div>
      <div class="ctawrap"><a class="cta" href="quiz2.html">Get Today&rsquo;s Coupon &mdash; Over 64% Off the Test Winner &rarr;</a><p class="ctamini">Coupon applies automatically &middot; expires today</p></div>
   </div>
 
@@ -418,20 +422,20 @@ p{margin:0 0 16px}
   <div class="fbdisc">
     <div class="fbhead"><h3>Comments</h3><span class="srt">Most relevant &#9662;</span></div>
     <div class="fbbar"><span class="rx"><span class="dot" style="background:#2f6ad0">&#128077;</span><span class="dot" style="background:#e0245e">&#10084;</span><span class="dot" style="background:#f7b125">&#128558;</span></span>&nbsp; 3.1k &nbsp;&middot;&nbsp; 412 comments</div>
-  <div class="cmt"><div class="av" style="background:#c58ba3">D</div><div class="bd"><div class="cbub"><span class="nm">Dana Whitfield<span class="vf">&#10004;</span></span><br>I used the Sol de Janeiro one for TWO YEARS thinking I was treating cellulite. Turns out I was just paying $48 to smell good &#128580;. This article finally explained why nothing changed &mdash; scent isn&rsquo;t firming. Ordered the Test Winner and the dimples on the back of my thighs are already softer.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 3h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 487</span></div></div></div>
+  <div class="cmt"><div class="av" style="background:#c58ba3">D</div><div class="bd"><div class="cbub"><span class="nm">Dana Whitfield<span class="vf">&#10004;</span></span><br>I used the Sol de Janeiro one for TWO YEARS thinking I was treating cellulite. Turns out I was just paying $48 to smell good &#128580;. This article finally explained why nothing changed &mdash; scent isn&rsquo;t firming. Ordered the Test Winner and the dimples on the back of my thighs are already softer.</div><img class="cimg" src="img/c-ugc-1.webp" alt="Reader photo" loading="lazy"><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 3h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 487</span></div></div></div>
   <div class="cmt reply"><div class="av" style="background:#385898">B</div><div class="bd"><div class="cbub"><span class="nm">Health Wire<span class="bg">Author</span></span><br>Dana &mdash; exactly. Fragrance &ne; firming. The winner was the only cream in our test designed to be massaged into the <b>deep layer</b> where the septae sit &mdash; that&rsquo;s the caffeine/guaran&aacute; mechanism we linked above.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 3h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 112</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#9db98c">M</div><div class="bd"><div class="cbub"><span class="nm">Marilyn Prescott</span><br>I&rsquo;m 58 and figured I&rsquo;d waited too long. Five weeks in and the crepey look above the backs of my knees is smoothing out. I did a literal double-take in the mirror this morning.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 5h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 216</span></div></div></div>
   <div class="cmt reply"><div class="av" style="background:#8fb0c9">K</div><div class="bd"><div class="cbub"><span class="nm">Kathy Doran</span><br>Marilyn Prescott which pack did you get?? Trying to decide.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 4h</div></div></div>
   <div class="cmt reply"><div class="av" style="background:#9db98c">M</div><div class="bd"><div class="cbub"><span class="nm">Marilyn Prescott</span><br>Kathy Doran the 3-jar &mdash; honestly wish I&rsquo;d done the 6 for the free leave-in. It goes faster than you think using it morning and night.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 4h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 44</span></div></div></div>
-  <div class="cmt"><div class="av" style="background:#b6a06e">R</div><div class="bd"><div class="cbub"><span class="nm">Rhonda Vasquez</span><br>NIVEA Good-bye Cellulite sat in my bathroom for a YEAR and did nothing. Two weeks of the winner and my husband noticed before I even said a word.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 6h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 173</span></div></div></div>
+  <div class="cmt"><div class="av" style="background:#b6a06e">R</div><div class="bd"><div class="cbub"><span class="nm">Rhonda Vasquez</span><br>NIVEA Good-bye Cellulite sat in my bathroom for a YEAR and did nothing. Two weeks of the winner and my husband noticed before I even said a word.</div><img class="cimg" src="img/c-ugc-2.webp" alt="Reader photo" loading="lazy"><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 6h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 173</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#c9948f">E</div><div class="bd"><div class="cbub"><span class="nm">Ellen McCabe<span class="vf">&#10004;</span></span><br>I had two BBL consultations booked. Cancelled both after 6 weeks with this. Roughly $12k saved and no knife. I&rsquo;m done chasing surgery.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 7h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 521</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#b58cc0">P</div><div class="bd"><div class="cbub"><span class="nm">Paige Sorenson</span><br>Is this coupon actually real or one of those fake countdown things?</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 2h</div></div></div>
   <div class="cmt reply"><div class="av" style="background:#385898">B</div><div class="bd"><div class="cbub"><span class="nm">Health Wire<span class="bg">Author</span></span><br>Paige &mdash; it applies automatically through the link in the article and it&rsquo;s tied to the current batch. Once this run sells out the price goes back up. No fake timers on our end.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 2h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 38</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#7fb59a">G</div><div class="bd"><div class="cbub"><span class="nm">Gina Halloran</span><br>PSA for anyone confused like I was: Bio-Oil is for scars and stretch marks, not firming. I rubbed it on cellulite for months for nothing. This comparison set me straight.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 8h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 129</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#8c9bc9">S</div><div class="bd"><div class="cbub"><span class="nm">Sofia Reyes</span><br>8 weeks. Backs of my thighs. Almost didn&rsquo;t post but here you go ladies &#128071;</div><img class="cimg" src="img/nb-ba-1.webp" alt="Reader photo" loading="lazy"><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 9h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 308</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#c0a37f">T</div><div class="bd"><div class="cbub"><span class="nm">Theresa Lund</span><br>Tried the Paula&rsquo;s Choice retinol first &mdash; it peeled and irritated my skin badly. The winner is a cream, no burning, and it actually firms. Night and day difference.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 10h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 97</span></div></div></div>
-  <div class="cmt"><div class="av" style="background:#a8b58c">C</div><div class="bd"><div class="cbub"><span class="nm">Corinne Baptiste</span><br>Skeptic here. Ordered one jar to &ldquo;prove&rdquo; it wouldn&rsquo;t work. Ate my words in 3 weeks. Just reordered two more.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 11h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 142</span></div></div></div>
-  <div class="cmt"><div class="av" style="background:#7fa88f">J</div><div class="bd"><div class="cbub"><span class="nm">Janice Corbett</span><br>My daughter put me onto this after nothing else worked. Believer now. Thank you for the honest star ratings &mdash; that&rsquo;s what I trusted.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 12h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 88</span></div></div></div>
+  <div class="cmt"><div class="av" style="background:#a8b58c">C</div><div class="bd"><div class="cbub"><span class="nm">Corinne Baptiste</span><br>Skeptic here. Ordered one jar to &ldquo;prove&rdquo; it wouldn&rsquo;t work. Ate my words in 3 weeks. Just reordered two more.</div><img class="cimg" src="img/c-ugc-3.webp" alt="Reader photo" loading="lazy"><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 11h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 142</span></div></div></div>
+  <div class="cmt"><div class="av" style="background:#7fa88f">J</div><div class="bd"><div class="cbub"><span class="nm">Janice Corbett</span><br>My daughter put me onto this after nothing else worked. Believer now. Thank you for the honest star ratings &mdash; that&rsquo;s what I trusted.</div><img class="cimg" src="img/c-ugc-4.webp" alt="Reader photo" loading="lazy"><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 12h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 88</span></div></div></div>
   <div class="cmt"><div class="av" style="background:#c58ba3">L</div><div class="bd"><div class="cbub"><span class="nm">Lauren Diaz</span><br>That warming tingle when you rub it in is oddly satisfying &mdash; you can feel it working. Sol de Janeiro never did that.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 13h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 54</span></div></div></div>
   <div class="fbmore">View 211 more comments</div>
   <div class="cmt"><div class="av" style="background:#b58ca0">H</div><div class="bd"><div class="cbub"><span class="nm">Hannah W.</span><br>Just grabbed the 6-jar with the free leave-in before it&rsquo;s gone. Not missing this one.</div><div class="cmeta"><b>Like</b> &middot; <b>Reply</b> &middot; 13h &nbsp;&middot;&nbsp; <span class="lk"><span class="u">&#128077;</span><span class="h">&#10084;</span> 61</span></div></div></div>
