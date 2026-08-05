@@ -155,6 +155,32 @@ body.showbar{padding-bottom:80px}
 .pcar-dots i{width:7px;height:7px;border-radius:50%;background:rgba(0,0,0,.28);cursor:pointer;transition:all .2s}
 .pcar-dots i.on{background:#e0397a;width:20px;border-radius:99px}
 @media(min-width:720px){.pcar-nav{opacity:0;transition:opacity .2s}.pcarousel:hover .pcar-nav{opacity:1}}
+
+/* ---- 6-month transformation table ---- */
+.tform{max-width:var(--wrap);margin:0 auto;padding:24px 18px}
+.tform h2{margin-bottom:2px}
+.tform .sub{font-family:Arial,Helvetica,sans-serif;color:var(--muted);font-size:15px;margin:2px 0 14px}
+.tblwrap{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ttable{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13.5px}
+.ttable th{background:#12233a;color:#fff;text-align:left;padding:11px 12px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;vertical-align:bottom}
+.ttable td{border-top:1px solid var(--line);padding:12px;vertical-align:top;line-height:1.45;color:#333}
+.ttable td.when{font-weight:900;color:var(--rose);white-space:nowrap;background:#fbf6f8}
+.ttable tr.win td{background:#f1faf4}
+.ttable tr.win td.when{color:var(--green);background:#e6f6ec}
+.tnote{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--muted);margin:9px 2px 0;line-height:1.5}
+@media(max-width:640px){
+ .tblwrap{border:0;border-radius:0}
+ .ttable,.ttable tbody,.ttable tr,.ttable td{display:block;width:100%}
+ .ttable thead{display:none}
+ .ttable tr{border:1px solid var(--line);border-radius:12px;margin:0 0 12px;overflow:hidden;background:#fff}
+ .ttable tr.win{border-color:var(--green)}
+ .ttable td{border-top:1px solid var(--line);padding:9px 12px;display:flex;gap:10px}
+ .ttable td::before{content:attr(data-l);flex:0 0 92px;font-weight:800;color:var(--rose);font-size:11px;text-transform:uppercase;letter-spacing:.03em;padding-top:2px}
+ .ttable tr.win td::before{color:var(--green)}
+ .ttable td.when{border-top:0;background:#fbf6f8;font-size:15px;padding:10px 12px}
+ .ttable td.when::before{content:"";flex:0 0 0}
+ .ttable tr.win td.when{background:#e6f6ec}
+}
 </style>
 </head>
 <body>
@@ -260,6 +286,25 @@ body.showbar{padding-bottom:80px}
     <img src="img/bagrid-5.webp" alt="Real reader before and after" style="width:100%;border-radius:10px;margin:0">
   </div>
   <p class="subcta" style="text-align:left">Self-reported appearance measures from a voluntary user panel &mdash; illustrative, not a clinical claim. Results vary.</p>
+</section>
+
+<section class="tform">
+  <h2>The First 6 Months &mdash; What Actually Changes</h2>
+  <p class="sub">It doesn&rsquo;t stop at your skin. Here&rsquo;s the ripple most women don&rsquo;t see coming.</p>
+  <div class="tblwrap">
+    <table class="ttable">
+      <thead><tr><th>When</th><th>Your skin</th><th>Your confidence</th><th>Your relationship</th><th>Your family</th></tr></thead>
+      <tbody>
+        <tr><td class="when">Weeks 1&ndash;2</td><td data-l="Skin">The warm tingle kicks in &mdash; skin feels tighter within minutes and a little firmer by morning.</td><td data-l="Confidence">You catch yourself checking the mirror a little less anxiously.</td><td data-l="Relationship">You stop pulling away when he touches the backs of your legs.</td><td data-l="Family">You say <b>yes</b> to the pool day instead of inventing an excuse.</td></tr>
+        <tr><td class="when">Month 1</td><td data-l="Skin">Texture starts to smooth; the dimples on the back of the thighs begin to soften.</td><td data-l="Confidence">You try on the shorts that have been buried in the drawer for years.</td><td data-l="Relationship">You leave the lamp on for the first time in a long time.</td><td data-l="Family">You get <em>in</em> the photo with your kids instead of taking it.</td></tr>
+        <tr><td class="when">Month 2</td><td data-l="Skin">Skin bounces back firmer; the lifted look starts showing in the mirror.</td><td data-l="Confidence">You stop reaching for the sarong out of habit.</td><td data-l="Relationship">Closeness feels easy again &mdash; not something you brace for.</td><td data-l="Family">You plan the beach trip instead of dreading it.</td></tr>
+        <tr><td class="when">Month 3</td><td data-l="Skin">Firmer, smoother, more even tone; stretch marks look softer.</td><td data-l="Confidence">Compliments you didn&rsquo;t fish for start landing.</td><td data-l="Relationship">He notices before you say a single word.</td><td data-l="Family">You&rsquo;re the mom in the group photo &mdash; front and center.</td></tr>
+        <tr><td class="when">Months 4&ndash;5</td><td data-l="Skin">The firmness holds; your skin starts to feel like <em>yours</em> again.</td><td data-l="Confidence">You stop apologizing for your body.</td><td data-l="Relationship">A spark you thought was gone quietly comes back.</td><td data-l="Family">Your daughter watches you stand tall &mdash; and learns to.</td></tr>
+        <tr class="win"><td class="when">Month 6</td><td data-l="Skin">The lifted, smooth result is your new normal; the 60-second ritual is just a habit now.</td><td data-l="Confidence">You feel like <b>you</b> again &mdash; maybe more than before.</td><td data-l="Relationship">Closeness without a second thought.</td><td data-l="Family">You show up fully &mdash; present, unafraid, in every picture.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tnote">Illustrative of the journey many women describe. It&rsquo;s Brazilian Bumbum is a cosmetic for the <b>look</b> of firmness &mdash; not a medical or weight-loss treatment; individual results and timelines vary.</p>
 </section>
 
 <section class="band">
