@@ -169,6 +169,15 @@ p{margin:0 0 16px}
 .panel p:last-child{margin-bottom:0}
 .panel .who{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 9px}
 .panel .who span{background:#eef2f8;border:1px solid #d7deea;color:#2a3a4d;font-size:12px;font-weight:700;padding:4px 9px;border-radius:20px}
+.studies{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.study{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.study img{display:block;width:100%}
+.study .sh{border-bottom:1px solid #eee}
+.study .cap{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#37414d;padding:10px 12px}
+.study .cap b{color:#12233a}
+.study .cap .pr{display:inline-block;background:#eef2f8;border:1px solid #d7deea;color:#2a3a4d;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:20px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:5px}
+.studln{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;color:#12233a;font-size:15px;margin:18px 0 2px}
+@media(max-width:620px){.studies{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -377,6 +386,20 @@ p{margin:0 0 16px}
   <h3 style="font-family:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;font-size:21px;margin:22px 0 8px">The Science, in Plain English</h3>
   <p>Cellulite isn&rsquo;t fat &mdash; it&rsquo;s the fibrous <b>septae</b> stiffening and pulling the skin down while fat pushes up between them. Caffeine (guaran&aacute;) is one of the few cosmetic actives with published research for the look of that exact problem: a <b>2025 study</b> (<i>Cosmetics</i>, MDPI) on 56 women and a <b>2026 double-blind trial</b> (<i>Pharmaceutics</i>, MDPI) both showed a reduced look of cellulite over 8&ndash;12 weeks &mdash; when the active was massaged in daily. <i>(Research evaluates the ingredient class, not this finished product; results vary.)</i></p>
   <figure><img src="img/sp-science.webp" alt="Cellulite-affected skin vs treated skin — the deep layer" style="width:100%;border-radius:10px"></figure>
+  <p class="studln">Don&rsquo;t take our word for it &mdash; here are the actual peer-reviewed papers:</p>
+  <div class="studies">
+    <div class="study">
+      <img class="sh" src="img/study1-head.webp" alt="Cosmetics (MDPI) 2025 journal article header" loading="lazy">
+      <img src="img/study1-volume.webp" alt="Cellulite surface volume dropped from 15.5 to 14.4 mm3" loading="lazy">
+      <div class="cap"><span class="pr">Cosmetics &middot; MDPI &middot; 2025</span><br><b>Peer-reviewed, open access.</b> Skin-surface imaging showed cellulite &ldquo;indentation volume&rdquo; falling from <b>15.5 &rarr; 14.4&nbsp;mm&sup3;</b> over the 8-week caffeine cream-gel + massage protocol (56 women).</div>
+    </div>
+    <div class="study">
+      <img class="sh" src="img/study2-head.webp" alt="Pharmaceutics (MDPI) 2026 journal article header" loading="lazy">
+      <img src="img/study2-graph.webp" alt="Cellulite grade: active caffeine beat placebo at weeks 4, 8 and 12" loading="lazy">
+      <div class="cap"><span class="pr">Pharmaceutics &middot; MDPI &middot; 2026</span><br><b>Randomized, double-blind, placebo-controlled.</b> On the cellulite grading scale the <b>caffeine (active) side beat placebo</b> at weeks 4, 8 and 12 &mdash; <b>P&nbsp;=&nbsp;0.001&ndash;0.012.</b></div>
+    </div>
+  </div>
+  <p class="disc" style="border:0;margin:2px 0 0;padding:0;font-size:11.5px">Figures reproduced from the open-access studies above (Cosmetics 2025; Pharmaceutics 2026). Research evaluates the caffeine/active class, not this specific finished product; individual results vary.</p>
 
   <h3 style="font-family:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;font-size:21px;margin:22px 0 8px">Real Women, Real Results</h3>
   <div class="reviews">
