@@ -63,7 +63,7 @@ h1{font-weight:900;font-size:46px;line-height:1.12;color:var(--ink);text-align:c
 .fbc{margin:2px 0 16px;border-top:1px solid var(--line);padding-top:12px}.cmt{display:flex;gap:8px;margin:0 0 9px}.cmt .av{flex:0 0 30px;width:30px;height:30px;border-radius:50%;color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}.cmt .cb{background:#f0f2f5;border-radius:15px;padding:8px 13px;font-size:14px;line-height:1.42;color:#1c1e21}.cmt .cb b{margin-right:5px}.cmt .cm{display:block;font-size:11px;color:var(--muted);margin-top:3px}
 .disc{font-size:12px;color:#9098a5;line-height:1.6;border-top:1px solid var(--line);margin-top:26px;padding:18px 0 46px}
 @media(max-width:600px){.cmt .cb{font-size:13.5px}.fbc{padding-top:10px}body{font-size:17px}h1{font-size:27px;margin:14px 0 8px}.item h3{font-size:21px}.collage img{height:84px}.search{display:none}.logo{font-size:19px}.lead{font-size:16.5px}.kicker{margin:16px 0 0}.vthumb .play{width:62px;height:44px}}
-.item.offer{cursor:pointer} .kicker{cursor:pointer} .collage{cursor:pointer} .hackimg{cursor:pointer} .discuss .cmt{cursor:pointer}
+.item.offer{cursor:pointer} .kicker{cursor:pointer} .collage{cursor:pointer} .hackimg{cursor:pointer} .discuss .cmt{cursor:pointer} h1{cursor:pointer}
 @media(max-width:600px){.kicker{margin:12px 0 0}h1{font-size:25px;line-height:1.22;margin:9px 0 8px}.collage{margin:0 0 12px}.collage img{height:66px}.byline{margin:0 0 10px}.lead{margin:0 0 12px}}
 </style><script type="text/javascript">
 (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -146,5 +146,5 @@ document.getElementById('today').textContent=new Date().toLocaleDateString('en-U
  });
 }());
 </script>
-<script>(function(){document.querySelectorAll(".item.offer").forEach(function(it){it.addEventListener("click",function(e){if(e.target.closest("a"))return;var c=it.querySelector("a.cta");if(c&&c.href)window.location.href=c.href;});});var f=document.querySelector(".item.offer");[".kicker",".collage"].forEach(function(sel){var el=document.querySelector(sel);if(el&&f)el.addEventListener("click",function(){f.scrollIntoView({behavior:"smooth"});});});var rc=document.querySelector(".recap");document.addEventListener("click",function(e){if(e.target.closest("a"))return;if(rc&&(e.target.closest(".hackimg")||e.target.closest(".discuss")))rc.scrollIntoView({behavior:"smooth"});},false);})();</script>
+<script>(function(){document.querySelectorAll(".item.offer").forEach(function(it){it.addEventListener("click",function(e){if(e.target.closest("a"))return;var c=it.querySelector("a.cta");if(c&&c.href)window.location.href=c.href;});});var f=document.querySelector(".item.offer");[".kicker",".collage","h1"].forEach(function(sel){var el=document.querySelector(sel);if(el&&f)el.addEventListener("click",function(){f.scrollIntoView({behavior:"smooth"});});});var rc=document.querySelector(".recap");document.addEventListener("click",function(e){if(e.target.closest("a"))return;if(rc&&(e.target.closest(".hackimg")||e.target.closest(".discuss")))rc.scrollIntoView({behavior:"smooth"});},false);})();</script>
 </body></html>
